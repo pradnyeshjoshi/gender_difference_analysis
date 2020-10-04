@@ -26,29 +26,28 @@ from time import time
 from glob import glob
 
 # accepts inputDir and outputDir variables from command line
-parser = argparse.ArgumentParser(description='Run the pan17 pipeline')
+# parser = argparse.ArgumentParser(description='Run the pan17 pipeline')
 
-parser.add_argument('inputDir', metavar='input', type=str, nargs='+',
-                    help='input directory with the training data')
-parser.add_argument('outputDir', metavar='output', type=str, nargs='?',
-                    help='output directory for the XML files')
-args = parser.parse_args()
+# parser.add_argument('inputDir', metavar='input', type=str, nargs='+',
+#                     help='input directory with the training data', default='')
+# parser.add_argument('outputDir', metavar='output', type=str, nargs='?',
+#                     help='output directory for the XML files', default='')
+# args = parser.parse_args()
 
 
 logging.basicConfig(level=logging.DEBUG)
 
-inputdir = args.inputDir[0]
-
-try:
-    outputdir = args.outputDir[0]
-except:
-    logging.info("Output dir not given: will not produce XML files")
+# inputdir = args.inputDir[0]
+# try:
+#     outputdir = args.outputDir[0]
+# except:
+#     logging.info("Output dir not given: will not produce XML files")
 
 def runbaseline():
 
-	train_dir = inputdir
+	train_dir = '../../data/pan17/pan17-author-profiling-training-dataset-2017-03-10/'
 	test_dir = '../../data/pan17/pan17-author-profiling-test-dataset-2017-03-16/'
-	reddit_dir = '../../../rawdata/'
+	reddit_dir = '../../data/rawdata/'
 
 	logging.info("loading train dataset...")
 	df = datasets.load_pan17(train_dir)
@@ -117,14 +116,17 @@ def runbaseline():
 	# print("test accuracy", scores[test.lang.iloc[0]]['gender'])
 
 	logging.info("loading reddit dataset")
-	reddit_list = [y for x in os.walk(reddit_dir) for y in glob(os.path.join(x[0], '*.csv')) if 'comment' not in y]
-	for r in reddit_list:
+	reddit_post_list = [y for x in os.walk(reddit_dir) for y in glob(os.path.join(x[0], '*.csv')) if 'comment' not in y]
+	reddit_comment_list = [y for x in os.walk(reddit_dir) for y in glob(os.path.join(x[0], '*.csv')) if 'comment' in y]
+	for r in reddit_post_list + reddit_comment_list:
 		print("loading ", r)
-		df_reddit = datasets.load_reddit(r)
+		file_type = "post" if r in reddit_post_list else "comment"
+		print(file_type)
+		df_reddit = datasets.load_reddit(r, type=file_type)
 		print("predict on ", r)
 		pred = pipe.predict(df_reddit.corpus.text)
 		df_reddit.corpus['predicted_gender'] = pred
-		df_reddit.corpus.to_csv(r)
+		df_reddit.corpus.to_csv(r, index=False, index_label=False)
 
 
 	# save predictions to output dict

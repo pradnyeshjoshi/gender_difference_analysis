@@ -111,10 +111,16 @@ class load_testpan17(object):
         self.corpus = text
 
 class load_reddit(object):
+    def __init__(self, path, type="post"):
+        df = pd.read_csv(path)
+        if type == "post":
+            df['text'] = df['title'].astype(str).str.cat(df['selftext'].astype(str), sep=' ')
+        else:
+            df['text'] = df['body'].astype(str)
+        df.text = df.text.fillna('')
+        self.corpus = df
 
-	def __init__(self, path):
-
-		df = pd.read_csv(path)
-		df['text'] = df['title'].str.cat(df['selftext'], sep=' ')
-		df.text = df.text.fillna('')
-		self.corpus = df
+if __name__ == "__main__":
+    df = load_reddit('../../data/rawdata/Business/business_hot.csv', type="post")
+    # print(df.corpus.title)
+    print(df.corpus.text.head())
