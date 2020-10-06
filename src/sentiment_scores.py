@@ -83,8 +83,8 @@ def get_nrc_sentiments(df):
 
 def get_sentistrength(df):
     senti = PySentiStr()
-    senti.setSentiStrengthPath('/Users/prady/softwares/SentiStrengthCom.jar')
-    senti.setSentiStrengthLanguageFolderPath('/Users/prady/softwares/SentStrength_Data_Sept2011/')
+    senti.setSentiStrengthPath('~/softwares/SentiStrengthCom.jar')
+    senti.setSentiStrengthLanguageFolderPath('~/softwares/SentStrength_Data_Sept2011/')
     df["text"] = [t if t!="" else " " for t in df['text']]
     result = senti.getSentiment(df["text"], score='trinary')
     df["sentistrength_pos"] = [r[0] for r in result]
@@ -92,7 +92,26 @@ def get_sentistrength(df):
     df["sentistrength_neutral"] = [r[2] for r in result]
     return df
 
-if __name__=='__main__':
+def get_wordcount(df, file_type="comment"):
+    if file_type == "comment":
+        df['comment_wordcount'] = 0
+        for j in tqdm(range(df.shape[0])):
+            tb = TextBlob(df_reddit.loc[j, 'text'])
+            df_reddit.loc[j, 'comment_wordcount'] = len(tb.words)
+    else:
+        df['title_wordcount'] = 0
+        df['post_wordcount'] = 0
+        df['title'] = df['title'].astype(str)
+        df['selftext'] = df['selftext'].astype(str)
+        for j in tqdm(range(df.shape[0])):
+            tb = TextBlob(df_reddit.loc[j, 'title'])
+            df_reddit.loc[j, 'title_wordcount'] = len(tb.words)
+            tb = TextBlob(df_reddit.loc[j, 'selftext'])
+            df_reddit.loc[j, 'post_wordcount'] = len(tb.words)
+    return df
+
+if __name__ == '__main__':
+
     reddit_dir = '../data/rawdata/'
     logging.info("loading reddit dataset")
     reddit_list = [y for x in os.walk(reddit_dir) for y in glob(os.path.join(x[0], '*.csv'))]
@@ -100,10 +119,13 @@ if __name__=='__main__':
     for i, r in enumerate(reddit_list):
         print(i, r)
         df_reddit = pd.read_csv(r)
-        if 'care' in df_reddit.columns:
-            continue
         df_reddit['text'] = df_reddit['text'].astype(str)
-        df_reddit = get_moralstrength(df_reddit)
-        df_reddit = get_nrc_sentiments(df_reddit)
-        df_reddit = get_sentistrength(df_reddit)
+        if 'comment_wordcount' in df_reddit.columns:
+            del df_reddit['comment_wordcount']
+        # df_reddit = get_moralstrength(df_reddit)
+        # df_reddit = get_nrc_sentiments(df_reddit)
+        # df_reddit = get_sentistrength(df_reddit)
+        file_type = "comment" if "comment" in r else "post"
+        print(file_type)
+        df_reddit = get_wordcount(df_reddit, file_type)
         df_reddit.to_csv(r, index=False, index_label=False)
