@@ -120,8 +120,6 @@ if __name__ == '__main__':
         print(i, r)
         df_reddit = pd.read_csv(r)
         df_reddit['text'] = df_reddit['text'].astype(str)
-        if 'comment_wordcount' in df_reddit.columns:
-            del df_reddit['comment_wordcount']
         # df_reddit = get_moralstrength(df_reddit)
         # df_reddit = get_nrc_sentiments(df_reddit)
         # df_reddit = get_sentistrength(df_reddit)

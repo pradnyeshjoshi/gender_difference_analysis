@@ -1,0 +1,5 @@
+{
+    "python.linting.pylintPath": "/Users/prady/anaconda3/bin/pylint",
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintEnabled": true
+}

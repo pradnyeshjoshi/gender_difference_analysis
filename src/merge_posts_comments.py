@@ -13,7 +13,7 @@ def merge_posts(reddit_dir='../data/rawdata/'):
     ]
     post_columns = [
         'name', 'predicted_gender', 'post_wordcount', 'title_wordcount',
-        'ups', 'author_premium', 'is_self', 'no_follow', 'title', 'selftext', 'created_utc'
+        'ups', 'author_premium', 'is_self', 'no_follow', 'num_comments', 'title', 'selftext'
     ] + sentiment_list
     post_list = [y for x in os.walk(reddit_dir) for y in glob(os.path.join(x[0], '*.csv'))]
     post_list = [p for p in post_list if 'comment' not in p]
@@ -25,6 +25,8 @@ def merge_posts(reddit_dir='../data/rawdata/'):
             if c not in df.columns:
                 df[c] = np.nan
         post_df = pd.concat([post_df, df[post_columns]])
+    post_df = post_df.groupby("name", as_index=False).apply(lambda x: x.sort_values(by="ups").reset_index().loc[x.shape[0]-1])
+    del post_df['index']
     post_df = post_df.drop_duplicates()
     return post_df
 
@@ -46,16 +48,18 @@ def merge_comments(reddit_dir='../data/rawdata/'):
         print(p)
         df = pd.read_csv(p)
         comment_df = pd.concat([comment_df, df[comment_columns]])
+    comment_df = comment_df.groupby("id", as_index=False).apply(lambda x: x.reset_index().loc[x.shape[0]-1])
+    del comment_df['index']
     comment_df = comment_df.drop_duplicates()
     return comment_df
 
 def combine_posts_comments(posts, comments):
     df = pd.merge(
-        comments, posts, how='left',left_on='link_id', right_on='name',
+        comments, posts, how='inner',left_on='link_id', right_on='name',
         suffixes=["_comment", "_post"]
     )
     df.rename(
-        {"title": "post_title", "selftext": "post_text", "text": "comment_text"}, inplace=True
+        columns={"title": "post_title", "selftext": "post_text", "text": "comment_text"}, inplace=True
     )
     df = df.drop_duplicates()
     return df
@@ -68,5 +72,6 @@ if __name__ == "__main__":
     print(comment_df.head())
     comment_df.to_csv('../data/comments.csv', index=False, index_label=False)
     df = combine_posts_comments(post_df, comment_df)
+    print("writing to csv")
     df.to_csv("../data/reddit_data.csv", index=False, index_label=False)
-    df.loc[df['link_id'] == "t3_e2wut4"].to_csv("../data/reddit_data_sample.csv", index=False, index_label=False)
+    # df.loc[df['link_id'] == "t3_e8qkg7"].to_csv("../data/reddit_data_sample.csv", index=False, index_label=False)
