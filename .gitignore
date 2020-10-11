@@ -1,2 +1,7 @@
 data/*
 *.pyc
+*.RData
+*.Rhistory
+gender_difference_model.R
+gender_diff_pan17.R
+.vscode/*

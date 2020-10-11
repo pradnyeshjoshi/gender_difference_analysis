@@ -1,0 +1,1911 @@
+
+fear_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6885  -1.1801   0.9499   1.1673   1.7206  
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    -1.007893   1.159313  -0.869  0.38463    
+predicted_gender_commentmale   -0.141606   0.008328 -17.003  < 2e-16 ***
+predicted_gender_postmale      -0.011814   0.009422  -1.254  0.20988    
+fear_post                       0.033083   0.006219   5.320 1.04e-07 ***
+anger_post                     -0.014564   0.008100  -1.798  0.07219 .  
+anticip_post                   -0.010103   0.007168  -1.409  0.15871    
+trust_post                     -0.018912   0.005953  -3.177  0.00149 ** 
+surprise_post                  -0.005537   0.007550  -0.733  0.46333    
+positive_post                  -0.040899   0.025828  -1.584  0.11331    
+negative_post                   0.021225   0.007638   2.779  0.00546 ** 
+sadness_post                   -0.035974   0.007977  -4.510 6.48e-06 ***
+disgust_post                   -0.006792   0.007706  -0.881  0.37811    
+joy_post                       -0.018917   0.007443  -2.541  0.01104 *  
+care_post                       0.032675   0.017488   1.868  0.06170 .  
+fairness_post                  -0.023216   0.010917  -2.127  0.03345 *  
+loyalty_post                    0.003402   0.014514   0.234  0.81470    
+authority_post                 -0.010862   0.013992  -0.776  0.43759    
+purity_post                     0.002982   0.014980   0.199  0.84222    
+non_moral_post                 -0.007481   0.008067  -0.927  0.35369    
+sentistrength_pos_post         -0.011631   0.006319  -1.841  0.06569 .  
+sentistrength_neg_post         -0.008266   0.005973  -1.384  0.16641    
+sentistrength_neutral_post      0.015081   0.005214   2.893  0.00382 ** 
+subredditbusiness               1.119609   1.159127   0.966  0.33409    
+subredditEntrepreneur           1.162560   1.159003   1.003  0.31583    
+subredditEntrepreneurRideAlong  1.179421   1.159076   1.018  0.30889    
+subredditEntrepreneurship       1.119606   1.159529   0.966  0.33426    
+subredditgrowmybusiness         1.259192   1.159274   1.086  0.27739    
+subredditladybusiness           1.073658   1.159729   0.926  0.35456    
+subredditsmallbusiness          1.085900   1.159017   0.937  0.34880    
+subredditStartup_Ideas          1.175022   1.159182   1.014  0.31074    
+subredditstartups               1.027057   1.159003   0.886  0.37553    
+subredditventurecapital         0.845245   1.159586   0.729  0.46605    
+post_wordcount                 -0.015107   0.007927  -1.906  0.05667 .  
+title_wordcount                -0.021256   0.003858  -5.509 3.61e-08 ***
+comment_wordcount               0.188400   0.003455  54.527  < 2e-16 ***
+ups                             0.007569   0.007495   1.010  0.31262    
+author_premiumFalse             0.003190   0.015650   0.204  0.83848    
+author_premiumTrue              0.033926   0.018847   1.800  0.07184 .  
+is_selfTrue                     0.012194   0.025614   0.476  0.63402    
+no_followTrue                   0.009119   0.012745   0.716  0.47428    
+num_comments                   -0.017779   0.006333  -2.807  0.00500 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512572  on 369743  degrees of freedom
+Residual deviance: 509061  on 369703  degrees of freedom
+AIC: 509143
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  89753  82876
+         1  94679 102436
+                                          
+               Accuracy : 0.5198          
+                 95% CI : (0.5182, 0.5214)
+    No Information Rate : 0.5012          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.0394          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.4866          
+            Specificity : 0.5528          
+         Pos Pred Value : 0.5199          
+         Neg Pred Value : 0.5197          
+             Prevalence : 0.4988          
+         Detection Rate : 0.2427          
+   Detection Prevalence : 0.4669          
+      Balanced Accuracy : 0.5197          
+                                          
+       'Positive' Class : 0               
+                                          
+
+fear_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6885  -1.1801   0.9499   1.1673   1.7206  
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    -1.007893   1.159313  -0.869  0.38463    
+predicted_gender_commentmale   -0.141606   0.008328 -17.003  < 2e-16 ***
+predicted_gender_postmale      -0.011814   0.009422  -1.254  0.20988    
+fear_post                       0.033083   0.006219   5.320 1.04e-07 ***
+anger_post                     -0.014564   0.008100  -1.798  0.07219 .  
+anticip_post                   -0.010103   0.007168  -1.409  0.15871    
+trust_post                     -0.018912   0.005953  -3.177  0.00149 ** 
+surprise_post                  -0.005537   0.007550  -0.733  0.46333    
+positive_post                  -0.040899   0.025828  -1.584  0.11331    
+negative_post                   0.021225   0.007638   2.779  0.00546 ** 
+sadness_post                   -0.035974   0.007977  -4.510 6.48e-06 ***
+disgust_post                   -0.006792   0.007706  -0.881  0.37811    
+joy_post                       -0.018917   0.007443  -2.541  0.01104 *  
+care_post                       0.032675   0.017488   1.868  0.06170 .  
+fairness_post                  -0.023216   0.010917  -2.127  0.03345 *  
+loyalty_post                    0.003402   0.014514   0.234  0.81470    
+authority_post                 -0.010862   0.013992  -0.776  0.43759    
+purity_post                     0.002982   0.014980   0.199  0.84222    
+non_moral_post                 -0.007481   0.008067  -0.927  0.35369    
+sentistrength_pos_post         -0.011631   0.006319  -1.841  0.06569 .  
+sentistrength_neg_post         -0.008266   0.005973  -1.384  0.16641    
+sentistrength_neutral_post      0.015081   0.005214   2.893  0.00382 ** 
+subredditbusiness               1.119609   1.159127   0.966  0.33409    
+subredditEntrepreneur           1.162560   1.159003   1.003  0.31583    
+subredditEntrepreneurRideAlong  1.179421   1.159076   1.018  0.30889    
+subredditEntrepreneurship       1.119606   1.159529   0.966  0.33426    
+subredditgrowmybusiness         1.259192   1.159274   1.086  0.27739    
+subredditladybusiness           1.073658   1.159729   0.926  0.35456    
+subredditsmallbusiness          1.085900   1.159017   0.937  0.34880    
+subredditStartup_Ideas          1.175022   1.159182   1.014  0.31074    
+subredditstartups               1.027057   1.159003   0.886  0.37553    
+subredditventurecapital         0.845245   1.159586   0.729  0.46605    
+post_wordcount                 -0.015107   0.007927  -1.906  0.05667 .  
+title_wordcount                -0.021256   0.003858  -5.509 3.61e-08 ***
+comment_wordcount               0.188400   0.003455  54.527  < 2e-16 ***
+ups                             0.007569   0.007495   1.010  0.31262    
+author_premiumFalse             0.003190   0.015650   0.204  0.83848    
+author_premiumTrue              0.033926   0.018847   1.800  0.07184 .  
+is_selfTrue                     0.012194   0.025614   0.476  0.63402    
+no_followTrue                   0.009119   0.012745   0.716  0.47428    
+num_comments                   -0.017779   0.006333  -2.807  0.00500 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512572  on 369743  degrees of freedom
+Residual deviance: 509061  on 369703  degrees of freedom
+AIC: 509143
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  89753  82876
+         1  94679 102436
+                                          
+               Accuracy : 0.5198          
+                 95% CI : (0.5182, 0.5214)
+    No Information Rate : 0.5012          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.0394          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.4866          
+            Specificity : 0.5528          
+         Pos Pred Value : 0.5199          
+         Neg Pred Value : 0.5197          
+             Prevalence : 0.4988          
+         Detection Rate : 0.2427          
+   Detection Prevalence : 0.4669          
+      Balanced Accuracy : 0.5197          
+                                          
+       'Positive' Class : 0               
+                                          
+
+fear_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6885  -1.1801   0.9499   1.1673   1.7206  
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    -1.007893   1.159313  -0.869  0.38463    
+predicted_gender_commentmale   -0.141606   0.008328 -17.003  < 2e-16 ***
+predicted_gender_postmale      -0.011814   0.009422  -1.254  0.20988    
+fear_post                       0.033083   0.006219   5.320 1.04e-07 ***
+anger_post                     -0.014564   0.008100  -1.798  0.07219 .  
+anticip_post                   -0.010103   0.007168  -1.409  0.15871    
+trust_post                     -0.018912   0.005953  -3.177  0.00149 ** 
+surprise_post                  -0.005537   0.007550  -0.733  0.46333    
+positive_post                  -0.040899   0.025828  -1.584  0.11331    
+negative_post                   0.021225   0.007638   2.779  0.00546 ** 
+sadness_post                   -0.035974   0.007977  -4.510 6.48e-06 ***
+disgust_post                   -0.006792   0.007706  -0.881  0.37811    
+joy_post                       -0.018917   0.007443  -2.541  0.01104 *  
+care_post                       0.032675   0.017488   1.868  0.06170 .  
+fairness_post                  -0.023216   0.010917  -2.127  0.03345 *  
+loyalty_post                    0.003402   0.014514   0.234  0.81470    
+authority_post                 -0.010862   0.013992  -0.776  0.43759    
+purity_post                     0.002982   0.014980   0.199  0.84222    
+non_moral_post                 -0.007481   0.008067  -0.927  0.35369    
+sentistrength_pos_post         -0.011631   0.006319  -1.841  0.06569 .  
+sentistrength_neg_post         -0.008266   0.005973  -1.384  0.16641    
+sentistrength_neutral_post      0.015081   0.005214   2.893  0.00382 ** 
+subredditbusiness               1.119609   1.159127   0.966  0.33409    
+subredditEntrepreneur           1.162560   1.159003   1.003  0.31583    
+subredditEntrepreneurRideAlong  1.179421   1.159076   1.018  0.30889    
+subredditEntrepreneurship       1.119606   1.159529   0.966  0.33426    
+subredditgrowmybusiness         1.259192   1.159274   1.086  0.27739    
+subredditladybusiness           1.073658   1.159729   0.926  0.35456    
+subredditsmallbusiness          1.085900   1.159017   0.937  0.34880    
+subredditStartup_Ideas          1.175022   1.159182   1.014  0.31074    
+subredditstartups               1.027057   1.159003   0.886  0.37553    
+subredditventurecapital         0.845245   1.159586   0.729  0.46605    
+post_wordcount                 -0.015107   0.007927  -1.906  0.05667 .  
+title_wordcount                -0.021256   0.003858  -5.509 3.61e-08 ***
+comment_wordcount               0.188400   0.003455  54.527  < 2e-16 ***
+ups                             0.007569   0.007495   1.010  0.31262    
+author_premiumFalse             0.003190   0.015650   0.204  0.83848    
+author_premiumTrue              0.033926   0.018847   1.800  0.07184 .  
+is_selfTrue                     0.012194   0.025614   0.476  0.63402    
+no_followTrue                   0.009119   0.012745   0.716  0.47428    
+num_comments                   -0.017779   0.006333  -2.807  0.00500 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512572  on 369743  degrees of freedom
+Residual deviance: 509061  on 369703  degrees of freedom
+AIC: 509143
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  89753  82876
+         1  94679 102436
+                                          
+               Accuracy : 0.5198          
+                 95% CI : (0.5182, 0.5214)
+    No Information Rate : 0.5012          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.0394          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.4866          
+            Specificity : 0.5528          
+         Pos Pred Value : 0.5199          
+         Neg Pred Value : 0.5197          
+             Prevalence : 0.4988          
+         Detection Rate : 0.2427          
+   Detection Prevalence : 0.4669          
+      Balanced Accuracy : 0.5197          
+                                          
+       'Positive' Class : 0               
+                                          
+
+anger_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.753  -1.177   0.955   1.167   1.644  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.293e+00  1.156e+00   1.118 0.263529    
+predicted_gender_commentmale   -1.024e-01  8.325e-03 -12.299  < 2e-16 ***
+predicted_gender_postmale       7.157e-03  9.420e-03   0.760 0.447390    
+fear_post                      -9.767e-03  6.102e-03  -1.601 0.109455    
+anger_post                      8.552e-02  8.184e-03  10.449  < 2e-16 ***
+anticip_post                   -2.639e-02  7.202e-03  -3.664 0.000248 ***
+trust_post                     -1.550e-02  5.944e-03  -2.608 0.009112 ** 
+surprise_post                   7.506e-03  7.576e-03   0.991 0.321814    
+positive_post                  -3.521e-02  2.577e-02  -1.366 0.171843    
+negative_post                  -1.452e-02  7.667e-03  -1.894 0.058276 .  
+sadness_post                   -1.932e-02  8.022e-03  -2.409 0.016002 *  
+disgust_post                   -2.947e-02  7.769e-03  -3.794 0.000148 ***
+joy_post                       -3.167e-02  7.464e-03  -4.243 2.21e-05 ***
+care_post                       3.175e-02  1.751e-02   1.814 0.069718 .  
+fairness_post                  -1.227e-02  1.093e-02  -1.122 0.261654    
+loyalty_post                   -1.363e-02  1.454e-02  -0.937 0.348617    
+authority_post                  2.228e-03  1.401e-02   0.159 0.873644    
+purity_post                     1.299e-03  1.499e-02   0.087 0.930964    
+non_moral_post                  2.295e-03  8.074e-03   0.284 0.776213    
+sentistrength_pos_post         -2.585e-02  6.320e-03  -4.090 4.31e-05 ***
+sentistrength_neg_post         -2.755e-02  5.974e-03  -4.612 3.99e-06 ***
+sentistrength_neutral_post     -4.048e-05  5.213e-03  -0.008 0.993805    
+subredditbusiness              -1.080e+00  1.156e+00  -0.934 0.350283    
+subredditEntrepreneur          -1.150e+00  1.156e+00  -0.995 0.319867    
+subredditEntrepreneurRideAlong -1.129e+00  1.156e+00  -0.976 0.328949    
+subredditEntrepreneurship      -1.173e+00  1.157e+00  -1.014 0.310453    
+subredditgrowmybusiness        -1.201e+00  1.156e+00  -1.039 0.298925    
+subredditladybusiness          -1.257e+00  1.157e+00  -1.087 0.277200    
+subredditsmallbusiness         -1.107e+00  1.156e+00  -0.958 0.338171    
+subredditStartup_Ideas         -1.165e+00  1.156e+00  -1.007 0.313802    
+subredditstartups              -1.291e+00  1.156e+00  -1.117 0.264189    
+subredditventurecapital        -1.421e+00  1.157e+00  -1.228 0.219285    
+post_wordcount                 -2.341e-02  7.926e-03  -2.953 0.003147 ** 
+title_wordcount                -1.436e-02  3.858e-03  -3.722 0.000198 ***
+comment_wordcount               1.708e-01  3.451e-03  49.488  < 2e-16 ***
+ups                            -1.885e-02  7.496e-03  -2.515 0.011895 *  
+author_premiumFalse            -1.460e-02  1.565e-02  -0.933 0.350760    
+author_premiumTrue             -8.424e-02  1.885e-02  -4.470 7.82e-06 ***
+is_selfTrue                    -2.592e-02  2.562e-02  -1.012 0.311662    
+no_followTrue                  -2.868e-02  1.274e-02  -2.250 0.024444 *  
+num_comments                    1.304e-03  6.334e-03   0.206 0.836897    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512571  on 369743  degrees of freedom
+Residual deviance: 509077  on 369703  degrees of freedom
+AIC: 509159
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  91834  83002
+         1  92503 102405
+                                          
+               Accuracy : 0.5253          
+                 95% CI : (0.5237, 0.5269)
+    No Information Rate : 0.5014          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.0505          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.4982          
+            Specificity : 0.5523          
+         Pos Pred Value : 0.5253          
+         Neg Pred Value : 0.5254          
+             Prevalence : 0.4986          
+         Detection Rate : 0.2484          
+   Detection Prevalence : 0.4729          
+      Balanced Accuracy : 0.5253          
+                                          
+       'Positive' Class : 0               
+                                          
+
+anticip_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.3101  -1.1938   0.9635   1.1427   1.7682  
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.217720   1.156278   1.053 0.292278    
+predicted_gender_commentmale   -0.132045   0.008357 -15.801  < 2e-16 ***
+predicted_gender_postmale       0.003454   0.009456   0.365 0.714951    
+fear_post                      -0.006021   0.006123  -0.983 0.325473    
+anger_post                     -0.018116   0.008173  -2.217 0.026644 *  
+anticip_post                    0.060570   0.007313   8.282  < 2e-16 ***
+trust_post                     -0.014814   0.005975  -2.479 0.013162 *  
+surprise_post                   0.010356   0.007600   1.363 0.173003    
+positive_post                  -0.028056   0.025819  -1.087 0.277181    
+negative_post                  -0.040922   0.007736  -5.290 1.23e-07 ***
+sadness_post                    0.020859   0.008060   2.588 0.009657 ** 
+disgust_post                   -0.019592   0.007766  -2.523 0.011641 *  
+joy_post                       -0.012615   0.007526  -1.676 0.093703 .  
+care_post                      -0.019885   0.017553  -1.133 0.257294    
+fairness_post                   0.002821   0.010959   0.257 0.796832    
+loyalty_post                    0.050741   0.014576   3.481 0.000499 ***
+authority_post                 -0.050533   0.014051  -3.596 0.000323 ***
+purity_post                     0.006953   0.015034   0.463 0.643714    
+non_moral_post                  0.010965   0.008097   1.354 0.175687    
+sentistrength_pos_post         -0.007466   0.006340  -1.178 0.238965    
+sentistrength_neg_post          0.017398   0.005992   2.903 0.003692 ** 
+sentistrength_neutral_post      0.018243   0.005232   3.487 0.000489 ***
+subredditbusiness              -1.220630   1.156095  -1.056 0.291050    
+subredditEntrepreneur          -1.169497   1.155976  -1.012 0.311683    
+subredditEntrepreneurRideAlong -1.077770   1.156051  -0.932 0.351189    
+subredditEntrepreneurship      -1.125710   1.156510  -0.973 0.330370    
+subredditgrowmybusiness        -1.140462   1.156252  -0.986 0.323964    
+subredditladybusiness          -1.284241   1.156710  -1.110 0.266890    
+subredditsmallbusiness         -1.175646   1.155991  -1.017 0.309152    
+subredditStartup_Ideas         -1.129819   1.156160  -0.977 0.328462    
+subredditstartups              -1.140298   1.155977  -0.986 0.323919    
+subredditventurecapital        -1.131504   1.156561  -0.978 0.327908    
+post_wordcount                  0.004482   0.007951   0.564 0.572971    
+title_wordcount                -0.001198   0.003871  -0.309 0.756981    
+comment_wordcount               0.240230   0.003479  69.047  < 2e-16 ***
+ups                            -0.013311   0.007521  -1.770 0.076759 .  
+author_premiumFalse             0.020839   0.015699   1.327 0.184366    
+author_premiumTrue              0.015729   0.018911   0.832 0.405547    
+is_selfTrue                     0.116080   0.025682   4.520 6.19e-06 ***
+no_followTrue                  -0.015849   0.012796  -1.239 0.215484    
+num_comments                    0.011366   0.006357   1.788 0.073789 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512265  on 369743  degrees of freedom
+Residual deviance: 506193  on 369703  degrees of freedom
+AIC: 506275
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  77694  68137
+         1 101832 122081
+                                          
+               Accuracy : 0.5403          
+                 95% CI : (0.5387, 0.5419)
+    No Information Rate : 0.5145          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.075           
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.4328          
+            Specificity : 0.6418          
+         Pos Pred Value : 0.5328          
+         Neg Pred Value : 0.5452          
+             Prevalence : 0.4855          
+         Detection Rate : 0.2101          
+   Detection Prevalence : 0.3944          
+      Balanced Accuracy : 0.5373          
+                                          
+       'Positive' Class : 0               
+                                          
+
+trust_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.4129  -1.0686   0.4052   1.0644   2.0057  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.4148701  1.1780461   1.201 0.229739    
+predicted_gender_commentmale    0.0198967  0.0088307   2.253 0.024250 *  
+predicted_gender_postmale       0.0194190  0.0100330   1.936 0.052927 .  
+fear_post                      -0.0068576  0.0064484  -1.063 0.287572    
+anger_post                      0.0191236  0.0085381   2.240 0.025104 *  
+anticip_post                   -0.0036683  0.0075764  -0.484 0.628262    
+trust_post                      0.0283948  0.0062867   4.517 6.28e-06 ***
+surprise_post                   0.0008924  0.0079664   0.112 0.910806    
+positive_post                  -0.0051216  0.0271843  -0.188 0.850562    
+negative_post                   0.0036381  0.0080209   0.454 0.650134    
+sadness_post                   -0.0123268  0.0083958  -1.468 0.142046    
+disgust_post                   -0.0155699  0.0081296  -1.915 0.055464 .  
+joy_post                       -0.0120948  0.0078715  -1.537 0.124406    
+care_post                      -0.0649303  0.0184907  -3.512 0.000446 ***
+fairness_post                  -0.0021522  0.0115324  -0.187 0.851960    
+loyalty_post                    0.0243072  0.0153143   1.587 0.112463    
+authority_post                  0.0106171  0.0147816   0.718 0.472594    
+purity_post                     0.0377703  0.0158096   2.389 0.016891 *  
+non_moral_post                  0.0136843  0.0085213   1.606 0.108297    
+sentistrength_pos_post          0.0085272  0.0067108   1.271 0.203845    
+sentistrength_neg_post          0.0186558  0.0063586   2.934 0.003347 ** 
+sentistrength_neutral_post     -0.0026281  0.0055468  -0.474 0.635637    
+subredditbusiness              -1.3796590  1.1778517  -1.171 0.241464    
+subredditEntrepreneur          -1.4342355  1.1777095  -1.218 0.223293    
+subredditEntrepreneurRideAlong -1.4677101  1.1777947  -1.246 0.212709    
+subredditEntrepreneurship      -1.5062453  1.1783137  -1.278 0.201142    
+subredditgrowmybusiness        -1.4757512  1.1780240  -1.253 0.210302    
+subredditladybusiness          -1.5632776  1.1785214  -1.326 0.184683    
+subredditsmallbusiness         -1.4071579  1.1777272  -1.195 0.232162    
+subredditStartup_Ideas         -1.3888830  1.1779161  -1.179 0.238358    
+subredditstartups              -1.3477835  1.1777125  -1.144 0.252454    
+subredditventurecapital        -1.2454165  1.1783707  -1.057 0.290559    
+post_wordcount                  0.0344879  0.0084409   4.086 4.39e-05 ***
+title_wordcount                 0.0200005  0.0041087   4.868 1.13e-06 ***
+comment_wordcount               0.7898063  0.0040720 193.962  < 2e-16 ***
+ups                             0.0359936  0.0079757   4.513 6.40e-06 ***
+author_premiumFalse            -0.0103827  0.0166603  -0.623 0.533154    
+author_premiumTrue             -0.0510784  0.0200434  -2.548 0.010822 *  
+is_selfTrue                    -0.0310538  0.0271761  -1.143 0.253169    
+no_followTrue                  -0.0367468  0.0135766  -2.707 0.006797 ** 
+num_comments                   -0.0862097  0.0067501 -12.772  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 464247  on 369703  degrees of freedom
+AIC: 464329
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 113572  63777
+         1  71184 121211
+                                          
+               Accuracy : 0.635           
+                 95% CI : (0.6334, 0.6365)
+    No Information Rate : 0.5003          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.27            
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.6147          
+            Specificity : 0.6552          
+         Pos Pred Value : 0.6404          
+         Neg Pred Value : 0.6300          
+             Prevalence : 0.4997          
+         Detection Rate : 0.3072          
+   Detection Prevalence : 0.4797          
+      Balanced Accuracy : 0.6350          
+                                          
+       'Positive' Class : 0               
+                                          
+
+surprise_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.9919  -1.1760   0.9119   1.1639   1.5843  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    -8.4197036 21.8972169  -0.385 0.700600    
+predicted_gender_commentmale   -0.0152934  0.0083444  -1.833 0.066838 .  
+predicted_gender_postmale       0.0095434  0.0094479   1.010 0.312445    
+fear_post                      -0.0237426  0.0061615  -3.853 0.000117 ***
+anger_post                     -0.0174578  0.0081400  -2.145 0.031979 *  
+anticip_post                   -0.0157514  0.0072168  -2.183 0.029065 *  
+trust_post                     -0.0183671  0.0059913  -3.066 0.002172 ** 
+surprise_post                   0.0711210  0.0076605   9.284  < 2e-16 ***
+positive_post                  -0.0519436  0.0260682  -1.993 0.046305 *  
+negative_post                  -0.0273476  0.0076776  -3.562 0.000368 ***
+sadness_post                    0.0038745  0.0080293   0.483 0.629416    
+disgust_post                   -0.0095469  0.0077520  -1.232 0.218118    
+joy_post                       -0.0221412  0.0074925  -2.955 0.003125 ** 
+care_post                       0.0225651  0.0175283   1.287 0.197971    
+fairness_post                   0.0189607  0.0109451   1.732 0.083212 .  
+loyalty_post                   -0.0040502  0.0145500  -0.278 0.780732    
+authority_post                 -0.0151913  0.0140254  -1.083 0.278753    
+purity_post                    -0.0285362  0.0150143  -1.901 0.057354 .  
+non_moral_post                  0.0131805  0.0080826   1.631 0.102947    
+sentistrength_pos_post         -0.0023086  0.0063354  -0.364 0.715564    
+sentistrength_neg_post          0.0034453  0.0059898   0.575 0.565160    
+sentistrength_neutral_post     -0.0101265  0.0052276  -1.937 0.052733 .  
+subredditbusiness               8.4328037 21.8972070   0.385 0.700157    
+subredditEntrepreneur           8.4565287 21.8972014   0.386 0.699354    
+subredditEntrepreneurRideAlong  8.4605093 21.8972054   0.386 0.699220    
+subredditEntrepreneurship       8.4456174 21.8972292   0.386 0.699724    
+subredditgrowmybusiness         8.2760420 21.8972158   0.378 0.705468    
+subredditladybusiness           8.4704540 21.8972400   0.387 0.698884    
+subredditsmallbusiness          8.4894698 21.8972023   0.388 0.698241    
+subredditStartup_Ideas          8.4993920 21.8972110   0.388 0.697905    
+subredditstartups               8.3537605 21.8972015   0.381 0.702833    
+subredditventurecapital         8.3984477 21.8972320   0.384 0.701320    
+post_wordcount                 -0.0321889  0.0079487  -4.050 5.13e-05 ***
+title_wordcount                -0.0002172  0.0038686  -0.056 0.955225    
+comment_wordcount               0.2373544  0.0034802  68.202  < 2e-16 ***
+ups                             0.0200970  0.0075163   2.674 0.007500 ** 
+author_premiumFalse            -0.0226077  0.0156926  -1.441 0.149681    
+author_premiumTrue             -0.0934196  0.0188984  -4.943 7.68e-07 ***
+is_selfTrue                     0.0560167  0.0256829   2.181 0.029177 *  
+no_followTrue                  -0.0982407  0.0127810  -7.686 1.51e-14 ***
+num_comments                   -0.0393481  0.0063512  -6.195 5.81e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512572  on 369743  degrees of freedom
+Residual deviance: 507039  on 369703  degrees of freedom
+AIC: 507121
+
+Number of Fisher Scoring iterations: 7
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  92978  82290
+         1  91486 102990
+                                          
+               Accuracy : 0.53            
+                 95% CI : (0.5284, 0.5316)
+    No Information Rate : 0.5011          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.0599          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.5040          
+            Specificity : 0.5559          
+         Pos Pred Value : 0.5305          
+         Neg Pred Value : 0.5296          
+             Prevalence : 0.4989          
+         Detection Rate : 0.2515          
+   Detection Prevalence : 0.4740          
+      Balanced Accuracy : 0.5300          
+                                          
+       'Positive' Class : 0               
+                                          
+
+positive_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2843  -1.0980   0.4237   1.0872   1.9874  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     0.2367125  1.0226085   0.231  0.81694    
+predicted_gender_commentmale   -0.1065980  0.0087322 -12.207  < 2e-16 ***
+predicted_gender_postmale       0.0317683  0.0099049   3.207  0.00134 ** 
+fear_post                       0.0024856  0.0063840   0.389  0.69701    
+anger_post                     -0.0101026  0.0084362  -1.198  0.23110    
+anticip_post                    0.0006266  0.0075004   0.084  0.93342    
+trust_post                      0.0108218  0.0062312   1.737  0.08244 .  
+surprise_post                  -0.0175608  0.0078960  -2.224  0.02615 *  
+positive_post                   0.0130506  0.0270958   0.482  0.63006    
+negative_post                   0.0137786  0.0079395   1.735  0.08266 .  
+sadness_post                   -0.0005006  0.0083103  -0.060  0.95196    
+disgust_post                    0.0031458  0.0080437   0.391  0.69573    
+joy_post                        0.0251460  0.0077908   3.228  0.00125 ** 
+care_post                      -0.0331251  0.0182752  -1.813  0.06990 .  
+fairness_post                   0.0051097  0.0114055   0.448  0.65415    
+loyalty_post                    0.0257878  0.0151501   1.702  0.08873 .  
+authority_post                 -0.0185595  0.0146144  -1.270  0.20411    
+purity_post                     0.0025954  0.0156399   0.166  0.86820    
+non_moral_post                 -0.0037623  0.0084285  -0.446  0.65532    
+sentistrength_pos_post          0.0101451  0.0066316   1.530  0.12606    
+sentistrength_neg_post          0.0190538  0.0062785   3.035  0.00241 ** 
+sentistrength_neutral_post      0.0058469  0.0054784   1.067  0.28585    
+subredditbusiness              -0.1854919  1.0223786  -0.181  0.85603    
+subredditEntrepreneur          -0.2093781  1.0222289  -0.205  0.83771    
+subredditEntrepreneurRideAlong -0.2566423  1.0223221  -0.251  0.80178    
+subredditEntrepreneurship      -0.2090479  1.0228934  -0.204  0.83807    
+subredditgrowmybusiness        -0.2714094  1.0225693  -0.265  0.79069    
+subredditladybusiness          -0.3421283  1.0231380  -0.334  0.73808    
+subredditsmallbusiness         -0.3064037  1.0222482  -0.300  0.76438    
+subredditStartup_Ideas         -0.2875659  1.0224539  -0.281  0.77852    
+subredditstartups              -0.1021247  1.0222298  -0.100  0.92042    
+subredditventurecapital         0.0204190  1.0229610   0.020  0.98407    
+post_wordcount                  0.0054476  0.0083344   0.654  0.51335    
+title_wordcount                 0.0049872  0.0040570   1.229  0.21897    
+comment_wordcount               0.7123488  0.0039533 180.192  < 2e-16 ***
+ups                             0.0724513  0.0078807   9.194  < 2e-16 ***
+author_premiumFalse            -0.0083517  0.0164516  -0.508  0.61170    
+author_premiumTrue              0.0270706  0.0198034   1.367  0.17163    
+is_selfTrue                     0.0176512  0.0268478   0.657  0.51089    
+no_followTrue                   0.0395450  0.0134207   2.947  0.00321 ** 
+num_comments                   -0.0567102  0.0066699  -8.502  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 472440  on 369703  degrees of freedom
+AIC: 472522
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 110354  67979
+         1  74485 116926
+                                          
+               Accuracy : 0.6147          
+                 95% CI : (0.6131, 0.6163)
+    No Information Rate : 0.5001          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.2294          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.5970          
+            Specificity : 0.6324          
+         Pos Pred Value : 0.6188          
+         Neg Pred Value : 0.6109          
+             Prevalence : 0.4999          
+         Detection Rate : 0.2985          
+   Detection Prevalence : 0.4823          
+      Balanced Accuracy : 0.6147          
+                                          
+       'Positive' Class : 0               
+                                          
+
+negative_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.3098  -1.0911   0.5415   1.0728   2.0215  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.4293780  1.1863340   1.205 0.228254    
+predicted_gender_commentmale   -0.1346235  0.0087705 -15.350  < 2e-16 ***
+predicted_gender_postmale       0.0199321  0.0099582   2.002 0.045330 *  
+fear_post                       0.0114352  0.0064165   1.782 0.074723 .  
+anger_post                     -0.0274586  0.0085318  -3.218 0.001289 ** 
+anticip_post                   -0.0145256  0.0075367  -1.927 0.053941 .  
+trust_post                     -0.0017789  0.0062335  -0.285 0.775360    
+surprise_post                  -0.0277160  0.0079399  -3.491 0.000482 ***
+positive_post                  -0.0186317  0.0269910  -0.690 0.490009    
+negative_post                   0.0747132  0.0081408   9.178  < 2e-16 ***
+sadness_post                   -0.0470753  0.0084661  -5.560 2.69e-08 ***
+disgust_post                    0.0171970  0.0081118   2.120 0.034007 *  
+joy_post                       -0.0207148  0.0078094  -2.653 0.007989 ** 
+care_post                      -0.0414644  0.0183698  -2.257 0.023996 *  
+fairness_post                  -0.0059316  0.0114599  -0.518 0.604739    
+loyalty_post                    0.0045995  0.0152247   0.302 0.762570    
+authority_post                  0.0300419  0.0146855   2.046 0.040788 *  
+purity_post                     0.0121383  0.0157131   0.772 0.439819    
+non_moral_post                 -0.0130630  0.0084779  -1.541 0.123360    
+sentistrength_pos_post          0.0005597  0.0066634   0.084 0.933055    
+sentistrength_neg_post         -0.0108501  0.0063069  -1.720 0.085367 .  
+sentistrength_neutral_post     -0.0164400  0.0055022  -2.988 0.002809 ** 
+subredditbusiness              -1.1892947  1.1861450  -1.003 0.316027    
+subredditEntrepreneur          -1.2527338  1.1859935  -1.056 0.290843    
+subredditEntrepreneurRideAlong -1.2997019  1.1860761  -1.096 0.273166    
+subredditEntrepreneurship      -1.3989586  1.1865873  -1.179 0.238408    
+subredditgrowmybusiness        -1.2003784  1.1863009  -1.012 0.311602    
+subredditladybusiness          -1.4708022  1.1867911  -1.239 0.215231    
+subredditsmallbusiness         -1.2982910  1.1860102  -1.095 0.273661    
+subredditStartup_Ideas         -1.3498191  1.1861950  -1.138 0.255145    
+subredditstartups              -1.3324085  1.1859960  -1.123 0.261246    
+subredditventurecapital        -1.4229964  1.1866359  -1.199 0.230456    
+post_wordcount                 -0.0146010  0.0083757  -1.743 0.081288 .  
+title_wordcount                -0.0051369  0.0040747  -1.261 0.207426    
+comment_wordcount               0.7494554  0.0040095 186.920  < 2e-16 ***
+ups                             0.0098204  0.0079163   1.241 0.214779    
+author_premiumFalse             0.0502546  0.0165391   3.039 0.002377 ** 
+author_premiumTrue              0.0267321  0.0198923   1.344 0.179000    
+is_selfTrue                    -0.1213639  0.0269876  -4.497 6.89e-06 ***
+no_followTrue                  -0.0491108  0.0134609  -3.648 0.000264 ***
+num_comments                   -0.0214250  0.0066913  -3.202 0.001365 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512565  on 369743  degrees of freedom
+Residual deviance: 470009  on 369703  degrees of freedom
+AIC: 470091
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 110104  63872
+         1  73867 121901
+                                         
+               Accuracy : 0.6275         
+                 95% CI : (0.6259, 0.629)
+    No Information Rate : 0.5024         
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.2547         
+                                         
+ Mcnemar's Test P-Value : < 2.2e-16      
+                                         
+            Sensitivity : 0.5985         
+            Specificity : 0.6562         
+         Pos Pred Value : 0.6329         
+         Neg Pred Value : 0.6227         
+             Prevalence : 0.4976         
+         Detection Rate : 0.2978         
+   Detection Prevalence : 0.4705         
+      Balanced Accuracy : 0.6273         
+                                         
+       'Positive' Class : 0              
+                                         
+
+sadness_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6798  -1.1767   0.9395   1.1642   1.5947  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.4024644  1.1556147   1.214 0.224897    
+predicted_gender_commentmale   -0.1657505  0.0083410 -19.872  < 2e-16 ***
+predicted_gender_postmale      -0.0387301  0.0094321  -4.106 4.02e-05 ***
+fear_post                      -0.0063078  0.0060981  -1.034 0.300955    
+anger_post                     -0.0076418  0.0081018  -0.943 0.345563    
+anticip_post                   -0.0128960  0.0071768  -1.797 0.072351 .  
+trust_post                     -0.0145970  0.0059438  -2.456 0.014056 *  
+surprise_post                  -0.0119117  0.0075682  -1.574 0.115509    
+positive_post                  -0.0267431  0.0257734  -1.038 0.299446    
+negative_post                  -0.0267916  0.0076318  -3.511 0.000447 ***
+sadness_post                    0.0554733  0.0080060   6.929 4.24e-12 ***
+disgust_post                    0.0034705  0.0077142   0.450 0.652798    
+joy_post                       -0.0269649  0.0074546  -3.617 0.000298 ***
+care_post                      -0.0049889  0.0175075  -0.285 0.775678    
+fairness_post                  -0.0127448  0.0109211  -1.167 0.243216    
+loyalty_post                   -0.0227936  0.0145375  -1.568 0.116899    
+authority_post                  0.0202356  0.0140041   1.445 0.148464    
+purity_post                     0.0269691  0.0149908   1.799 0.072012 .  
+non_moral_post                 -0.0073440  0.0080712  -0.910 0.362875    
+sentistrength_pos_post         -0.0006002  0.0063246  -0.095 0.924399    
+sentistrength_neg_post         -0.0271824  0.0059810  -4.545 5.50e-06 ***
+sentistrength_neutral_post     -0.0055022  0.0052186  -1.054 0.291722    
+subredditbusiness              -1.1932478  1.1554320  -1.033 0.301731    
+subredditEntrepreneur          -1.1820592  1.1553040  -1.023 0.306233    
+subredditEntrepreneurRideAlong -1.1866247  1.1553781  -1.027 0.304400    
+subredditEntrepreneurship      -1.2377368  1.1558361  -1.071 0.284233    
+subredditgrowmybusiness        -1.3834572  1.1555772  -1.197 0.231229    
+subredditladybusiness          -1.2658776  1.1560361  -1.095 0.273510    
+subredditsmallbusiness         -1.2311486  1.1553186  -1.066 0.286588    
+subredditStartup_Ideas         -1.2034540  1.1554859  -1.042 0.297637    
+subredditstartups              -1.3871201  1.1553044  -1.201 0.229886    
+subredditventurecapital        -1.4291442  1.1558887  -1.236 0.216309    
+post_wordcount                 -0.0458503  0.0079348  -5.778 7.54e-09 ***
+title_wordcount                -0.0174607  0.0038620  -4.521 6.15e-06 ***
+comment_wordcount               0.1944929  0.0034632  56.160  < 2e-16 ***
+ups                             0.0251632  0.0075028   3.354 0.000797 ***
+author_premiumFalse             0.0235573  0.0156623   1.504 0.132562    
+author_premiumTrue             -0.0486989  0.0188650  -2.581 0.009839 ** 
+is_selfTrue                     0.0070830  0.0256367   0.276 0.782330    
+no_followTrue                  -0.0584194  0.0127603  -4.578 4.69e-06 ***
+num_comments                   -0.0415680  0.0063407  -6.556 5.54e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512571  on 369743  degrees of freedom
+Residual deviance: 508202  on 369703  degrees of freedom
+AIC: 508284
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  92392  81234
+         1  91944 104174
+                                        
+               Accuracy : 0.5316        
+                 95% CI : (0.53, 0.5332)
+    No Information Rate : 0.5014        
+    P-Value [Acc > NIR] : < 2.2e-16     
+                                        
+                  Kappa : 0.0631        
+                                        
+ Mcnemar's Test P-Value : < 2.2e-16     
+                                        
+            Sensitivity : 0.5012        
+            Specificity : 0.5619        
+         Pos Pred Value : 0.5321        
+         Neg Pred Value : 0.5312        
+             Prevalence : 0.4986        
+         Detection Rate : 0.2499        
+   Detection Prevalence : 0.4696        
+      Balanced Accuracy : 0.5315        
+                                        
+       'Positive' Class : 0             
+                                        
+
+disgust_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.8192  -1.1770   0.9428   1.1695   1.5669  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     0.2904677  1.0033009   0.290 0.772190    
+predicted_gender_commentmale   -0.1388821  0.0083192 -16.694  < 2e-16 ***
+predicted_gender_postmale      -0.0306371  0.0094098  -3.256 0.001130 ** 
+fear_post                      -0.0032389  0.0060751  -0.533 0.593936    
+anger_post                     -0.0311917  0.0081031  -3.849 0.000118 ***
+anticip_post                   -0.0195152  0.0071635  -2.724 0.006445 ** 
+trust_post                     -0.0063890  0.0059163  -1.080 0.280186    
+surprise_post                  -0.0030656  0.0075479  -0.406 0.684627    
+positive_post                   0.0002863  0.0255935   0.011 0.991074    
+negative_post                  -0.0007649  0.0076024  -0.101 0.919853    
+sadness_post                   -0.0094428  0.0079508  -1.188 0.234971    
+disgust_post                    0.0849024  0.0077336  10.978  < 2e-16 ***
+joy_post                       -0.0200788  0.0074358  -2.700 0.006928 ** 
+care_post                      -0.0393383  0.0174764  -2.251 0.024390 *  
+fairness_post                  -0.0017188  0.0108993  -0.158 0.874696    
+loyalty_post                    0.0018836  0.0145068   0.130 0.896689    
+authority_post                  0.0373436  0.0139792   2.671 0.007554 ** 
+purity_post                     0.0078256  0.0149652   0.523 0.601032    
+non_moral_post                 -0.0093930  0.0080550  -1.166 0.243567    
+sentistrength_pos_post         -0.0080935  0.0063113  -1.282 0.199708    
+sentistrength_neg_post         -0.0151946  0.0059661  -2.547 0.010871 *  
+sentistrength_neutral_post      0.0106153  0.0052074   2.039 0.041498 *  
+subredditbusiness              -0.0955931  1.0030904  -0.095 0.924078    
+subredditEntrepreneur          -0.0154999  1.0029467  -0.015 0.987670    
+subredditEntrepreneurRideAlong  0.0320771  1.0030318   0.032 0.974488    
+subredditEntrepreneurship      -0.1409220  1.0035552  -0.140 0.888326    
+subredditgrowmybusiness        -0.0088182  1.0032588  -0.009 0.992987    
+subredditladybusiness           0.1075887  1.0037964   0.107 0.914645    
+subredditsmallbusiness         -0.0201693  1.0029636  -0.020 0.983956    
+subredditStartup_Ideas         -0.0105451  1.0031550  -0.011 0.991613    
+subredditstartups              -0.1983654  1.0029471  -0.198 0.843215    
+subredditventurecapital        -0.3487160  1.0036232  -0.347 0.728248    
+post_wordcount                 -0.0061339  0.0079156  -0.775 0.438389    
+title_wordcount                -0.0185007  0.0038532  -4.801 1.58e-06 ***
+comment_wordcount               0.1389950  0.0034403  40.402  < 2e-16 ***
+ups                             0.0068629  0.0074857   0.917 0.359250    
+author_premiumFalse             0.0311601  0.0156276   1.994 0.046161 *  
+author_premiumTrue             -0.0172883  0.0188239  -0.918 0.358400    
+is_selfTrue                    -0.1327986  0.0255985  -5.188 2.13e-07 ***
+no_followTrue                  -0.0152384  0.0127321  -1.197 0.231366    
+num_comments                   -0.0136226  0.0063259  -2.153 0.031281 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 509909  on 369703  degrees of freedom
+AIC: 509991
+
+Number of Fisher Scoring iterations: 3
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  92763  83793
+         1  92009 101179
+                                          
+               Accuracy : 0.5245          
+                 95% CI : (0.5229, 0.5261)
+    No Information Rate : 0.5003          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.049           
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.5020          
+            Specificity : 0.5470          
+         Pos Pred Value : 0.5254          
+         Neg Pred Value : 0.5237          
+             Prevalence : 0.4997          
+         Detection Rate : 0.2509          
+   Detection Prevalence : 0.4775          
+      Balanced Accuracy : 0.5245          
+                                          
+       'Positive' Class : 0               
+                                          
+
+joy_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.8321  -1.1759   0.7703   1.1636   1.6762  
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.393279   1.155669   1.206  0.22797    
+predicted_gender_commentmale   -0.240199   0.008346 -28.781  < 2e-16 ***
+predicted_gender_postmale      -0.007161   0.009428  -0.760  0.44753    
+fear_post                      -0.012527   0.006132  -2.043  0.04106 *  
+anger_post                     -0.036939   0.008160  -4.527 5.99e-06 ***
+anticip_post                   -0.012886   0.007271  -1.772  0.07633 .  
+trust_post                     -0.019260   0.005969  -3.227  0.00125 ** 
+surprise_post                  -0.000629   0.007599  -0.083  0.93403    
+positive_post                  -0.035874   0.025683  -1.397  0.16248    
+negative_post                  -0.020035   0.007688  -2.606  0.00916 ** 
+sadness_post                    0.002442   0.008042   0.304  0.76139    
+disgust_post                   -0.006007   0.007770  -0.773  0.43950    
+joy_post                        0.079425   0.007648  10.386  < 2e-16 ***
+care_post                      -0.033241   0.017552  -1.894  0.05824 .  
+fairness_post                   0.013021   0.010983   1.186  0.23581    
+loyalty_post                    0.047485   0.014576   3.258  0.00112 ** 
+authority_post                 -0.039034   0.014047  -2.779  0.00546 ** 
+purity_post                     0.006265   0.015038   0.417  0.67698    
+non_moral_post                  0.011223   0.008095   1.386  0.16562    
+sentistrength_pos_post          0.026116   0.006322   4.131 3.62e-05 ***
+sentistrength_neg_post          0.017970   0.005976   3.007  0.00264 ** 
+sentistrength_neutral_post      0.004310   0.005216   0.826  0.40859    
+subredditbusiness              -1.313489   1.155488  -1.137  0.25565    
+subredditEntrepreneur          -1.169244   1.155362  -1.012  0.31153    
+subredditEntrepreneurRideAlong -1.158857   1.155436  -1.003  0.31588    
+subredditEntrepreneurship      -1.110767   1.155896  -0.961  0.33657    
+subredditgrowmybusiness        -1.195806   1.155635  -1.035  0.30078    
+subredditladybusiness          -1.243116   1.156095  -1.075  0.28225    
+subredditsmallbusiness         -1.293578   1.155377  -1.120  0.26288    
+subredditStartup_Ideas         -1.197586   1.155544  -1.036  0.30002    
+subredditstartups              -1.206717   1.155362  -1.044  0.29628    
+subredditventurecapital        -1.213953   1.155942  -1.050  0.29363    
+post_wordcount                  0.014317   0.007930   1.805  0.07101 .  
+title_wordcount                 0.003674   0.003860   0.952  0.34107    
+comment_wordcount               0.168545   0.003453  48.816  < 2e-16 ***
+ups                             0.035029   0.007503   4.669 3.03e-06 ***
+author_premiumFalse             0.013930   0.015660   0.890  0.37372    
+author_premiumTrue             -0.014457   0.018868  -0.766  0.44355    
+is_selfTrue                     0.021880   0.025636   0.853  0.39339    
+no_followTrue                  -0.010545   0.012746  -0.827  0.40808    
+num_comments                   -0.042633   0.006340  -6.724 1.77e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 508410  on 369703  degrees of freedom
+AIC: 508492
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  93565  80454
+         1  91272 104453
+                                          
+               Accuracy : 0.5356          
+                 95% CI : (0.5339, 0.5372)
+    No Information Rate : 0.5001          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.0711          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.5062          
+            Specificity : 0.5649          
+         Pos Pred Value : 0.5377          
+         Neg Pred Value : 0.5337          
+             Prevalence : 0.4999          
+         Detection Rate : 0.2531          
+   Detection Prevalence : 0.4706          
+      Balanced Accuracy : 0.5355          
+                                          
+       'Positive' Class : 0               
+                                          
+
+care_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-6.2898  -0.1635  -0.0001   0.1861   4.4456  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.3742604  1.6305038   0.843 0.399316    
+predicted_gender_commentmale   -0.0030817  0.0165437  -0.186 0.852226    
+predicted_gender_postmale      -0.0358013  0.0190002  -1.884 0.059529 .  
+fear_post                       0.0254316  0.0118060   2.154 0.031230 *  
+anger_post                     -0.0126834  0.0156885  -0.808 0.418831    
+anticip_post                    0.0136725  0.0139681   0.979 0.327660    
+trust_post                     -0.0111938  0.0116842  -0.958 0.338048    
+surprise_post                  -0.0121822  0.0145251  -0.839 0.401636    
+positive_post                  -0.0052589  0.0507107  -0.104 0.917404    
+negative_post                  -0.0099888  0.0145494  -0.687 0.492371    
+sadness_post                   -0.0172589  0.0153521  -1.124 0.260927    
+disgust_post                    0.0422786  0.0150056   2.818 0.004840 ** 
+joy_post                       -0.0273122  0.0144629  -1.888 0.058967 .  
+care_post                       0.0580817  0.0340563   1.705 0.088109 .  
+fairness_post                  -0.0097195  0.0209463  -0.464 0.642634    
+loyalty_post                   -0.0926266  0.0277954  -3.332 0.000861 ***
+authority_post                  0.0844351  0.0271894   3.105 0.001900 ** 
+purity_post                     0.0028040  0.0286530   0.098 0.922043    
+non_moral_post                  0.0045640  0.0156096   0.292 0.769994    
+sentistrength_pos_post          0.0003439  0.0125458   0.027 0.978130    
+sentistrength_neg_post         -0.0217083  0.0119849  -1.811 0.070093 .  
+sentistrength_neutral_post     -0.0439163  0.0104222  -4.214 2.51e-05 ***
+subredditbusiness              -1.3959455  1.6299668  -0.856 0.391762    
+subredditEntrepreneur          -1.4942124  1.6298373  -0.917 0.359255    
+subredditEntrepreneurRideAlong -1.7417565  1.6300732  -1.069 0.285289    
+subredditEntrepreneurship      -1.6171250  1.6313526  -0.991 0.321550    
+subredditgrowmybusiness        -1.6466865  1.6306505  -1.010 0.312575    
+subredditladybusiness          -1.8063812  1.6320036  -1.107 0.268359    
+subredditsmallbusiness         -1.5432226  1.6299203  -0.947 0.343736    
+subredditStartup_Ideas         -1.4851458  1.6303446  -0.911 0.362327    
+subredditstartups              -1.5825132  1.6298686  -0.971 0.331576    
+subredditventurecapital        -1.6494449  1.6315063  -1.011 0.312019    
+post_wordcount                 -0.0086580  0.0158335  -0.547 0.584503    
+title_wordcount                 0.0461988  0.0077604   5.953 2.63e-09 ***
+comment_wordcount               6.1326086  0.0238949 256.649  < 2e-16 ***
+ups                            -0.0703177  0.0149823  -4.693 2.69e-06 ***
+author_premiumFalse            -0.0352103  0.0312061  -1.128 0.259188    
+author_premiumTrue             -0.3224244  0.0375635  -8.583  < 2e-16 ***
+is_selfTrue                    -0.0218880  0.0504509  -0.434 0.664399    
+no_followTrue                  -0.2505210  0.0259546  -9.652  < 2e-16 ***
+num_comments                   -0.0642775  0.0128164  -5.015 5.30e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 147636  on 369703  degrees of freedom
+AIC: 147718
+
+Number of Fisher Scoring iterations: 7
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 168448  15614
+         1  16424 169258
+                                          
+               Accuracy : 0.9134          
+                 95% CI : (0.9124, 0.9143)
+    No Information Rate : 0.5             
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.8267          
+                                          
+ Mcnemar's Test P-Value : 6.191e-06       
+                                          
+            Sensitivity : 0.9112          
+            Specificity : 0.9155          
+         Pos Pred Value : 0.9152          
+         Neg Pred Value : 0.9115          
+             Prevalence : 0.5000          
+         Detection Rate : 0.4556          
+   Detection Prevalence : 0.4978          
+      Balanced Accuracy : 0.9134          
+                                          
+       'Positive' Class : 0               
+                                          
+
+fairness_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-6.1771  -0.1780  -0.0001   0.2026   5.1123  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.6892245  1.5966913   1.058 0.290077    
+predicted_gender_commentmale   -0.3250801  0.0162988 -19.945  < 2e-16 ***
+predicted_gender_postmale      -0.0120468  0.0186551  -0.646 0.518430    
+fear_post                       0.0019003  0.0116736   0.163 0.870687    
+anger_post                     -0.0146260  0.0154587  -0.946 0.344080    
+anticip_post                   -0.0205280  0.0137815  -1.490 0.136348    
+trust_post                     -0.0291075  0.0115963  -2.510 0.012071 *  
+surprise_post                  -0.0085324  0.0143330  -0.595 0.551642    
+positive_post                  -0.0759122  0.0506247  -1.500 0.133742    
+negative_post                  -0.0190874  0.0143440  -1.331 0.183290    
+sadness_post                   -0.0274897  0.0151392  -1.816 0.069401 .  
+disgust_post                    0.0304520  0.0147954   2.058 0.039571 *  
+joy_post                       -0.0233381  0.0142762  -1.635 0.102101    
+care_post                      -0.0191220  0.0334584  -0.572 0.567651    
+fairness_post                   0.0366228  0.0206185   1.776 0.075698 .  
+loyalty_post                   -0.0779891  0.0273102  -2.856 0.004295 ** 
+authority_post                  0.0649991  0.0267035   2.434 0.014929 *  
+purity_post                     0.0302523  0.0281918   1.073 0.283231    
+non_moral_post                  0.0146251  0.0153287   0.954 0.340033    
+sentistrength_pos_post         -0.0009723  0.0123121  -0.079 0.937053    
+sentistrength_neg_post         -0.0357480  0.0117690  -3.037 0.002386 ** 
+sentistrength_neutral_post     -0.0361551  0.0102286  -3.535 0.000408 ***
+subredditbusiness              -1.5121685  1.5961591  -0.947 0.343445    
+subredditEntrepreneur          -1.5018547  1.5960244  -0.941 0.346706    
+subredditEntrepreneurRideAlong -1.6915984  1.5962543  -1.060 0.289267    
+subredditEntrepreneurship      -1.6838035  1.5975160  -1.054 0.291877    
+subredditgrowmybusiness        -1.7056251  1.5968177  -1.068 0.285457    
+subredditladybusiness          -1.9402524  1.5981637  -1.214 0.224728    
+subredditsmallbusiness         -1.5416120  1.5961053  -0.966 0.334115    
+subredditStartup_Ideas         -1.4824605  1.5965212  -0.929 0.353119    
+subredditstartups              -1.6575773  1.5960550  -1.039 0.299016    
+subredditventurecapital        -1.6633062  1.5976598  -1.041 0.297834    
+post_wordcount                  0.0229769  0.0155408   1.478 0.139277    
+title_wordcount                 0.0663872  0.0076164   8.716  < 2e-16 ***
+comment_wordcount               5.9185338  0.0227325 260.356  < 2e-16 ***
+ups                            -0.0600912  0.0147025  -4.087 4.37e-05 ***
+author_premiumFalse            -0.0296101  0.0306459  -0.966 0.333945    
+author_premiumTrue             -0.3361021  0.0368756  -9.114  < 2e-16 ***
+is_selfTrue                    -0.0591427  0.0495618  -1.193 0.232747    
+no_followTrue                  -0.2707013  0.0254341 -10.643  < 2e-16 ***
+num_comments                   -0.0676170  0.0125669  -5.381 7.42e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 153221  on 369703  degrees of freedom
+AIC: 153303
+
+Number of Fisher Scoring iterations: 7
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 167772  16290
+         1  17100 168582
+                                          
+               Accuracy : 0.9097          
+                 95% CI : (0.9088, 0.9106)
+    No Information Rate : 0.5             
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.8194          
+                                          
+ Mcnemar's Test P-Value : 9.541e-06       
+                                          
+            Sensitivity : 0.9075          
+            Specificity : 0.9119          
+         Pos Pred Value : 0.9115          
+         Neg Pred Value : 0.9079          
+             Prevalence : 0.5000          
+         Detection Rate : 0.4538          
+   Detection Prevalence : 0.4978          
+      Balanced Accuracy : 0.9097          
+                                          
+       'Positive' Class : 0               
+                                          
+
+loyalty_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-6.5809  -0.1344   0.0000   0.1546   5.4272  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.6021761  1.6811059   0.953 0.340565    
+predicted_gender_commentmale   -0.0765833  0.0172288  -4.445 8.79e-06 ***
+predicted_gender_postmale       0.0117950  0.0197772   0.596 0.550912    
+fear_post                       0.0292966  0.0122379   2.394 0.016670 *  
+anger_post                      0.0033008  0.0163232   0.202 0.839747    
+anticip_post                    0.0235661  0.0145079   1.624 0.104299    
+trust_post                      0.0025795  0.0120883   0.213 0.831023    
+surprise_post                   0.0003062  0.0150632   0.020 0.983781    
+positive_post                   0.0732292  0.0522242   1.402 0.160853    
+negative_post                  -0.0037392  0.0150946  -0.248 0.804355    
+sadness_post                   -0.0031553  0.0159249  -0.198 0.842941    
+disgust_post                    0.0452159  0.0156114   2.896 0.003775 ** 
+joy_post                       -0.0219467  0.0150226  -1.461 0.144040    
+care_post                       0.0296161  0.0354470   0.836 0.403435    
+fairness_post                   0.0021336  0.0217743   0.098 0.921941    
+loyalty_post                   -0.0429045  0.0289209  -1.484 0.137938    
+authority_post                  0.0641685  0.0283151   2.266 0.023437 *  
+purity_post                    -0.0035141  0.0297798  -0.118 0.906067    
+non_moral_post                  0.0149159  0.0162323   0.919 0.358144    
+sentistrength_pos_post          0.0102954  0.0130638   0.788 0.430648    
+sentistrength_neg_post         -0.0282591  0.0124807  -2.264 0.023560 *  
+sentistrength_neutral_post     -0.0273427  0.0108509  -2.520 0.011740 *  
+subredditbusiness              -1.5921926  1.6805416  -0.947 0.343421    
+subredditEntrepreneur          -1.7390047  1.6804158  -1.035 0.300732    
+subredditEntrepreneurRideAlong -1.8727365  1.6806632  -1.114 0.265157    
+subredditEntrepreneurship      -1.7501555  1.6820028  -1.041 0.298099    
+subredditgrowmybusiness        -1.7970867  1.6812715  -1.069 0.285121    
+subredditladybusiness          -2.0697029  1.6827041  -1.230 0.218702    
+subredditsmallbusiness         -1.7172127  1.6805038  -1.022 0.306855    
+subredditStartup_Ideas         -1.6915412  1.6809491  -1.006 0.314271    
+subredditstartups              -1.7593030  1.6804493  -1.047 0.295135    
+subredditventurecapital        -1.8564504  1.6821705  -1.104 0.269765    
+post_wordcount                  0.0076275  0.0164845   0.463 0.643575    
+title_wordcount                 0.0368442  0.0080824   4.559 5.15e-06 ***
+comment_wordcount               6.6988091  0.0269361 248.692  < 2e-16 ***
+ups                            -0.0487030  0.0155947  -3.123 0.001790 ** 
+author_premiumFalse            -0.0411797  0.0324654  -1.268 0.204650    
+author_premiumTrue             -0.2585856  0.0390908  -6.615 3.72e-11 ***
+is_selfTrue                    -0.0845741  0.0525002  -1.611 0.107195    
+no_followTrue                  -0.2104747  0.0270613  -7.778 7.38e-15 ***
+num_comments                   -0.0442941  0.0133529  -3.317 0.000909 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 136303  on 369703  degrees of freedom
+AIC: 136385
+
+Number of Fisher Scoring iterations: 8
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 169814  14484
+         1  15058 170388
+                                         
+               Accuracy : 0.9201         
+                 95% CI : (0.9192, 0.921)
+    No Information Rate : 0.5            
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.8402         
+                                         
+ Mcnemar's Test P-Value : 0.0008568      
+                                         
+            Sensitivity : 0.9185         
+            Specificity : 0.9217         
+         Pos Pred Value : 0.9214         
+         Neg Pred Value : 0.9188         
+             Prevalence : 0.5000         
+         Detection Rate : 0.4593         
+   Detection Prevalence : 0.4984         
+      Balanced Accuracy : 0.9201         
+                                         
+       'Positive' Class : 0              
+                                         
+
+authority_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-5.8934  -0.2155  -0.0003   0.2344   4.8393  
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.2298876  1.5187203   0.810 0.418045    
+predicted_gender_commentmale    0.0553788  0.0156226   3.545 0.000393 ***
+predicted_gender_postmale      -0.0184954  0.0179369  -1.031 0.302478    
+fear_post                       0.0225393  0.0111515   2.021 0.043260 *  
+anger_post                      0.0073922  0.0148462   0.498 0.618544    
+anticip_post                    0.0066346  0.0131861   0.503 0.614860    
+trust_post                      0.0056101  0.0110271   0.509 0.610924    
+surprise_post                   0.0141920  0.0137268   1.034 0.301190    
+positive_post                   0.0330398  0.0479370   0.689 0.490677    
+negative_post                  -0.0026879  0.0137835  -0.195 0.845386    
+sadness_post                   -0.0141274  0.0145171  -0.973 0.330474    
+disgust_post                    0.0178330  0.0141847   1.257 0.208684    
+joy_post                       -0.0247548  0.0136554  -1.813 0.069859 .  
+care_post                       0.0054032  0.0321405   0.168 0.866495    
+fairness_post                  -0.0138515  0.0197972  -0.700 0.484134    
+loyalty_post                   -0.0854574  0.0262516  -3.255 0.001133 ** 
+authority_post                  0.0961064  0.0256549   3.746 0.000180 ***
+purity_post                     0.0307300  0.0270831   1.135 0.256520    
+non_moral_post                  0.0192365  0.0147489   1.304 0.192143    
+sentistrength_pos_post         -0.0007632  0.0118454  -0.064 0.948625    
+sentistrength_neg_post         -0.0140408  0.0113078  -1.242 0.214352    
+sentistrength_neutral_post     -0.0354782  0.0098390  -3.606 0.000311 ***
+subredditbusiness              -1.2600352  1.5182072  -0.830 0.406567    
+subredditEntrepreneur          -1.4173295  1.5180730  -0.934 0.350491    
+subredditEntrepreneurRideAlong -1.5665893  1.5182965  -1.032 0.302162    
+subredditEntrepreneurship      -1.4479908  1.5195268  -0.953 0.340629    
+subredditgrowmybusiness        -1.4634624  1.5188476  -0.964 0.335279    
+subredditladybusiness          -1.7713841  1.5200997  -1.165 0.243894    
+subredditsmallbusiness         -1.3079023  1.5181488  -0.862 0.388957    
+subredditStartup_Ideas         -1.3757513  1.5185571  -0.906 0.364957    
+subredditstartups              -1.3997807  1.5181004  -0.922 0.356497    
+subredditventurecapital        -1.4024655  1.5196686  -0.923 0.356072    
+post_wordcount                  0.0255500  0.0149511   1.709 0.087468 .  
+title_wordcount                 0.0427558  0.0073258   5.836 5.34e-09 ***
+comment_wordcount               5.3967377  0.0202037 267.117  < 2e-16 ***
+ups                            -0.0621340  0.0141413  -4.394 1.11e-05 ***
+author_premiumFalse            -0.0763479  0.0294705  -2.591 0.009579 ** 
+author_premiumTrue             -0.3098653  0.0354734  -8.735  < 2e-16 ***
+is_selfTrue                    -0.0164255  0.0476356  -0.345 0.730233    
+no_followTrue                  -0.1687248  0.0244805  -6.892 5.49e-12 ***
+num_comments                   -0.0290773  0.0120961  -2.404 0.016223 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 165009  on 369703  degrees of freedom
+AIC: 165091
+
+Number of Fisher Scoring iterations: 7
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 167113  16762
+         1  17759 168110
+                                          
+               Accuracy : 0.9066          
+                 95% CI : (0.9057, 0.9076)
+    No Information Rate : 0.5             
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.8133          
+                                          
+ Mcnemar's Test P-Value : 8.292e-08       
+                                          
+            Sensitivity : 0.9039          
+            Specificity : 0.9093          
+         Pos Pred Value : 0.9088          
+         Neg Pred Value : 0.9045          
+             Prevalence : 0.5000          
+         Detection Rate : 0.4520          
+   Detection Prevalence : 0.4973          
+      Balanced Accuracy : 0.9066          
+                                          
+       'Positive' Class : 0               
+                                          
+
+purity_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-6.4067  -0.1523  -0.0001   0.1732   5.2760  
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.544750   1.638829   0.943  0.34589    
+predicted_gender_commentmale   -0.027612   0.016809  -1.643  0.10045    
+predicted_gender_postmale      -0.014727   0.019302  -0.763  0.44547    
+fear_post                       0.018618   0.011952   1.558  0.11929    
+anger_post                      0.021582   0.015966   1.352  0.17644    
+anticip_post                    0.015191   0.014164   1.073  0.28347    
+trust_post                     -0.001544   0.011820  -0.131  0.89610    
+surprise_post                  -0.007315   0.014725  -0.497  0.61935    
+positive_post                   0.035728   0.051174   0.698  0.48507    
+negative_post                  -0.012735   0.014761  -0.863  0.38829    
+sadness_post                   -0.007251   0.015575  -0.466  0.64154    
+disgust_post                    0.023027   0.015259   1.509  0.13128    
+joy_post                       -0.020486   0.014669  -1.397  0.16254    
+care_post                       0.019657   0.034579   0.568  0.56971    
+fairness_post                   0.005805   0.021259   0.273  0.78482    
+loyalty_post                   -0.057883   0.028220  -2.051  0.04025 *  
+authority_post                  0.030948   0.027601   1.121  0.26218    
+purity_post                     0.048258   0.029088   1.659  0.09710 .  
+non_moral_post                  0.014595   0.015847   0.921  0.35704    
+sentistrength_pos_post         -0.002395   0.012748  -0.188  0.85095    
+sentistrength_neg_post         -0.021148   0.012175  -1.737  0.08239 .  
+sentistrength_neutral_post     -0.034337   0.010588  -3.243  0.00118 ** 
+subredditbusiness              -1.573141   1.638278  -0.960  0.33693    
+subredditEntrepreneur          -1.655337   1.638150  -1.010  0.31226    
+subredditEntrepreneurRideAlong -1.824114   1.638391  -1.113  0.26556    
+subredditEntrepreneurship      -1.852855   1.639707  -1.130  0.25848    
+subredditgrowmybusiness        -1.842992   1.638983  -1.124  0.26081    
+subredditladybusiness          -2.039821   1.640367  -1.244  0.21368    
+subredditsmallbusiness         -1.633396   1.638235  -0.997  0.31874    
+subredditStartup_Ideas         -1.747715   1.638671  -1.067  0.28618    
+subredditstartups              -1.720049   1.638182  -1.050  0.29373    
+subredditventurecapital        -1.711243   1.639863  -1.044  0.29670    
+post_wordcount                 -0.004993   0.016088  -0.310  0.75629    
+title_wordcount                 0.034392   0.007886   4.361 1.29e-05 ***
+comment_wordcount               6.352079   0.025055 253.521  < 2e-16 ***
+ups                            -0.031053   0.015215  -2.041  0.04126 *  
+author_premiumFalse            -0.052490   0.031689  -1.656  0.09763 .  
+author_premiumTrue             -0.292180   0.038147  -7.659 1.87e-14 ***
+is_selfTrue                    -0.058385   0.051236  -1.140  0.25449    
+no_followTrue                  -0.218209   0.026381  -8.272  < 2e-16 ***
+num_comments                   -0.065005   0.013025  -4.991 6.01e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 143082  on 369703  degrees of freedom
+AIC: 143164
+
+Number of Fisher Scoring iterations: 8
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 169161  14998
+         1  15711 169874
+                                          
+               Accuracy : 0.9169          
+                 95% CI : (0.9161, 0.9178)
+    No Information Rate : 0.5             
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.8339          
+                                          
+ Mcnemar's Test P-Value : 4.845e-05       
+                                          
+            Sensitivity : 0.9150          
+            Specificity : 0.9189          
+         Pos Pred Value : 0.9186          
+         Neg Pred Value : 0.9153          
+             Prevalence : 0.5000          
+         Detection Rate : 0.4575          
+   Detection Prevalence : 0.4981          
+      Balanced Accuracy : 0.9169          
+                                          
+       'Positive' Class : 0               
+                                          
+
+non_moral_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.5816  -0.3009   0.0005   0.2691   5.4886  
+
+Coefficients:
+                                Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)                     0.425659   1.566382    0.272 0.785817    
+predicted_gender_commentmale    0.674092   0.014901   45.238  < 2e-16 ***
+predicted_gender_postmale       0.030554   0.016870    1.811 0.070113 .  
+fear_post                      -0.008247   0.010583   -0.779 0.435789    
+anger_post                      0.032261   0.014014    2.302 0.021329 *  
+anticip_post                    0.009582   0.012544    0.764 0.444951    
+trust_post                      0.020805   0.010525    1.977 0.048070 *  
+surprise_post                   0.019274   0.013063    1.475 0.140089    
+positive_post                   0.030066   0.045838    0.656 0.511872    
+negative_post                   0.002690   0.013005    0.207 0.836143    
+sadness_post                    0.017025   0.013742    1.239 0.215410    
+disgust_post                   -0.037711   0.013414   -2.811 0.004932 ** 
+joy_post                        0.002897   0.012980    0.223 0.823358    
+care_post                       0.034277   0.030390    1.128 0.259362    
+fairness_post                   0.017560   0.018845    0.932 0.351441    
+loyalty_post                    0.052518   0.024813    2.117 0.034295 *  
+authority_post                 -0.040568   0.024287   -1.670 0.094842 .  
+purity_post                    -0.029237   0.025734   -1.136 0.255903    
+non_moral_post                  0.045254   0.013958    3.242 0.001187 ** 
+sentistrength_pos_post         -0.013316   0.011123   -1.197 0.231236    
+sentistrength_neg_post          0.032343   0.010634    3.041 0.002355 ** 
+sentistrength_neutral_post      0.026521   0.009244    2.869 0.004116 ** 
+subredditbusiness              -0.711130   1.565882   -0.454 0.649728    
+subredditEntrepreneur          -0.969363   1.565745   -0.619 0.535846    
+subredditEntrepreneurRideAlong -0.747911   1.565912   -0.478 0.632921    
+subredditEntrepreneurship      -0.836336   1.566968   -0.534 0.593529    
+subredditgrowmybusiness        -0.858231   1.566360   -0.548 0.583750    
+subredditladybusiness          -0.489119   1.567498   -0.312 0.755012    
+subredditsmallbusiness         -0.888501   1.565780   -0.567 0.570409    
+subredditStartup_Ideas         -0.968525   1.566117   -0.618 0.536295    
+subredditstartups              -0.791241   1.565738   -0.505 0.613315    
+subredditventurecapital        -0.376748   1.567073   -0.240 0.810009    
+post_wordcount                 -0.050078   0.014039   -3.567 0.000361 ***
+title_wordcount                -0.086456   0.006878  -12.569  < 2e-16 ***
+comment_wordcount              -4.738954   0.017020 -278.439  < 2e-16 ***
+ups                             0.097011   0.013296    7.296 2.95e-13 ***
+author_premiumFalse            -0.011704   0.027742   -0.422 0.673102    
+author_premiumTrue              0.347750   0.033381   10.418  < 2e-16 ***
+is_selfTrue                     0.010797   0.044848    0.241 0.809749    
+no_followTrue                   0.278826   0.022907   12.172  < 2e-16 ***
+num_comments                    0.056846   0.011340    5.013 5.37e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 512574  on 369743  degrees of freedom
+Residual deviance: 186429  on 369703  degrees of freedom
+AIC: 186511
+
+Number of Fisher Scoring iterations: 7
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 164855  21187
+         1  20017 163685
+                                          
+               Accuracy : 0.8886          
+                 95% CI : (0.8875, 0.8896)
+    No Information Rate : 0.5             
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.7771          
+                                          
+ Mcnemar's Test P-Value : 8.463e-09       
+                                          
+            Sensitivity : 0.8917          
+            Specificity : 0.8854          
+         Pos Pred Value : 0.8861          
+         Neg Pred Value : 0.8910          
+             Prevalence : 0.5000          
+         Detection Rate : 0.4459          
+   Detection Prevalence : 0.5032          
+      Balanced Accuracy : 0.8886          
+                                          
+       'Positive' Class : 0               
+                                          
+
+sentistrength_pos_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.7916  -1.0257   0.5454   0.8878   2.4702  
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     1.153097   1.034750   1.114 0.265119    
+predicted_gender_commentmale   -0.673327   0.009617 -70.017  < 2e-16 ***
+predicted_gender_postmale      -0.041026   0.010726  -3.825 0.000131 ***
+fear_post                       0.003064   0.006664   0.460 0.645652    
+anger_post                     -0.027215   0.008842  -3.078 0.002084 ** 
+anticip_post                   -0.011065   0.007885  -1.403 0.160525    
+trust_post                     -0.005902   0.006507  -0.907 0.364434    
+surprise_post                  -0.032087   0.008295  -3.868 0.000110 ***
+positive_post                  -0.012792   0.028164  -0.454 0.649691    
+negative_post                  -0.021447   0.008318  -2.578 0.009926 ** 
+sadness_post                    0.020462   0.008704   2.351 0.018738 *  
+disgust_post                    0.011571   0.008439   1.371 0.170357    
+joy_post                        0.042081   0.008201   5.131 2.88e-07 ***
+care_post                      -0.057712   0.019081  -3.025 0.002489 ** 
+fairness_post                   0.013061   0.011929   1.095 0.273553    
+loyalty_post                    0.026861   0.015813   1.699 0.089376 .  
+authority_post                 -0.030605   0.015268  -2.004 0.045018 *  
+purity_post                     0.031383   0.016339   1.921 0.054763 .  
+non_moral_post                 -0.003366   0.008797  -0.383 0.702051    
+sentistrength_pos_post          0.160182   0.007062  22.683  < 2e-16 ***
+sentistrength_neg_post          0.006072   0.006805   0.892 0.372305    
+sentistrength_neutral_post      0.024195   0.005925   4.083 4.44e-05 ***
+subredditbusiness              -0.474196   1.034484  -0.458 0.646673    
+subredditEntrepreneur           0.089100   1.034322   0.086 0.931353    
+subredditEntrepreneurRideAlong  0.301063   1.034431   0.291 0.771019    
+subredditEntrepreneurship       0.206461   1.035086   0.199 0.841901    
+subredditgrowmybusiness         0.434210   1.034774   0.420 0.674764    
+subredditladybusiness           0.718105   1.035880   0.693 0.488164    
+subredditsmallbusiness         -0.116575   1.034344  -0.113 0.910265    
+subredditStartup_Ideas          0.093849   1.034574   0.091 0.927721    
+subredditstartups               0.081932   1.034324   0.079 0.936863    
+subredditventurecapital        -0.007076   1.035127  -0.007 0.994546    
+post_wordcount                  0.087965   0.008920   9.861  < 2e-16 ***
+title_wordcount                -0.017381   0.004378  -3.970 7.20e-05 ***
+comment_wordcount               1.026875   0.004519 227.257  < 2e-16 ***
+ups                             0.188318   0.008432  22.334  < 2e-16 ***
+author_premiumFalse             0.101795   0.017521   5.810 6.25e-09 ***
+author_premiumTrue              0.213634   0.021210  10.072  < 2e-16 ***
+is_selfTrue                    -0.267730   0.028398  -9.428  < 2e-16 ***
+no_followTrue                   0.107500   0.014523   7.402 1.34e-13 ***
+num_comments                   -0.130756   0.007181 -18.207  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 498209  on 369743  degrees of freedom
+Residual deviance: 418725  on 369703  degrees of freedom
+AIC: 418807
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  77044  41562
+         1  71507 179631
+                                          
+               Accuracy : 0.6942          
+                 95% CI : (0.6927, 0.6957)
+    No Information Rate : 0.5982          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.3421          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.5186          
+            Specificity : 0.8121          
+         Pos Pred Value : 0.6496          
+         Neg Pred Value : 0.7153          
+             Prevalence : 0.4018          
+         Detection Rate : 0.2084          
+   Detection Prevalence : 0.3208          
+      Balanced Accuracy : 0.6654          
+                                          
+       'Positive' Class : 0               
+                                          
+
+sentistrength_neg_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.0447  -0.8851   0.3494   0.8630   2.5497  
+
+Coefficients:
+                                 Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)                    -0.2338017  1.0784340   -0.217 0.828366    
+predicted_gender_commentmale   -0.2156497  0.0102200  -21.101  < 2e-16 ***
+predicted_gender_postmale      -0.0098934  0.0113134   -0.874 0.381855    
+fear_post                       0.0049913  0.0071792    0.695 0.486903    
+anger_post                     -0.0452140  0.0095506   -4.734 2.20e-06 ***
+anticip_post                    0.0245901  0.0084481    2.911 0.003606 ** 
+trust_post                      0.0040738  0.0070532    0.578 0.563545    
+surprise_post                  -0.0213756  0.0088896   -2.405 0.016191 *  
+positive_post                  -0.0007845  0.0309683   -0.025 0.979789    
+negative_post                  -0.0193948  0.0089732   -2.161 0.030663 *  
+sadness_post                    0.0282985  0.0093711    3.020 0.002530 ** 
+disgust_post                    0.0157229  0.0090564    1.736 0.082545 .  
+joy_post                        0.0421419  0.0087564    4.813 1.49e-06 ***
+care_post                       0.0074818  0.0206150    0.363 0.716655    
+fairness_post                  -0.0052853  0.0127814   -0.414 0.679232    
+loyalty_post                    0.0165933  0.0169946    0.976 0.328873    
+authority_post                 -0.0330157  0.0163909   -2.014 0.043982 *  
+purity_post                    -0.0010985  0.0175099   -0.063 0.949977    
+non_moral_post                 -0.0316756  0.0095083   -3.331 0.000864 ***
+sentistrength_pos_post         -0.0159836  0.0075366   -2.121 0.033939 *  
+sentistrength_neg_post          0.1299989  0.0071128   18.277  < 2e-16 ***
+sentistrength_neutral_post      0.1247272  0.0062218   20.047  < 2e-16 ***
+subredditbusiness               0.2387233  1.0781431    0.221 0.824765    
+subredditEntrepreneur           0.8386447  1.0779717    0.778 0.436579    
+subredditEntrepreneurRideAlong  1.1864898  1.0780991    1.101 0.271097    
+subredditEntrepreneurship       0.9218861  1.0788160    0.855 0.392809    
+subredditgrowmybusiness         1.3064571  1.0784018    1.211 0.225713    
+subredditladybusiness           1.1321480  1.0790467    1.049 0.294081    
+subredditsmallbusiness          0.7833976  1.0779957    0.727 0.467399    
+subredditStartup_Ideas          1.1048407  1.0782563    1.025 0.305526    
+subredditstartups               0.9239416  1.0779734    0.857 0.391384    
+subredditventurecapital         1.2139411  1.0789065    1.125 0.260522    
+post_wordcount                  0.1742959  0.0095772   18.199  < 2e-16 ***
+title_wordcount                 0.0208317  0.0046441    4.486 7.27e-06 ***
+comment_wordcount              -1.4467906  0.0055622 -260.112  < 2e-16 ***
+ups                             0.0720043  0.0090175    7.985 1.41e-15 ***
+author_premiumFalse             0.0069264  0.0187355    0.370 0.711609    
+author_premiumTrue              0.2467727  0.0225206   10.958  < 2e-16 ***
+is_selfTrue                     0.0235157  0.0306330    0.768 0.442690    
+no_followTrue                   0.2970740  0.0153297   19.379  < 2e-16 ***
+num_comments                    0.0308777  0.0076190    4.053 5.06e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 503266  on 369743  degrees of freedom
+Residual deviance: 385351  on 369703  degrees of freedom
+AIC: 385433
+
+Number of Fisher Scoring iterations: 5
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0 101889  44303
+         1  53712 169840
+                                          
+               Accuracy : 0.7349          
+                 95% CI : (0.7335, 0.7363)
+    No Information Rate : 0.5792          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.4517          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.6548          
+            Specificity : 0.7931          
+         Pos Pred Value : 0.6970          
+         Neg Pred Value : 0.7597          
+             Prevalence : 0.4208          
+         Detection Rate : 0.2756          
+   Detection Prevalence : 0.3954          
+      Balanced Accuracy : 0.7240          
+                                          
+       'Positive' Class : 0               
+                                          
+
+sentistrength_neutral_comment
+
+Call:
+glm(formula = response ~ ., family = binomial, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.8625  -1.0366   0.5380   0.8677   2.5343  
+
+Coefficients:
+                                Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)                    -0.005021   1.038225   -0.005 0.996141    
+predicted_gender_commentmale   -0.290932   0.010314  -28.207  < 2e-16 ***
+predicted_gender_postmale      -0.025383   0.011004   -2.307 0.021065 *  
+fear_post                       0.001493   0.006896    0.216 0.828635    
+anger_post                     -0.052642   0.009148   -5.755 8.68e-09 ***
+anticip_post                    0.022722   0.008139    2.792 0.005241 ** 
+trust_post                     -0.002402   0.006831   -0.352 0.725094    
+surprise_post                  -0.030391   0.008570   -3.546 0.000391 ***
+positive_post                  -0.019858   0.030421   -0.653 0.513897    
+negative_post                  -0.028034   0.008604   -3.258 0.001121 ** 
+sadness_post                    0.033660   0.008971    3.752 0.000175 ***
+disgust_post                    0.017102   0.008661    1.975 0.048298 *  
+joy_post                        0.042113   0.008466    4.974 6.55e-07 ***
+care_post                       0.001142   0.019585    0.058 0.953491    
+fairness_post                  -0.006849   0.012086   -0.567 0.570904    
+loyalty_post                    0.003282   0.016150    0.203 0.838967    
+authority_post                 -0.031892   0.015551   -2.051 0.040284 *  
+purity_post                     0.001240   0.016634    0.075 0.940599    
+non_moral_post                 -0.034401   0.009012   -3.817 0.000135 ***
+sentistrength_pos_post          0.027271   0.007285    3.743 0.000182 ***
+sentistrength_neg_post          0.123185   0.006835   18.023  < 2e-16 ***
+sentistrength_neutral_post      0.118981   0.006047   19.675  < 2e-16 ***
+subredditbusiness               0.408416   1.037941    0.393 0.693960    
+subredditEntrepreneur           1.105902   1.037770    1.066 0.286581    
+subredditEntrepreneurRideAlong  1.467498   1.037908    1.414 0.157391    
+subredditEntrepreneurship       1.300887   1.038668    1.252 0.210404    
+subredditgrowmybusiness         1.647546   1.038253    1.587 0.112548    
+subredditladybusiness           1.498062   1.038964    1.442 0.149336    
+subredditsmallbusiness          0.957359   1.037790    0.922 0.356269    
+subredditStartup_Ideas          1.290497   1.038062    1.243 0.213802    
+subredditstartups               1.152080   1.037771    1.110 0.266935    
+subredditventurecapital         1.395912   1.038724    1.344 0.178990    
+post_wordcount                  0.185218   0.009346   19.818  < 2e-16 ***
+title_wordcount                 0.026957   0.004543    5.934 2.95e-09 ***
+comment_wordcount              -0.954415   0.004762 -200.424  < 2e-16 ***
+ups                             0.098802   0.008750   11.291  < 2e-16 ***
+author_premiumFalse             0.053844   0.017991    2.993 0.002764 ** 
+author_premiumTrue              0.291779   0.021773   13.401  < 2e-16 ***
+is_selfTrue                    -0.040171   0.029700   -1.353 0.176199    
+no_followTrue                   0.285733   0.015023   19.020  < 2e-16 ***
+num_comments                   -0.002618   0.007430   -0.352 0.724628    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 470660  on 369743  degrees of freedom
+Residual deviance: 403325  on 369703  degrees of freedom
+AIC: 403407
+
+Number of Fisher Scoring iterations: 4
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction      0      1
+         0  48093  29683
+         1  75130 216838
+                                         
+               Accuracy : 0.7165         
+                 95% CI : (0.7151, 0.718)
+    No Information Rate : 0.6667         
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.2973         
+                                         
+ Mcnemar's Test P-Value : < 2.2e-16      
+                                         
+            Sensitivity : 0.3903         
+            Specificity : 0.8796         
+         Pos Pred Value : 0.6184         
+         Neg Pred Value : 0.7427         
+             Prevalence : 0.3333         
+         Detection Rate : 0.1301         
+   Detection Prevalence : 0.2104         
+      Balanced Accuracy : 0.6349         
+                                         
+       'Positive' Class : 0              
+                                         

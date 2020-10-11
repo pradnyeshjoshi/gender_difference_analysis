@@ -1,0 +1,1178 @@
+
+fear_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.11349 -0.01011  0.00179  0.01489  0.94294 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             9.111e-02  1.488e-02   6.123 9.20e-10 ***
+predicted_gender_commentmale                           -2.553e-03  2.684e-04  -9.513  < 2e-16 ***
+predicted_gender_postmale                               9.158e-04  2.613e-04   3.504 0.000458 ***
+fear_post                                               1.783e-04  8.998e-05   1.982 0.047516 *  
+anger_post                                             -2.712e-04  1.193e-04  -2.273 0.023011 *  
+anticip_post                                           -6.394e-05  1.058e-04  -0.604 0.545699    
+trust_post                                             -3.022e-04  8.765e-05  -3.447 0.000566 ***
+surprise_post                                          -1.683e-04  1.115e-04  -1.510 0.131066    
+positive_post                                          -7.209e-04  3.792e-04  -1.901 0.057308 .  
+negative_post                                           2.546e-04  1.124e-04   2.264 0.023545 *  
+sadness_post                                           -5.261e-04  1.175e-04  -4.477 7.57e-06 ***
+disgust_post                                            1.505e-04  1.137e-04   1.323 0.185674    
+joy_post                                               -2.573e-04  1.099e-04  -2.342 0.019157 *  
+care_post                                              -1.031e-04  2.589e-04  -0.398 0.690561    
+fairness_post                                          -1.725e-04  1.615e-04  -1.068 0.285643    
+loyalty_post                                            1.359e-04  2.149e-04   0.632 0.527115    
+authority_post                                          6.128e-05  2.071e-04   0.296 0.767341    
+purity_post                                             1.218e-04  2.218e-04   0.549 0.583039    
+non_moral_post                                         -8.027e-06  1.194e-04  -0.067 0.946390    
+sentistrength_pos_post                                 -2.533e-04  9.352e-05  -2.708 0.006763 ** 
+sentistrength_neg_post                                 -5.331e-05  8.842e-05  -0.603 0.546567    
+sentistrength_neutral_post                              1.190e-04  7.718e-05   1.541 0.123232    
+subredditbusiness                                       1.093e-03  1.488e-02   0.073 0.941433    
+subredditEntrepreneur                                   1.529e-03  1.487e-02   0.103 0.918127    
+subredditEntrepreneurRideAlong                          1.840e-03  1.488e-02   0.124 0.901557    
+subredditEntrepreneurship                              -1.050e-03  1.488e-02  -0.071 0.943756    
+subredditgrowmybusiness                                -2.023e-05  1.488e-02  -0.001 0.998915    
+subredditladybusiness                                  -1.506e-03  1.489e-02  -0.101 0.919425    
+subredditsmallbusiness                                 -4.531e-05  1.488e-02  -0.003 0.997570    
+subredditStartup_Ideas                                  1.247e-03  1.488e-02   0.084 0.933215    
+subredditstartups                                      -1.033e-03  1.487e-02  -0.069 0.944659    
+subredditventurecapital                                -2.425e-03  1.488e-02  -0.163 0.870605    
+post_wordcount                                         -4.916e-04  1.173e-04  -4.190 2.79e-05 ***
+title_wordcount                                        -1.821e-04  5.711e-05  -3.189 0.001427 ** 
+comment_wordcount                                       1.566e-02  5.077e-05 308.406  < 2e-16 ***
+ups                                                     7.904e-04  1.109e-04   7.125 1.04e-12 ***
+author_premiumFalse                                     2.987e-04  2.316e-04   1.289 0.197273    
+author_premiumTrue                                      6.008e-05  2.790e-04   0.215 0.829508    
+is_selfTrue                                            -6.248e-04  3.791e-04  -1.648 0.099281 .  
+no_followTrue                                          -6.996e-04  1.886e-04  -3.710 0.000208 ***
+num_comments                                           -1.239e-03  9.373e-05 -13.224  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -7.444e-04  3.002e-04  -2.479 0.013158 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02975 on 369702 degrees of freedom
+Multiple R-squared:  0.2082,	Adjusted R-squared:  0.2081 
+F-statistic:  2371 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+anger_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.11103 -0.00952  0.00209  0.01481  0.93831 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             1.094e-01  1.364e-02   8.022 1.04e-15 ***
+predicted_gender_commentmale                           -2.582e-03  2.460e-04 -10.497  < 2e-16 ***
+predicted_gender_postmale                               7.080e-04  2.395e-04   2.956 0.003118 ** 
+fear_post                                              -1.311e-04  8.246e-05  -1.589 0.111994    
+anger_post                                              1.671e-04  1.093e-04   1.529 0.126288    
+anticip_post                                           -1.722e-04  9.698e-05  -1.776 0.075798 .  
+trust_post                                             -3.225e-04  8.033e-05  -4.015 5.95e-05 ***
+surprise_post                                          -1.604e-04  1.022e-04  -1.570 0.116431    
+positive_post                                          -9.861e-04  3.476e-04  -2.837 0.004553 ** 
+negative_post                                           1.199e-04  1.030e-04   1.163 0.244687    
+sadness_post                                           -4.220e-04  1.077e-04  -3.919 8.91e-05 ***
+disgust_post                                           -4.329e-05  1.042e-04  -0.415 0.677794    
+joy_post                                               -3.205e-04  1.007e-04  -3.183 0.001456 ** 
+care_post                                               1.573e-05  2.373e-04   0.066 0.947138    
+fairness_post                                          -1.045e-04  1.480e-04  -0.706 0.480401    
+loyalty_post                                           -2.667e-05  1.970e-04  -0.135 0.892313    
+authority_post                                         -1.070e-04  1.899e-04  -0.563 0.573147    
+purity_post                                             1.741e-04  2.033e-04   0.856 0.391830    
+non_moral_post                                         -2.433e-05  1.094e-04  -0.222 0.824016    
+sentistrength_pos_post                                 -3.167e-04  8.571e-05  -3.694 0.000221 ***
+sentistrength_neg_post                                 -1.216e-04  8.104e-05  -1.500 0.133640    
+sentistrength_neutral_post                              3.730e-05  7.073e-05   0.527 0.597955    
+subredditbusiness                                      -1.818e-02  1.363e-02  -1.334 0.182334    
+subredditEntrepreneur                                  -1.864e-02  1.363e-02  -1.367 0.171579    
+subredditEntrepreneurRideAlong                         -1.843e-02  1.363e-02  -1.352 0.176349    
+subredditEntrepreneurship                              -2.079e-02  1.364e-02  -1.524 0.127418    
+subredditgrowmybusiness                                -2.120e-02  1.364e-02  -1.555 0.120012    
+subredditladybusiness                                  -2.195e-02  1.364e-02  -1.609 0.107713    
+subredditsmallbusiness                                 -1.979e-02  1.363e-02  -1.451 0.146685    
+subredditStartup_Ideas                                 -1.928e-02  1.364e-02  -1.414 0.157279    
+subredditstartups                                      -2.124e-02  1.363e-02  -1.558 0.119200    
+subredditventurecapital                                -2.218e-02  1.364e-02  -1.626 0.103953    
+post_wordcount                                         -3.942e-04  1.075e-04  -3.666 0.000247 ***
+title_wordcount                                        -1.474e-04  5.234e-05  -2.816 0.004855 ** 
+comment_wordcount                                       1.567e-02  4.653e-05 336.683  < 2e-16 ***
+ups                                                     5.208e-04  1.017e-04   5.122 3.02e-07 ***
+author_premiumFalse                                     3.427e-04  2.123e-04   1.615 0.106415    
+author_premiumTrue                                     -4.320e-04  2.557e-04  -1.690 0.091080 .  
+is_selfTrue                                            -7.325e-04  3.474e-04  -2.109 0.034976 *  
+no_followTrue                                          -8.070e-04  1.729e-04  -4.669 3.03e-06 ***
+num_comments                                           -9.733e-04  8.590e-05 -11.330  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -5.990e-04  2.751e-04  -2.177 0.029467 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02726 on 369702 degrees of freedom
+Multiple R-squared:  0.2387,	Adjusted R-squared:  0.2386 
+F-statistic:  2827 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+anticip_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.11360 -0.00999  0.00187  0.01491  0.94184 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             1.102e-01  1.454e-02   7.577 3.55e-14 ***
+predicted_gender_commentmale                           -2.712e-03  2.623e-04 -10.341  < 2e-16 ***
+predicted_gender_postmale                               7.518e-04  2.553e-04   2.944 0.003238 ** 
+fear_post                                               5.010e-05  8.791e-05   0.570 0.568745    
+anger_post                                             -4.860e-04  1.165e-04  -4.170 3.04e-05 ***
+anticip_post                                            4.638e-04  1.034e-04   4.486 7.25e-06 ***
+trust_post                                             -2.079e-04  8.564e-05  -2.428 0.015184 *  
+surprise_post                                           1.535e-04  1.089e-04   1.409 0.158718    
+positive_post                                          -4.067e-04  3.705e-04  -1.098 0.272307    
+negative_post                                           1.328e-05  1.099e-04   0.121 0.903773    
+sadness_post                                           -8.135e-05  1.148e-04  -0.709 0.478573    
+disgust_post                                            5.642e-05  1.111e-04   0.508 0.611446    
+joy_post                                               -2.477e-04  1.073e-04  -2.308 0.020981 *  
+care_post                                              -1.980e-04  2.530e-04  -0.783 0.433761    
+fairness_post                                           1.644e-04  1.578e-04   1.042 0.297616    
+loyalty_post                                            3.037e-04  2.100e-04   1.447 0.148007    
+authority_post                                         -5.455e-04  2.024e-04  -2.695 0.007035 ** 
+purity_post                                             1.012e-04  2.167e-04   0.467 0.640627    
+non_moral_post                                          1.418e-04  1.166e-04   1.216 0.224035    
+sentistrength_pos_post                                 -1.057e-04  9.138e-05  -1.157 0.247131    
+sentistrength_neg_post                                  3.637e-05  8.639e-05   0.421 0.673753    
+sentistrength_neutral_post                              2.199e-04  7.540e-05   2.916 0.003545 ** 
+subredditbusiness                                      -2.031e-02  1.454e-02  -1.397 0.162305    
+subredditEntrepreneur                                  -2.006e-02  1.453e-02  -1.380 0.167582    
+subredditEntrepreneurRideAlong                         -1.908e-02  1.453e-02  -1.313 0.189218    
+subredditEntrepreneurship                              -2.169e-02  1.454e-02  -1.491 0.135892    
+subredditgrowmybusiness                                -2.179e-02  1.454e-02  -1.499 0.133869    
+subredditladybusiness                                  -2.358e-02  1.455e-02  -1.621 0.105051    
+subredditsmallbusiness                                 -2.128e-02  1.453e-02  -1.464 0.143060    
+subredditStartup_Ideas                                 -1.950e-02  1.454e-02  -1.341 0.179852    
+subredditstartups                                      -2.173e-02  1.453e-02  -1.495 0.134826    
+subredditventurecapital                                -2.142e-02  1.454e-02  -1.473 0.140698    
+post_wordcount                                         -5.066e-04  1.146e-04  -4.420 9.88e-06 ***
+title_wordcount                                        -3.316e-05  5.579e-05  -0.594 0.552333    
+comment_wordcount                                       1.602e-02  4.961e-05 322.890  < 2e-16 ***
+ups                                                     6.584e-04  1.084e-04   6.075 1.24e-09 ***
+author_premiumFalse                                     2.601e-04  2.263e-04   1.149 0.250422    
+author_premiumTrue                                     -3.625e-04  2.726e-04  -1.330 0.183607    
+is_selfTrue                                             7.527e-04  3.703e-04   2.033 0.042100 *  
+no_followTrue                                          -7.033e-04  1.843e-04  -3.817 0.000135 ***
+num_comments                                           -9.613e-04  9.158e-05 -10.497  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -7.800e-04  2.933e-04  -2.659 0.007830 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02906 on 369702 degrees of freedom
+Multiple R-squared:  0.2244,	Adjusted R-squared:  0.2243 
+F-statistic:  2608 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+trust_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.12144 -0.01159 -0.00056  0.01150  0.93042 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             1.225e-01  2.673e-02   4.582 4.60e-06 ***
+predicted_gender_commentmale                           -4.240e-03  4.821e-04  -8.795  < 2e-16 ***
+predicted_gender_postmale                               6.836e-04  4.694e-04   1.457   0.1453    
+fear_post                                               3.256e-05  1.616e-04   0.201   0.8403    
+anger_post                                             -1.347e-04  2.142e-04  -0.629   0.5295    
+anticip_post                                           -7.988e-05  1.900e-04  -0.420   0.6743    
+trust_post                                              3.442e-04  1.574e-04   2.186   0.0288 *  
+surprise_post                                           3.127e-04  2.002e-04   1.562   0.1183    
+positive_post                                          -1.680e-04  6.811e-04  -0.247   0.8052    
+negative_post                                           2.172e-04  2.019e-04   1.076   0.2821    
+sadness_post                                           -2.988e-04  2.110e-04  -1.416   0.1569    
+disgust_post                                            7.183e-05  2.042e-04   0.352   0.7250    
+joy_post                                               -4.296e-04  1.973e-04  -2.178   0.0294 *  
+care_post                                              -5.187e-04  4.651e-04  -1.115   0.2647    
+fairness_post                                           1.339e-04  2.901e-04   0.462   0.6444    
+loyalty_post                                            4.500e-04  3.860e-04   1.166   0.2437    
+authority_post                                         -1.429e-04  3.720e-04  -0.384   0.7009    
+purity_post                                             2.384e-04  3.984e-04   0.598   0.5496    
+non_moral_post                                          3.363e-04  2.144e-04   1.568   0.1168    
+sentistrength_pos_post                                  2.587e-04  1.680e-04   1.540   0.1234    
+sentistrength_neg_post                                  1.703e-04  1.588e-04   1.073   0.2834    
+sentistrength_neutral_post                             -1.872e-04  1.386e-04  -1.351   0.1768    
+subredditbusiness                                      -1.681e-02  2.672e-02  -0.629   0.5293    
+subredditEntrepreneur                                  -1.720e-02  2.672e-02  -0.644   0.5198    
+subredditEntrepreneurRideAlong                         -1.820e-02  2.672e-02  -0.681   0.4957    
+subredditEntrepreneurship                              -2.103e-02  2.673e-02  -0.787   0.4314    
+subredditgrowmybusiness                                -2.035e-02  2.672e-02  -0.761   0.4464    
+subredditladybusiness                                  -2.317e-02  2.674e-02  -0.867   0.3861    
+subredditsmallbusiness                                 -1.858e-02  2.672e-02  -0.695   0.4868    
+subredditStartup_Ideas                                 -1.817e-02  2.672e-02  -0.680   0.4965    
+subredditstartups                                      -1.851e-02  2.672e-02  -0.693   0.4885    
+subredditventurecapital                                -1.829e-02  2.673e-02  -0.684   0.4940    
+post_wordcount                                         -9.657e-05  2.107e-04  -0.458   0.6467    
+title_wordcount                                        -8.376e-05  1.026e-04  -0.817   0.4141    
+comment_wordcount                                       1.415e-02  9.119e-05 155.204  < 2e-16 ***
+ups                                                     1.591e-03  1.992e-04   7.983 1.43e-15 ***
+author_premiumFalse                                     1.751e-04  4.160e-04   0.421   0.6738    
+author_premiumTrue                                     -5.752e-04  5.010e-04  -1.148   0.2510    
+is_selfTrue                                            -6.902e-04  6.808e-04  -1.014   0.3107    
+no_followTrue                                          -4.164e-04  3.387e-04  -1.229   0.2190    
+num_comments                                           -2.456e-03  1.683e-04 -14.587  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -2.908e-04  5.392e-04  -0.539   0.5896    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.05342 on 369702 degrees of freedom
+Multiple R-squared:  0.0624,	Adjusted R-squared:  0.0623 
+F-statistic: 600.1 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+surprise_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.10641 -0.01044  0.00183  0.01538  0.94725 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             8.127e-02  1.386e-02   5.862 4.56e-09 ***
+predicted_gender_commentmale                           -8.309e-04  2.501e-04  -3.322 0.000892 ***
+predicted_gender_postmale                               1.289e-03  2.435e-04   5.295 1.19e-07 ***
+fear_post                                              -1.234e-04  8.382e-05  -1.472 0.141001    
+anger_post                                             -3.206e-04  1.111e-04  -2.885 0.003913 ** 
+anticip_post                                           -1.364e-04  9.858e-05  -1.384 0.166448    
+trust_post                                             -2.727e-04  8.166e-05  -3.339 0.000840 ***
+surprise_post                                           4.471e-04  1.038e-04   4.306 1.66e-05 ***
+positive_post                                          -8.439e-04  3.533e-04  -2.389 0.016910 *  
+negative_post                                          -5.102e-05  1.047e-04  -0.487 0.626207    
+sadness_post                                           -2.189e-04  1.095e-04  -2.000 0.045537 *  
+disgust_post                                            3.332e-05  1.059e-04   0.315 0.753019    
+joy_post                                               -2.534e-04  1.023e-04  -2.476 0.013300 *  
+care_post                                              -8.234e-05  2.412e-04  -0.341 0.732860    
+fairness_post                                           6.265e-06  1.505e-04   0.042 0.966794    
+loyalty_post                                           -5.130e-05  2.002e-04  -0.256 0.797778    
+authority_post                                         -1.214e-04  1.930e-04  -0.629 0.529379    
+purity_post                                             1.159e-04  2.066e-04   0.561 0.574911    
+non_moral_post                                         -2.177e-05  1.112e-04  -0.196 0.844816    
+sentistrength_pos_post                                 -1.206e-04  8.713e-05  -1.384 0.166411    
+sentistrength_neg_post                                 -2.777e-05  8.237e-05  -0.337 0.736021    
+sentistrength_neutral_post                             -8.447e-06  7.190e-05  -0.117 0.906475    
+subredditbusiness                                       3.073e-03  1.386e-02   0.222 0.824557    
+subredditEntrepreneur                                   3.313e-03  1.386e-02   0.239 0.811076    
+subredditEntrepreneurRideAlong                          3.145e-03  1.386e-02   0.227 0.820477    
+subredditEntrepreneurship                               1.004e-03  1.387e-02   0.072 0.942261    
+subredditgrowmybusiness                                -5.418e-05  1.386e-02  -0.004 0.996881    
+subredditladybusiness                                   1.177e-03  1.387e-02   0.085 0.932373    
+subredditsmallbusiness                                  2.355e-03  1.386e-02   0.170 0.865039    
+subredditStartup_Ideas                                  3.530e-03  1.386e-02   0.255 0.798986    
+subredditstartups                                       1.119e-03  1.386e-02   0.081 0.935644    
+subredditventurecapital                                 4.167e-04  1.387e-02   0.030 0.976025    
+post_wordcount                                         -6.483e-04  1.093e-04  -5.931 3.01e-09 ***
+title_wordcount                                        -1.253e-04  5.320e-05  -2.355 0.018505 *  
+comment_wordcount                                       1.571e-02  4.730e-05 332.073  < 2e-16 ***
+ups                                                     8.781e-04  1.033e-04   8.497  < 2e-16 ***
+author_premiumFalse                                     3.977e-04  2.158e-04   1.843 0.065357 .  
+author_premiumTrue                                     -4.874e-04  2.599e-04  -1.875 0.060772 .  
+is_selfTrue                                            -3.526e-04  3.531e-04  -0.999 0.318002    
+no_followTrue                                          -1.140e-03  1.757e-04  -6.487 8.79e-11 ***
+num_comments                                           -1.247e-03  8.732e-05 -14.275  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -1.107e-03  2.797e-04  -3.958 7.55e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02771 on 369702 degrees of freedom
+Multiple R-squared:  0.235,	Adjusted R-squared:  0.2349 
+F-statistic:  2770 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+positive_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.13028 -0.01162 -0.00139  0.01000  0.92988 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             1.202e-01  2.803e-02   4.290 1.78e-05 ***
+predicted_gender_commentmale                           -3.909e-03  5.056e-04  -7.733 1.06e-14 ***
+predicted_gender_postmale                               1.821e-03  4.922e-04   3.700 0.000216 ***
+fear_post                                               1.126e-04  1.695e-04   0.664 0.506505    
+anger_post                                             -7.490e-04  2.247e-04  -3.334 0.000856 ***
+anticip_post                                           -2.307e-04  1.993e-04  -1.157 0.247088    
+trust_post                                             -6.131e-05  1.651e-04  -0.371 0.710382    
+surprise_post                                          -1.954e-04  2.099e-04  -0.931 0.352057    
+positive_post                                           5.075e-05  7.143e-04   0.071 0.943360    
+negative_post                                           7.478e-04  2.118e-04   3.531 0.000414 ***
+sadness_post                                           -4.072e-04  2.213e-04  -1.840 0.065771 .  
+disgust_post                                            4.917e-04  2.141e-04   2.297 0.021645 *  
+joy_post                                                5.018e-04  2.069e-04   2.425 0.015301 *  
+care_post                                              -5.333e-04  4.877e-04  -1.094 0.274162    
+fairness_post                                           2.818e-04  3.042e-04   0.926 0.354336    
+loyalty_post                                            4.288e-04  4.048e-04   1.059 0.289477    
+authority_post                                         -1.763e-04  3.901e-04  -0.452 0.651344    
+purity_post                                             1.370e-05  4.178e-04   0.033 0.973836    
+non_moral_post                                          2.223e-04  2.248e-04   0.988 0.322919    
+sentistrength_pos_post                                  5.617e-05  1.762e-04   0.319 0.749835    
+sentistrength_neg_post                                  2.695e-04  1.665e-04   1.618 0.105669    
+sentistrength_neutral_post                              1.418e-04  1.454e-04   0.975 0.329461    
+subredditbusiness                                      -9.222e-03  2.802e-02  -0.329 0.742065    
+subredditEntrepreneur                                  -9.274e-03  2.802e-02  -0.331 0.740628    
+subredditEntrepreneurRideAlong                         -8.820e-03  2.802e-02  -0.315 0.752917    
+subredditEntrepreneurship                              -1.096e-02  2.803e-02  -0.391 0.695785    
+subredditgrowmybusiness                                -1.192e-02  2.803e-02  -0.425 0.670627    
+subredditladybusiness                                  -1.353e-02  2.804e-02  -0.483 0.629354    
+subredditsmallbusiness                                 -1.116e-02  2.802e-02  -0.398 0.690403    
+subredditStartup_Ideas                                 -9.369e-03  2.802e-02  -0.334 0.738131    
+subredditstartups                                      -1.001e-02  2.802e-02  -0.357 0.720952    
+subredditventurecapital                                -7.509e-03  2.803e-02  -0.268 0.788811    
+post_wordcount                                         -1.074e-04  2.210e-04  -0.486 0.626963    
+title_wordcount                                        -9.598e-05  1.076e-04  -0.892 0.372206    
+comment_wordcount                                       1.430e-02  9.563e-05 149.492  < 2e-16 ***
+ups                                                     2.354e-03  2.089e-04  11.268  < 2e-16 ***
+author_premiumFalse                                     4.221e-04  4.363e-04   0.968 0.333263    
+author_premiumTrue                                     -2.696e-07  5.255e-04  -0.001 0.999591    
+is_selfTrue                                            -3.758e-04  7.139e-04  -0.526 0.598609    
+no_followTrue                                           7.880e-04  3.552e-04   2.218 0.026523 *  
+num_comments                                           -2.163e-03  1.765e-04 -12.251  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -1.920e-03  5.654e-04  -3.395 0.000686 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.05602 on 369702 degrees of freedom
+Multiple R-squared:  0.05802,	Adjusted R-squared:  0.05791 
+F-statistic: 555.4 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+negative_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.13027 -0.00929 -0.00042  0.00904  0.92247 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             1.201e-01  3.241e-02   3.707 0.000210 ***
+predicted_gender_commentmale                           -1.044e-02  5.845e-04 -17.861  < 2e-16 ***
+predicted_gender_postmale                               5.452e-03  5.691e-04   9.581  < 2e-16 ***
+fear_post                                               5.131e-05  1.959e-04   0.262 0.793407    
+anger_post                                             -4.830e-04  2.597e-04  -1.860 0.062930 .  
+anticip_post                                           -4.228e-04  2.304e-04  -1.835 0.066529 .  
+trust_post                                              8.476e-05  1.909e-04   0.444 0.656987    
+surprise_post                                          -3.048e-04  2.427e-04  -1.256 0.209180    
+positive_post                                          -9.061e-04  8.258e-04  -1.097 0.272542    
+negative_post                                           6.696e-04  2.448e-04   2.735 0.006237 ** 
+sadness_post                                           -7.623e-04  2.559e-04  -2.979 0.002889 ** 
+disgust_post                                            3.503e-04  2.476e-04   1.415 0.157007    
+joy_post                                               -5.568e-04  2.392e-04  -2.328 0.019926 *  
+care_post                                              -4.898e-04  5.639e-04  -0.869 0.384997    
+fairness_post                                          -3.438e-04  3.517e-04  -0.977 0.328324    
+loyalty_post                                            1.076e-03  4.680e-04   2.300 0.021454 *  
+authority_post                                          6.132e-06  4.511e-04   0.014 0.989154    
+purity_post                                            -4.447e-04  4.830e-04  -0.921 0.357190    
+non_moral_post                                         -2.904e-04  2.600e-04  -1.117 0.264005    
+sentistrength_pos_post                                 -6.927e-04  2.037e-04  -3.401 0.000671 ***
+sentistrength_neg_post                                 -1.569e-04  1.925e-04  -0.815 0.415107    
+sentistrength_neutral_post                              1.643e-04  1.681e-04   0.978 0.328274    
+subredditbusiness                                      -6.341e-03  3.240e-02  -0.196 0.844820    
+subredditEntrepreneur                                  -1.128e-02  3.239e-02  -0.348 0.727633    
+subredditEntrepreneurRideAlong                         -1.336e-02  3.239e-02  -0.412 0.680003    
+subredditEntrepreneurship                              -1.528e-02  3.241e-02  -0.472 0.637229    
+subredditgrowmybusiness                                -9.781e-03  3.240e-02  -0.302 0.762748    
+subredditladybusiness                                  -1.586e-02  3.242e-02  -0.489 0.624636    
+subredditsmallbusiness                                 -1.146e-02  3.239e-02  -0.354 0.723548    
+subredditStartup_Ideas                                 -1.273e-02  3.240e-02  -0.393 0.694316    
+subredditstartups                                      -7.557e-03  3.239e-02  -0.233 0.815523    
+subredditventurecapital                                -1.213e-02  3.241e-02  -0.374 0.708153    
+post_wordcount                                          4.308e-04  2.555e-04   1.686 0.091751 .  
+title_wordcount                                        -2.583e-04  1.244e-04  -2.077 0.037805 *  
+comment_wordcount                                       9.386e-03  1.106e-04  84.894  < 2e-16 ***
+ups                                                    -3.040e-04  2.416e-04  -1.258 0.208317    
+author_premiumFalse                                     5.478e-04  5.044e-04   1.086 0.277491    
+author_premiumTrue                                      4.973e-04  6.075e-04   0.819 0.413033    
+is_selfTrue                                             2.057e-04  8.254e-04   0.249 0.803228    
+no_followTrue                                          -1.513e-03  4.107e-04  -3.685 0.000229 ***
+num_comments                                           -4.285e-04  2.041e-04  -2.099 0.035782 *  
+predicted_gender_commentmale:predicted_gender_postmale -5.686e-03  6.537e-04  -8.697  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.06477 on 369702 degrees of freedom
+Multiple R-squared:  0.02562,	Adjusted R-squared:  0.02551 
+F-statistic: 237.1 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+sadness_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.11081 -0.00964  0.00189  0.01455  0.93980 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             1.073e-01  1.434e-02   7.482 7.34e-14 ***
+predicted_gender_commentmale                           -2.088e-03  2.586e-04  -8.074 6.81e-16 ***
+predicted_gender_postmale                               7.891e-04  2.518e-04   3.134 0.001724 ** 
+fear_post                                               6.060e-05  8.669e-05   0.699 0.484479    
+anger_post                                             -4.149e-04  1.149e-04  -3.611 0.000306 ***
+anticip_post                                           -6.014e-05  1.019e-04  -0.590 0.555221    
+trust_post                                             -1.431e-04  8.445e-05  -1.694 0.090281 .  
+surprise_post                                          -1.833e-04  1.074e-04  -1.707 0.087738 .  
+positive_post                                          -5.428e-04  3.654e-04  -1.486 0.137355    
+negative_post                                          -5.215e-05  1.083e-04  -0.481 0.630178    
+sadness_post                                            2.995e-04  1.132e-04   2.646 0.008150 ** 
+disgust_post                                            1.134e-04  1.095e-04   1.035 0.300650    
+joy_post                                               -2.847e-04  1.058e-04  -2.690 0.007154 ** 
+care_post                                              -1.915e-05  2.495e-04  -0.077 0.938816    
+fairness_post                                          -5.965e-05  1.556e-04  -0.383 0.701488    
+loyalty_post                                           -4.638e-04  2.071e-04  -2.240 0.025093 *  
+authority_post                                          2.971e-05  1.996e-04   0.149 0.881662    
+purity_post                                             3.049e-04  2.137e-04   1.427 0.153577    
+non_moral_post                                         -9.138e-05  1.150e-04  -0.795 0.426885    
+sentistrength_pos_post                                 -8.917e-05  9.010e-05  -0.990 0.322353    
+sentistrength_neg_post                                 -1.561e-04  8.519e-05  -1.833 0.066824 .  
+sentistrength_neutral_post                              6.532e-05  7.435e-05   0.879 0.379640    
+subredditbusiness                                      -1.709e-02  1.433e-02  -1.192 0.233094    
+subredditEntrepreneur                                  -1.668e-02  1.433e-02  -1.164 0.244323    
+subredditEntrepreneurRideAlong                         -1.655e-02  1.433e-02  -1.155 0.248271    
+subredditEntrepreneurship                              -1.828e-02  1.434e-02  -1.274 0.202498    
+subredditgrowmybusiness                                -2.008e-02  1.434e-02  -1.401 0.161262    
+subredditladybusiness                                  -1.996e-02  1.434e-02  -1.392 0.163998    
+subredditsmallbusiness                                 -1.830e-02  1.433e-02  -1.277 0.201538    
+subredditStartup_Ideas                                 -1.720e-02  1.433e-02  -1.200 0.230036    
+subredditstartups                                      -1.941e-02  1.433e-02  -1.355 0.175532    
+subredditventurecapital                                -2.058e-02  1.434e-02  -1.435 0.151223    
+post_wordcount                                         -7.707e-04  1.130e-04  -6.818 9.24e-12 ***
+title_wordcount                                        -1.507e-04  5.502e-05  -2.739 0.006154 ** 
+comment_wordcount                                       1.558e-02  4.892e-05 318.520  < 2e-16 ***
+ups                                                     9.505e-04  1.069e-04   8.894  < 2e-16 ***
+author_premiumFalse                                     4.372e-04  2.232e-04   1.959 0.050108 .  
+author_premiumTrue                                     -4.334e-04  2.688e-04  -1.612 0.106876    
+is_selfTrue                                            -1.949e-04  3.652e-04  -0.534 0.593589    
+no_followTrue                                          -8.516e-04  1.817e-04  -4.687 2.78e-06 ***
+num_comments                                           -1.283e-03  9.030e-05 -14.206  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -9.731e-04  2.892e-04  -3.364 0.000767 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02866 on 369702 degrees of freedom
+Multiple R-squared:  0.2186,	Adjusted R-squared:  0.2185 
+F-statistic:  2522 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+disgust_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.10884 -0.00977  0.00208  0.01504  0.94255 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             1.028e-01  1.353e-02   7.599 2.99e-14 ***
+predicted_gender_commentmale                           -2.365e-03  2.441e-04  -9.691  < 2e-16 ***
+predicted_gender_postmale                               6.414e-04  2.376e-04   2.699 0.006955 ** 
+fear_post                                              -1.306e-04  8.181e-05  -1.597 0.110352    
+anger_post                                             -4.550e-04  1.085e-04  -4.195 2.73e-05 ***
+anticip_post                                           -3.168e-05  9.622e-05  -0.329 0.741932    
+trust_post                                             -2.237e-04  7.970e-05  -2.806 0.005009 ** 
+surprise_post                                          -2.706e-04  1.013e-04  -2.671 0.007572 ** 
+positive_post                                          -6.476e-04  3.448e-04  -1.878 0.060371 .  
+negative_post                                           1.249e-04  1.022e-04   1.221 0.221930    
+sadness_post                                           -3.559e-04  1.068e-04  -3.331 0.000867 ***
+disgust_post                                            7.627e-04  1.034e-04   7.378 1.61e-13 ***
+joy_post                                               -3.180e-04  9.989e-05  -3.184 0.001454 ** 
+care_post                                              -9.388e-04  2.355e-04  -3.987 6.69e-05 ***
+fairness_post                                          -2.752e-04  1.469e-04  -1.874 0.060926 .  
+loyalty_post                                            6.618e-05  1.954e-04   0.339 0.734878    
+authority_post                                          3.816e-04  1.883e-04   2.026 0.042760 *  
+purity_post                                             6.169e-04  2.017e-04   3.059 0.002221 ** 
+non_moral_post                                         -2.430e-04  1.085e-04  -2.239 0.025174 *  
+sentistrength_pos_post                                 -1.960e-04  8.504e-05  -2.304 0.021199 *  
+sentistrength_neg_post                                 -7.794e-05  8.040e-05  -0.969 0.332318    
+sentistrength_neutral_post                              8.809e-05  7.018e-05   1.255 0.209373    
+subredditbusiness                                      -1.358e-02  1.353e-02  -1.004 0.315391    
+subredditEntrepreneur                                  -1.282e-02  1.353e-02  -0.948 0.343111    
+subredditEntrepreneurRideAlong                         -1.281e-02  1.353e-02  -0.947 0.343482    
+subredditEntrepreneurship                              -1.555e-02  1.353e-02  -1.149 0.250444    
+subredditgrowmybusiness                                -1.534e-02  1.353e-02  -1.134 0.256799    
+subredditladybusiness                                  -1.527e-02  1.354e-02  -1.128 0.259372    
+subredditsmallbusiness                                 -1.402e-02  1.353e-02  -1.037 0.299823    
+subredditStartup_Ideas                                 -1.341e-02  1.353e-02  -0.991 0.321562    
+subredditstartups                                      -1.548e-02  1.353e-02  -1.144 0.252547    
+subredditventurecapital                                -1.668e-02  1.353e-02  -1.232 0.217796    
+post_wordcount                                         -3.087e-04  1.067e-04  -2.894 0.003808 ** 
+title_wordcount                                        -1.710e-04  5.193e-05  -3.294 0.000988 ***
+comment_wordcount                                       1.543e-02  4.617e-05 334.299  < 2e-16 ***
+ups                                                     7.169e-04  1.009e-04   7.107 1.19e-12 ***
+author_premiumFalse                                     5.174e-04  2.106e-04   2.456 0.014031 *  
+author_premiumTrue                                     -2.257e-04  2.537e-04  -0.890 0.373533    
+is_selfTrue                                            -1.845e-03  3.447e-04  -5.352 8.70e-08 ***
+no_followTrue                                          -6.348e-04  1.715e-04  -3.702 0.000214 ***
+num_comments                                           -1.087e-03  8.523e-05 -12.751  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -6.302e-04  2.730e-04  -2.309 0.020967 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02705 on 369702 degrees of freedom
+Multiple R-squared:  0.2363,	Adjusted R-squared:  0.2362 
+F-statistic:  2790 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+joy_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.11268 -0.00995  0.00182  0.01465  0.44474 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             1.077e-01  1.474e-02   7.311 2.66e-13 ***
+predicted_gender_commentmale                           -4.166e-03  2.658e-04 -15.674  < 2e-16 ***
+predicted_gender_postmale                               1.540e-03  2.588e-04   5.950 2.68e-09 ***
+fear_post                                              -7.268e-05  8.909e-05  -0.816 0.414654    
+anger_post                                             -6.018e-04  1.181e-04  -5.095 3.48e-07 ***
+anticip_post                                           -5.849e-05  1.048e-04  -0.558 0.576678    
+trust_post                                             -2.470e-04  8.679e-05  -2.846 0.004428 ** 
+surprise_post                                          -1.154e-04  1.104e-04  -1.046 0.295674    
+positive_post                                          -6.986e-04  3.755e-04  -1.860 0.062858 .  
+negative_post                                          -1.582e-05  1.113e-04  -0.142 0.886973    
+sadness_post                                           -6.888e-05  1.164e-04  -0.592 0.553850    
+disgust_post                                            1.026e-04  1.126e-04   0.912 0.361847    
+joy_post                                                3.679e-04  1.088e-04   3.382 0.000718 ***
+care_post                                              -6.941e-04  2.564e-04  -2.707 0.006788 ** 
+fairness_post                                           1.834e-04  1.599e-04   1.147 0.251439    
+loyalty_post                                            2.725e-04  2.128e-04   1.280 0.200421    
+authority_post                                         -3.511e-04  2.051e-04  -1.712 0.086936 .  
+purity_post                                             5.900e-04  2.196e-04   2.687 0.007220 ** 
+non_moral_post                                          1.673e-04  1.182e-04   1.415 0.156927    
+sentistrength_pos_post                                  5.431e-05  9.261e-05   0.586 0.557607    
+sentistrength_neg_post                                  8.909e-05  8.755e-05   1.018 0.308870    
+sentistrength_neutral_post                              9.686e-05  7.642e-05   1.267 0.205005    
+subredditbusiness                                      -1.517e-02  1.473e-02  -1.030 0.303052    
+subredditEntrepreneur                                  -1.344e-02  1.473e-02  -0.913 0.361367    
+subredditEntrepreneurRideAlong                         -1.318e-02  1.473e-02  -0.895 0.370938    
+subredditEntrepreneurship                              -1.503e-02  1.474e-02  -1.020 0.307757    
+subredditgrowmybusiness                                -1.582e-02  1.473e-02  -1.074 0.282907    
+subredditladybusiness                                  -1.671e-02  1.474e-02  -1.133 0.257100    
+subredditsmallbusiness                                 -1.542e-02  1.473e-02  -1.047 0.295163    
+subredditStartup_Ideas                                 -1.389e-02  1.473e-02  -0.943 0.345691    
+subredditstartups                                      -1.523e-02  1.473e-02  -1.034 0.301031    
+subredditventurecapital                                -1.480e-02  1.474e-02  -1.004 0.315398    
+post_wordcount                                          3.648e-05  1.162e-04   0.314 0.753511    
+title_wordcount                                         5.136e-06  5.655e-05   0.091 0.927630    
+comment_wordcount                                       1.538e-02  5.028e-05 305.819  < 2e-16 ***
+ups                                                     1.555e-03  1.099e-04  14.155  < 2e-16 ***
+author_premiumFalse                                     4.902e-04  2.294e-04   2.137 0.032587 *  
+author_premiumTrue                                     -1.295e-04  2.763e-04  -0.469 0.639191    
+is_selfTrue                                            -8.724e-04  3.753e-04  -2.324 0.020106 *  
+no_followTrue                                          -4.619e-04  1.867e-04  -2.473 0.013380 *  
+num_comments                                           -1.814e-03  9.281e-05 -19.548  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -1.758e-03  2.973e-04  -5.914 3.35e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02945 on 369702 degrees of freedom
+Multiple R-squared:  0.2052,	Adjusted R-squared:  0.2051 
+F-statistic:  2328 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+care_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.39653 -0.16088  0.01147  0.17656  0.91595 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             8.157e-01  1.126e-01   7.243 4.40e-13 ***
+predicted_gender_commentmale                           -1.481e-03  2.032e-03  -0.729 0.465978    
+predicted_gender_postmale                              -8.636e-04  1.978e-03  -0.437 0.662393    
+fear_post                                               2.026e-03  6.810e-04   2.976 0.002925 ** 
+anger_post                                             -3.464e-03  9.028e-04  -3.837 0.000125 ***
+anticip_post                                           -4.148e-04  8.008e-04  -0.518 0.604522    
+trust_post                                             -3.789e-04  6.634e-04  -0.571 0.567879    
+surprise_post                                          -1.026e-04  8.435e-04  -0.122 0.903195    
+positive_post                                          -6.677e-04  2.870e-03  -0.233 0.816048    
+negative_post                                           3.516e-03  8.509e-04   4.132 3.60e-05 ***
+sadness_post                                           -4.383e-03  8.893e-04  -4.928 8.30e-07 ***
+disgust_post                                            2.944e-03  8.604e-04   3.422 0.000622 ***
+joy_post                                                1.526e-04  8.314e-04   0.183 0.854412    
+care_post                                               4.539e-03  1.960e-03   2.316 0.020557 *  
+fairness_post                                          -2.143e-03  1.223e-03  -1.753 0.079582 .  
+loyalty_post                                           -3.040e-03  1.627e-03  -1.869 0.061615 .  
+authority_post                                          7.521e-04  1.568e-03   0.480 0.631420    
+purity_post                                             2.830e-03  1.679e-03   1.686 0.091828 .  
+non_moral_post                                          7.739e-05  9.035e-04   0.086 0.931742    
+sentistrength_pos_post                                 -2.612e-03  7.078e-04  -3.691 0.000224 ***
+sentistrength_neg_post                                 -8.021e-04  6.692e-04  -1.199 0.230653    
+sentistrength_neutral_post                             -9.869e-04  5.841e-04  -1.690 0.091111 .  
+subredditbusiness                                      -6.425e-02  1.126e-01  -0.571 0.568227    
+subredditEntrepreneur                                  -6.689e-02  1.126e-01  -0.594 0.552398    
+subredditEntrepreneurRideAlong                         -8.205e-02  1.126e-01  -0.729 0.466173    
+subredditEntrepreneurship                              -8.499e-02  1.126e-01  -0.754 0.450578    
+subredditgrowmybusiness                                -9.265e-02  1.126e-01  -0.823 0.410668    
+subredditladybusiness                                  -7.909e-02  1.127e-01  -0.702 0.482711    
+subredditsmallbusiness                                 -7.532e-02  1.126e-01  -0.669 0.503449    
+subredditStartup_Ideas                                 -5.723e-02  1.126e-01  -0.508 0.611266    
+subredditstartups                                      -8.361e-02  1.126e-01  -0.743 0.457679    
+subredditventurecapital                                -8.819e-02  1.127e-01  -0.783 0.433743    
+post_wordcount                                         -1.880e-03  8.880e-04  -2.117 0.034218 *  
+title_wordcount                                         2.656e-03  4.322e-04   6.145 8.00e-10 ***
+comment_wordcount                                       3.101e-01  3.843e-04 806.870  < 2e-16 ***
+ups                                                    -3.686e-03  8.396e-04  -4.390 1.13e-05 ***
+author_premiumFalse                                     9.328e-04  1.753e-03   0.532 0.594671    
+author_premiumTrue                                     -1.083e-02  2.111e-03  -5.131 2.88e-07 ***
+is_selfTrue                                            -7.840e-03  2.869e-03  -2.733 0.006281 ** 
+no_followTrue                                          -1.519e-02  1.427e-03 -10.644  < 2e-16 ***
+num_comments                                           -2.339e-03  7.094e-04  -3.298 0.000974 ***
+predicted_gender_commentmale:predicted_gender_postmale  6.210e-03  2.272e-03   2.733 0.006274 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2251 on 369702 degrees of freedom
+Multiple R-squared:  0.6524,	Adjusted R-squared:  0.6524 
+F-statistic: 1.693e+04 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+fairness_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.33318 -0.15750  0.02573  0.17390  0.81513 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             0.9228557  0.1119258   8.245  < 2e-16 ***
+predicted_gender_commentmale                           -0.0337798  0.0020189 -16.731  < 2e-16 ***
+predicted_gender_postmale                               0.0038231  0.0019656   1.945 0.051778 .  
+fear_post                                               0.0010310  0.0006767   1.523 0.127654    
+anger_post                                             -0.0036529  0.0008971  -4.072 4.67e-05 ***
+anticip_post                                           -0.0004912  0.0007959  -0.617 0.537104    
+trust_post                                             -0.0008520  0.0006593  -1.292 0.196235    
+surprise_post                                          -0.0012700  0.0008383  -1.515 0.129777    
+positive_post                                          -0.0016680  0.0028524  -0.585 0.558700    
+negative_post                                           0.0043421  0.0008456   5.135 2.83e-07 ***
+sadness_post                                           -0.0044977  0.0008838  -5.089 3.60e-07 ***
+disgust_post                                            0.0034233  0.0008550   4.004 6.23e-05 ***
+joy_post                                                0.0004601  0.0008262   0.557 0.577647    
+care_post                                               0.0030845  0.0019475   1.584 0.113241    
+fairness_post                                           0.0013780  0.0012149   1.134 0.256700    
+loyalty_post                                           -0.0034251  0.0016164  -2.119 0.034097 *  
+authority_post                                          0.0000874  0.0015580   0.056 0.955266    
+purity_post                                             0.0022457  0.0016682   1.346 0.178253    
+non_moral_post                                          0.0011210  0.0008979   1.248 0.211862    
+sentistrength_pos_post                                 -0.0022025  0.0007034  -3.131 0.001742 ** 
+sentistrength_neg_post                                 -0.0005414  0.0006650  -0.814 0.415632    
+sentistrength_neutral_post                             -0.0006504  0.0005805  -1.120 0.262529    
+subredditbusiness                                      -0.1031907  0.1118940  -0.922 0.356415    
+subredditEntrepreneur                                  -0.1007209  0.1118781  -0.900 0.367975    
+subredditEntrepreneurRideAlong                         -0.1143068  0.1118876  -1.022 0.306961    
+subredditEntrepreneurship                              -0.1209138  0.1119459  -1.080 0.280094    
+subredditgrowmybusiness                                -0.1303790  0.1119129  -1.165 0.244018    
+subredditladybusiness                                  -0.1309650  0.1119718  -1.170 0.242153    
+subredditsmallbusiness                                 -0.1154277  0.1118800  -1.032 0.302209    
+subredditStartup_Ideas                                 -0.0946243  0.1119014  -0.846 0.397774    
+subredditstartups                                      -0.1216683  0.1118781  -1.088 0.276813    
+subredditventurecapital                                -0.1229667  0.1119522  -1.098 0.272037    
+post_wordcount                                         -0.0009823  0.0008825  -1.113 0.265669    
+title_wordcount                                         0.0026812  0.0004295   6.242 4.31e-10 ***
+comment_wordcount                                       0.2818516  0.0003819 738.073  < 2e-16 ***
+ups                                                    -0.0011762  0.0008344  -1.410 0.158652    
+author_premiumFalse                                     0.0035103  0.0017422   2.015 0.043916 *  
+author_premiumTrue                                     -0.0082812  0.0020983  -3.947 7.93e-05 ***
+is_selfTrue                                            -0.0108470  0.0028510  -3.805 0.000142 ***
+no_followTrue                                          -0.0127867  0.0014185  -9.014  < 2e-16 ***
+num_comments                                           -0.0037417  0.0007050  -5.308 1.11e-07 ***
+predicted_gender_commentmale:predicted_gender_postmale  0.0004125  0.0022580   0.183 0.855060    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2237 on 369702 degrees of freedom
+Multiple R-squared:  0.6064,	Adjusted R-squared:  0.6063 
+F-statistic: 1.389e+04 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+loyalty_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.46070 -0.17041  0.00657  0.18075  0.96985 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             7.532e-01  1.143e-01   6.589 4.45e-11 ***
+predicted_gender_commentmale                           -3.778e-03  2.062e-03  -1.832 0.066978 .  
+predicted_gender_postmale                               1.776e-04  2.008e-03   0.088 0.929513    
+fear_post                                               1.997e-03  6.912e-04   2.889 0.003863 ** 
+anger_post                                             -2.872e-03  9.164e-04  -3.135 0.001721 ** 
+anticip_post                                            4.066e-04  8.129e-04   0.500 0.616972    
+trust_post                                             -5.050e-04  6.734e-04  -0.750 0.453301    
+surprise_post                                          -9.028e-04  8.562e-04  -1.054 0.291731    
+positive_post                                           2.798e-04  2.914e-03   0.096 0.923485    
+negative_post                                           3.760e-03  8.638e-04   4.353 1.34e-05 ***
+sadness_post                                           -4.525e-03  9.027e-04  -5.012 5.38e-07 ***
+disgust_post                                            2.892e-03  8.733e-04   3.312 0.000927 ***
+joy_post                                                8.303e-04  8.439e-04   0.984 0.325191    
+care_post                                               1.735e-03  1.989e-03   0.872 0.383180    
+fairness_post                                          -1.430e-03  1.241e-03  -1.153 0.249041    
+loyalty_post                                            4.315e-05  1.651e-03   0.026 0.979149    
+authority_post                                         -2.756e-04  1.591e-03  -0.173 0.862509    
+purity_post                                             3.070e-03  1.704e-03   1.801 0.071632 .  
+non_moral_post                                          8.932e-04  9.171e-04   0.974 0.330069    
+sentistrength_pos_post                                 -2.480e-03  7.185e-04  -3.451 0.000558 ***
+sentistrength_neg_post                                 -4.030e-04  6.793e-04  -0.593 0.552995    
+sentistrength_neutral_post                             -9.128e-04  5.929e-04  -1.540 0.123670    
+subredditbusiness                                      -1.809e-02  1.143e-01  -0.158 0.874230    
+subredditEntrepreneur                                  -2.486e-02  1.143e-01  -0.218 0.827767    
+subredditEntrepreneurRideAlong                         -3.688e-02  1.143e-01  -0.323 0.746943    
+subredditEntrepreneurship                              -3.937e-02  1.143e-01  -0.344 0.730640    
+subredditgrowmybusiness                                -4.597e-02  1.143e-01  -0.402 0.687555    
+subredditladybusiness                                  -2.844e-02  1.144e-01  -0.249 0.803599    
+subredditsmallbusiness                                 -3.111e-02  1.143e-01  -0.272 0.785455    
+subredditStartup_Ideas                                 -1.732e-02  1.143e-01  -0.151 0.879585    
+subredditstartups                                      -3.953e-02  1.143e-01  -0.346 0.729424    
+subredditventurecapital                                -4.381e-02  1.144e-01  -0.383 0.701608    
+post_wordcount                                          3.578e-04  9.014e-04   0.397 0.691372    
+title_wordcount                                         2.626e-03  4.387e-04   5.986 2.16e-09 ***
+comment_wordcount                                       3.249e-01  3.901e-04 833.059  < 2e-16 ***
+ups                                                    -2.226e-03  8.523e-04  -2.612 0.008996 ** 
+author_premiumFalse                                     8.371e-04  1.779e-03   0.470 0.638045    
+author_premiumTrue                                     -8.463e-03  2.143e-03  -3.948 7.87e-05 ***
+is_selfTrue                                            -6.519e-03  2.912e-03  -2.238 0.025189 *  
+no_followTrue                                          -1.380e-02  1.449e-03  -9.525  < 2e-16 ***
+num_comments                                           -2.433e-03  7.201e-04  -3.378 0.000729 ***
+predicted_gender_commentmale:predicted_gender_postmale  5.562e-03  2.306e-03   2.412 0.015880 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2285 on 369702 degrees of freedom
+Multiple R-squared:  0.6668,	Adjusted R-squared:  0.6668 
+F-statistic: 1.805e+04 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+authority_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.70420 -0.16912  0.00626  0.17886  0.97976 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             0.7817928  0.1152216   6.785 1.16e-11 ***
+predicted_gender_commentmale                           -0.0051367  0.0020784  -2.471 0.013456 *  
+predicted_gender_postmale                              -0.0033985  0.0020235  -1.680 0.093050 .  
+fear_post                                               0.0017359  0.0006967   2.492 0.012714 *  
+anger_post                                             -0.0032071  0.0009236  -3.472 0.000516 ***
+anticip_post                                           -0.0006257  0.0008193  -0.764 0.445046    
+trust_post                                             -0.0005485  0.0006787  -0.808 0.419014    
+surprise_post                                          -0.0009544  0.0008630  -1.106 0.268739    
+positive_post                                          -0.0002424  0.0029364  -0.083 0.934206    
+negative_post                                           0.0031701  0.0008706   3.642 0.000271 ***
+sadness_post                                           -0.0035111  0.0009098  -3.859 0.000114 ***
+disgust_post                                            0.0027395  0.0008802   3.112 0.001856 ** 
+joy_post                                                0.0009068  0.0008506   1.066 0.286366    
+care_post                                               0.0021818  0.0020049   1.088 0.276494    
+fairness_post                                          -0.0010660  0.0012507  -0.852 0.394014    
+loyalty_post                                           -0.0031079  0.0016640  -1.868 0.061810 .  
+authority_post                                          0.0037768  0.0016039   2.355 0.018533 *  
+purity_post                                             0.0028342  0.0017174   1.650 0.098878 .  
+non_moral_post                                          0.0019626  0.0009243   2.123 0.033732 *  
+sentistrength_pos_post                                 -0.0027157  0.0007241  -3.750 0.000177 ***
+sentistrength_neg_post                                 -0.0006591  0.0006846  -0.963 0.335650    
+sentistrength_neutral_post                             -0.0012271  0.0005976  -2.054 0.040017 *  
+subredditbusiness                                      -0.0471502  0.1151889  -0.409 0.682298    
+subredditEntrepreneur                                  -0.0533557  0.1151725  -0.463 0.643173    
+subredditEntrepreneurRideAlong                         -0.0673119  0.1151823  -0.584 0.558955    
+subredditEntrepreneurship                              -0.0657925  0.1152423  -0.571 0.568064    
+subredditgrowmybusiness                                -0.0728024  0.1152083  -0.632 0.527440    
+subredditladybusiness                                  -0.0648994  0.1152690  -0.563 0.573417    
+subredditsmallbusiness                                 -0.0583005  0.1151745  -0.506 0.612721    
+subredditStartup_Ideas                                 -0.0468670  0.1151965  -0.407 0.684123    
+subredditstartups                                      -0.0665487  0.1151726  -0.578 0.563388    
+subredditventurecapital                                -0.0726036  0.1152488  -0.630 0.528713    
+post_wordcount                                         -0.0002254  0.0009084  -0.248 0.804008    
+title_wordcount                                         0.0033142  0.0004422   7.495 6.63e-14 ***
+comment_wordcount                                       0.3213056  0.0003931 817.322  < 2e-16 ***
+ups                                                    -0.0037846  0.0008589  -4.406 1.05e-05 ***
+author_premiumFalse                                     0.0015731  0.0017935   0.877 0.380409    
+author_premiumTrue                                     -0.0105073  0.0021601  -4.864 1.15e-06 ***
+is_selfTrue                                            -0.0052136  0.0029349  -1.776 0.075664 .  
+no_followTrue                                          -0.0137890  0.0014602  -9.443  < 2e-16 ***
+num_comments                                           -0.0009148  0.0007257  -1.260 0.207502    
+predicted_gender_commentmale:predicted_gender_postmale  0.0087755  0.0023245   3.775 0.000160 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2303 on 369702 degrees of freedom
+Multiple R-squared:  0.6587,	Adjusted R-squared:  0.6586 
+F-statistic: 1.74e+04 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+purity_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.6994 -0.1646  0.0162  0.1814  0.9029 
+
+Coefficients:
+                                                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             7.388e-01  1.147e-01   6.443 1.17e-10 ***
+predicted_gender_commentmale                           -7.360e-03  2.068e-03  -3.558 0.000374 ***
+predicted_gender_postmale                               2.406e-03  2.014e-03   1.195 0.232253    
+fear_post                                               1.934e-03  6.933e-04   2.790 0.005270 ** 
+anger_post                                             -3.039e-03  9.191e-04  -3.307 0.000944 ***
+anticip_post                                           -6.563e-05  8.154e-04  -0.080 0.935849    
+trust_post                                             -4.219e-04  6.754e-04  -0.625 0.532168    
+surprise_post                                          -4.244e-04  8.588e-04  -0.494 0.621194    
+positive_post                                           1.622e-03  2.922e-03   0.555 0.578764    
+negative_post                                           4.113e-03  8.664e-04   4.747 2.06e-06 ***
+sadness_post                                           -3.898e-03  9.055e-04  -4.305 1.67e-05 ***
+disgust_post                                            3.408e-03  8.760e-04   3.890 0.000100 ***
+joy_post                                                5.756e-04  8.465e-04   0.680 0.496496    
+care_post                                               2.678e-03  1.995e-03   1.342 0.179566    
+fairness_post                                          -1.508e-03  1.245e-03  -1.212 0.225557    
+loyalty_post                                           -1.912e-03  1.656e-03  -1.155 0.248265    
+authority_post                                          2.919e-04  1.596e-03   0.183 0.854906    
+purity_post                                             3.814e-03  1.709e-03   2.231 0.025660 *  
+non_moral_post                                          7.667e-04  9.199e-04   0.833 0.404574    
+sentistrength_pos_post                                 -2.121e-03  7.207e-04  -2.943 0.003247 ** 
+sentistrength_neg_post                                 -8.778e-04  6.813e-04  -1.288 0.197621    
+sentistrength_neutral_post                             -9.743e-04  5.947e-04  -1.638 0.101375    
+subredditbusiness                                       3.271e-02  1.146e-01   0.285 0.775405    
+subredditEntrepreneur                                   2.995e-02  1.146e-01   0.261 0.793860    
+subredditEntrepreneurRideAlong                          1.326e-02  1.146e-01   0.116 0.907892    
+subredditEntrepreneurship                               9.453e-03  1.147e-01   0.082 0.934313    
+subredditgrowmybusiness                                -1.391e-03  1.147e-01  -0.012 0.990319    
+subredditladybusiness                                   1.615e-02  1.147e-01   0.141 0.888050    
+subredditsmallbusiness                                  1.982e-02  1.146e-01   0.173 0.862702    
+subredditStartup_Ideas                                  3.286e-02  1.146e-01   0.287 0.774429    
+subredditstartups                                       1.183e-02  1.146e-01   0.103 0.917792    
+subredditventurecapital                                 9.099e-03  1.147e-01   0.079 0.936772    
+post_wordcount                                         -2.402e-03  9.041e-04  -2.657 0.007888 ** 
+title_wordcount                                         2.159e-03  4.400e-04   4.906 9.32e-07 ***
+comment_wordcount                                       3.058e-01  3.912e-04 781.633  < 2e-16 ***
+ups                                                    -7.443e-04  8.548e-04  -0.871 0.383902    
+author_premiumFalse                                     1.756e-03  1.785e-03   0.984 0.325132    
+author_premiumTrue                                     -9.516e-03  2.150e-03  -4.426 9.58e-06 ***
+is_selfTrue                                            -9.170e-03  2.921e-03  -3.140 0.001692 ** 
+no_followTrue                                          -1.408e-02  1.453e-03  -9.689  < 2e-16 ***
+num_comments                                           -4.258e-03  7.223e-04  -5.896 3.73e-09 ***
+predicted_gender_commentmale:predicted_gender_postmale  2.987e-03  2.313e-03   1.291 0.196565    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2292 on 369702 degrees of freedom
+Multiple R-squared:  0.6365,	Adjusted R-squared:  0.6364 
+F-statistic: 1.579e+04 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+non_moral_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.44953 -0.10630 -0.02833  0.07944  1.28230 
+
+Coefficients:
+                                                         Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                                            -2.455e-02  7.536e-02   -0.326 0.744598    
+predicted_gender_commentmale                            4.404e-02  1.359e-03   32.398  < 2e-16 ***
+predicted_gender_postmale                              -3.904e-03  1.324e-03   -2.950 0.003179 ** 
+fear_post                                              -7.303e-04  4.557e-04   -1.603 0.109009    
+anger_post                                              3.149e-03  6.041e-04    5.213 1.86e-07 ***
+anticip_post                                            4.454e-04  5.359e-04    0.831 0.405935    
+trust_post                                              9.508e-04  4.439e-04    2.142 0.032201 *  
+surprise_post                                           1.890e-03  5.644e-04    3.349 0.000812 ***
+positive_post                                           2.964e-03  1.921e-03    1.543 0.122735    
+negative_post                                          -2.008e-03  5.694e-04   -3.526 0.000422 ***
+sadness_post                                            2.811e-03  5.951e-04    4.723 2.32e-06 ***
+disgust_post                                           -2.802e-03  5.757e-04   -4.867 1.13e-06 ***
+joy_post                                               -6.773e-04  5.563e-04   -1.217 0.223433    
+care_post                                               2.750e-04  1.311e-03    0.210 0.833891    
+fairness_post                                           4.885e-04  8.180e-04    0.597 0.550428    
+loyalty_post                                           -6.922e-05  1.088e-03   -0.064 0.949287    
+authority_post                                          7.008e-04  1.049e-03    0.668 0.504116    
+purity_post                                            -1.260e-03  1.123e-03   -1.121 0.262105    
+non_moral_post                                          1.532e-03  6.046e-04    2.533 0.011293 *  
+sentistrength_pos_post                                  6.203e-04  4.736e-04    1.310 0.190280    
+sentistrength_neg_post                                  9.063e-05  4.478e-04    0.202 0.839605    
+sentistrength_neutral_post                              8.914e-04  3.908e-04    2.281 0.022559 *  
+subredditbusiness                                       1.017e-01  7.534e-02    1.350 0.176894    
+subredditEntrepreneur                                   9.174e-02  7.533e-02    1.218 0.223281    
+subredditEntrepreneurRideAlong                          9.800e-02  7.534e-02    1.301 0.193298    
+subredditEntrepreneurship                               1.033e-01  7.538e-02    1.371 0.170371    
+subredditgrowmybusiness                                 1.070e-01  7.535e-02    1.420 0.155546    
+subredditladybusiness                                   1.183e-01  7.539e-02    1.569 0.116574    
+subredditsmallbusiness                                  1.020e-01  7.533e-02    1.354 0.175792    
+subredditStartup_Ideas                                  8.649e-02  7.535e-02    1.148 0.251033    
+subredditstartups                                       1.059e-01  7.533e-02    1.406 0.159805    
+subredditventurecapital                                 1.134e-01  7.538e-02    1.504 0.132574    
+post_wordcount                                         -1.144e-03  5.942e-04   -1.926 0.054131 .  
+title_wordcount                                        -1.505e-03  2.892e-04   -5.206 1.94e-07 ***
+comment_wordcount                                      -1.578e-01  2.571e-04 -613.838  < 2e-16 ***
+ups                                                    -2.165e-03  5.618e-04   -3.853 0.000117 ***
+author_premiumFalse                                    -3.242e-03  1.173e-03   -2.764 0.005707 ** 
+author_premiumTrue                                      4.987e-03  1.413e-03    3.530 0.000416 ***
+is_selfTrue                                             1.150e-02  1.920e-03    5.993 2.06e-09 ***
+no_followTrue                                           5.950e-03  9.551e-04    6.230 4.66e-10 ***
+num_comments                                            5.770e-03  4.747e-04   12.155  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale  3.412e-03  1.520e-03    2.244 0.024819 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1506 on 369702 degrees of freedom
+Multiple R-squared:  0.5128,	Adjusted R-squared:  0.5127 
+F-statistic:  9490 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+sentistrength_pos_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.2085 -0.6545 -0.1403  0.5818  4.0641 
+
+Coefficients:
+                                                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             2.304167   0.429797   5.361 8.28e-08 ***
+predicted_gender_commentmale                           -0.305892   0.007753 -39.456  < 2e-16 ***
+predicted_gender_postmale                               0.003935   0.007548   0.521 0.602144    
+fear_post                                              -0.004097   0.002599  -1.577 0.114875    
+anger_post                                             -0.015685   0.003445  -4.553 5.29e-06 ***
+anticip_post                                           -0.004542   0.003056  -1.486 0.137267    
+trust_post                                             -0.007197   0.002532  -2.843 0.004469 ** 
+surprise_post                                          -0.020523   0.003219  -6.376 1.83e-10 ***
+positive_post                                          -0.031862   0.010953  -2.909 0.003627 ** 
+negative_post                                          -0.015686   0.003247  -4.831 1.36e-06 ***
+sadness_post                                            0.010536   0.003394   3.105 0.001906 ** 
+disgust_post                                           -0.001340   0.003283  -0.408 0.683093    
+joy_post                                                0.015879   0.003173   5.005 5.59e-07 ***
+care_post                                              -0.028214   0.007479  -3.773 0.000162 ***
+fairness_post                                           0.005998   0.004665   1.286 0.198566    
+loyalty_post                                            0.001459   0.006207   0.235 0.814184    
+authority_post                                         -0.003230   0.005983  -0.540 0.589296    
+purity_post                                             0.013678   0.006406   2.135 0.032745 *  
+non_moral_post                                         -0.003126   0.003448  -0.907 0.364628    
+sentistrength_pos_post                                  0.072914   0.002701  26.993  < 2e-16 ***
+sentistrength_neg_post                                 -0.004764   0.002554  -1.865 0.062125 .  
+sentistrength_neutral_post                              0.018831   0.002229   8.448  < 2e-16 ***
+subredditbusiness                                      -0.247951   0.429675  -0.577 0.563894    
+subredditEntrepreneur                                   0.047760   0.429614   0.111 0.911483    
+subredditEntrepreneurRideAlong                          0.146311   0.429650   0.341 0.733453    
+subredditEntrepreneurship                               0.104921   0.429874   0.244 0.807174    
+subredditgrowmybusiness                                 0.197278   0.429747   0.459 0.646195    
+subredditladybusiness                                   0.432262   0.429974   1.005 0.314743    
+subredditsmallbusiness                                 -0.064454   0.429621  -0.150 0.880745    
+subredditStartup_Ideas                                  0.004354   0.429703   0.010 0.991915    
+subredditstartups                                       0.032451   0.429614   0.076 0.939788    
+subredditventurecapital                                -0.015452   0.429898  -0.036 0.971328    
+post_wordcount                                          0.052098   0.003389  15.374  < 2e-16 ***
+title_wordcount                                        -0.003415   0.001649  -2.070 0.038413 *  
+comment_wordcount                                       0.369116   0.001466 251.715  < 2e-16 ***
+ups                                                     0.097219   0.003204  30.343  < 2e-16 ***
+author_premiumFalse                                     0.052787   0.006690   7.891 3.02e-15 ***
+author_premiumTrue                                      0.103873   0.008058  12.891  < 2e-16 ***
+is_selfTrue                                            -0.148769   0.010948 -13.589  < 2e-16 ***
+no_followTrue                                           0.037507   0.005447   6.886 5.75e-12 ***
+num_comments                                           -0.064712   0.002707 -23.905  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -0.044343   0.008671  -5.114 3.15e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8591 on 369702 degrees of freedom
+Multiple R-squared:  0.1951,	Adjusted R-squared:  0.195 
+F-statistic:  2185 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+sentistrength_neg_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.2954 -0.3317  0.1470  0.5708  1.8337 
+
+Coefficients:
+                                                         Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                                            -1.9202815  0.3995419   -4.806 1.54e-06 ***
+predicted_gender_commentmale                           -0.0104710  0.0072070   -1.453 0.146257    
+predicted_gender_postmale                               0.0257096  0.0070167    3.664 0.000248 ***
+fear_post                                               0.0033771  0.0024157    1.398 0.162124    
+anger_post                                             -0.0205772  0.0032025   -6.425 1.32e-10 ***
+anticip_post                                            0.0097330  0.0028410    3.426 0.000613 ***
+trust_post                                              0.0004828  0.0023534    0.205 0.837450    
+surprise_post                                          -0.0060185  0.0029924   -2.011 0.044296 *  
+positive_post                                           0.0030951  0.0101822    0.304 0.761149    
+negative_post                                          -0.0009286  0.0030187   -0.308 0.758369    
+sadness_post                                            0.0056426  0.0031549    1.789 0.073690 .  
+disgust_post                                            0.0076611  0.0030522    2.510 0.012072 *  
+joy_post                                                0.0173712  0.0029494    5.890 3.87e-09 ***
+care_post                                               0.0073383  0.0069521    1.056 0.291178    
+fairness_post                                           0.0016314  0.0043369    0.376 0.706796    
+loyalty_post                                            0.0057286  0.0057702    0.993 0.320815    
+authority_post                                         -0.0122499  0.0055616   -2.203 0.027623 *  
+purity_post                                            -0.0018864  0.0059551   -0.317 0.751412    
+non_moral_post                                         -0.0036927  0.0032051   -1.152 0.249270    
+sentistrength_pos_post                                 -0.0059039  0.0025110   -2.351 0.018713 *  
+sentistrength_neg_post                                  0.0705573  0.0023740   29.721  < 2e-16 ***
+sentistrength_neutral_post                              0.0326640  0.0020721   15.764  < 2e-16 ***
+subredditbusiness                                       0.0204337  0.3994283    0.051 0.959200    
+subredditEntrepreneur                                   0.2342627  0.3993716    0.587 0.557487    
+subredditEntrepreneurRideAlong                          0.3388874  0.3994054    0.848 0.396171    
+subredditEntrepreneurship                               0.2572975  0.3996136    0.644 0.519663    
+subredditgrowmybusiness                                 0.3725072  0.3994957    0.932 0.351108    
+subredditladybusiness                                   0.2539535  0.3997061    0.635 0.525200    
+subredditsmallbusiness                                  0.2084263  0.3993783    0.522 0.601756    
+subredditStartup_Ideas                                  0.3292796  0.3994546    0.824 0.409757    
+subredditstartups                                       0.2487206  0.3993717    0.623 0.533430    
+subredditventurecapital                                 0.3515981  0.3996362    0.880 0.378971    
+post_wordcount                                          0.0689463  0.0031501   21.887  < 2e-16 ***
+title_wordcount                                         0.0087822  0.0015333    5.728 1.02e-08 ***
+comment_wordcount                                      -0.4318674  0.0013632 -316.809  < 2e-16 ***
+ups                                                     0.0249555  0.0029785    8.379  < 2e-16 ***
+author_premiumFalse                                     0.0137774  0.0062190    2.215 0.026735 *  
+author_premiumTrue                                      0.1050781  0.0074904   14.028  < 2e-16 ***
+is_selfTrue                                             0.0064195  0.0101771    0.631 0.528186    
+no_followTrue                                           0.1027057  0.0050635   20.283  < 2e-16 ***
+num_comments                                            0.0014275  0.0025165    0.567 0.570549    
+predicted_gender_commentmale:predicted_gender_postmale -0.0138124  0.0080603   -1.714 0.086598 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7986 on 369702 degrees of freedom
+Multiple R-squared:  0.2409,	Adjusted R-squared:  0.2409 
+F-statistic:  2862 on 41 and 369702 DF,  p-value: < 2.2e-16
+
+
+sentistrength_neutral_comment
+
+Call:
+lm(formula = response ~ . + predicted_gender_post:predicted_gender_comment, 
+    data = d)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.90810 -0.78737 -0.07971  0.81503  1.90100 
+
+Coefficients:
+                                                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                             0.160139   0.408960   0.392 0.695372    
+predicted_gender_commentmale                           -0.174804   0.007377 -23.696  < 2e-16 ***
+predicted_gender_postmale                               0.010457   0.007182   1.456 0.145384    
+fear_post                                               0.001349   0.002473   0.546 0.585242    
+anger_post                                             -0.021433   0.003278  -6.538 6.22e-11 ***
+anticip_post                                            0.006195   0.002908   2.130 0.033153 *  
+trust_post                                             -0.002044   0.002409  -0.849 0.396048    
+surprise_post                                          -0.015848   0.003063  -5.174 2.29e-07 ***
+positive_post                                          -0.009420   0.010422  -0.904 0.366087    
+negative_post                                          -0.010858   0.003090  -3.514 0.000441 ***
+sadness_post                                            0.012749   0.003229   3.948 7.88e-05 ***
+disgust_post                                            0.005412   0.003124   1.732 0.083206 .  
+joy_post                                                0.020182   0.003019   6.685 2.31e-11 ***
+care_post                                              -0.008271   0.007116  -1.162 0.245097    
+fairness_post                                          -0.001078   0.004439  -0.243 0.808068    
+loyalty_post                                            0.002878   0.005906   0.487 0.626002    
+authority_post                                         -0.012744   0.005693  -2.239 0.025175 *  
+purity_post                                             0.008058   0.006095   1.322 0.186167    
+non_moral_post                                         -0.008845   0.003281  -2.696 0.007019 ** 
+sentistrength_pos_post                                  0.030941   0.002570  12.038  < 2e-16 ***
+sentistrength_neg_post                                  0.036974   0.002430  15.216  < 2e-16 ***
+sentistrength_neutral_post                              0.039083   0.002121  18.427  < 2e-16 ***
+subredditbusiness                                      -0.215883   0.408844  -0.528 0.597477    
+subredditEntrepreneur                                   0.086572   0.408786   0.212 0.832280    
+subredditEntrepreneurRideAlong                          0.214670   0.408821   0.525 0.599517    
+subredditEntrepreneurship                               0.154100   0.409034   0.377 0.706367    
+subredditgrowmybusiness                                 0.282659   0.408913   0.691 0.489412    
+subredditladybusiness                                   0.266882   0.409128   0.652 0.514196    
+subredditsmallbusiness                                  0.002777   0.408793   0.007 0.994580    
+subredditStartup_Ideas                                  0.136246   0.408871   0.333 0.738965    
+subredditstartups                                       0.087958   0.408786   0.215 0.829635    
+subredditventurecapital                                 0.134932   0.409057   0.330 0.741504    
+post_wordcount                                          0.066636   0.003224  20.666  < 2e-16 ***
+title_wordcount                                         0.004119   0.001569   2.624 0.008684 ** 
+comment_wordcount                                      -0.130874   0.001395 -93.796  < 2e-16 ***
+ups                                                     0.066092   0.003049  21.679  < 2e-16 ***
+author_premiumFalse                                     0.038820   0.006366   6.098 1.07e-09 ***
+author_premiumTrue                                      0.134054   0.007667  17.485  < 2e-16 ***
+is_selfTrue                                            -0.062135   0.010417  -5.965 2.45e-09 ***
+no_followTrue                                           0.105901   0.005183  20.433  < 2e-16 ***
+num_comments                                           -0.027289   0.002576 -10.594  < 2e-16 ***
+predicted_gender_commentmale:predicted_gender_postmale -0.028742   0.008250  -3.484 0.000495 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8175 on 369702 degrees of freedom
+Multiple R-squared:  0.08349,	Adjusted R-squared:  0.08338 
+F-statistic: 821.4 on 41 and 369702 DF,  p-value: < 2.2e-16
+
