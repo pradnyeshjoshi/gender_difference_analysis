@@ -1,0 +1,855 @@
+
+fear_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 44.35%
+Confusion matrix:
+      0      1 class.error
+0 94437  89995   0.4879576
+1 73985 111327   0.3992456
+                                    0         1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment   14.0848982 -1.472633            13.105240       1703.66521
+predicted_gender_post      -0.6178920  4.206788             6.817901        238.23158
+fear_post                   0.4470942 14.102584            28.221859       2101.47548
+anger_post                  0.4437752  6.861882            26.312425       1881.14486
+anticip_post               -0.7298965 10.168593            15.515183       1911.13004
+trust_post                  1.5918028  7.279646            18.470885       1947.63707
+surprise_post               1.8707918  8.879004            18.913550       1928.30532
+positive_post              -0.8216506  6.542027            16.797173       1926.54336
+negative_post              -1.8499573 10.455205            12.746108       1907.88351
+sadness_post               -0.9309969  9.595957            22.959603       1890.71548
+disgust_post               -1.1306130  8.546309            18.211163       1871.76174
+joy_post                    0.2534567  6.075308            18.329508       1906.80413
+care_post                   1.2748845  2.759858            14.794659        974.74313
+fairness_post              -0.2963413  3.063231             9.056908        891.58282
+loyalty_post                1.1225686  3.122747            14.653064        955.92238
+authority_post              2.4155762  3.029440            14.300523        983.39622
+purity_post                -0.9477007  4.268431            11.909459        876.02829
+non_moral_post              0.5519260  4.092485            14.919604       1157.15653
+sentistrength_pos_post     -0.3283561  6.479882            10.158431        620.91968
+sentistrength_neg_post     -1.0035720  5.354033             9.865389        681.07175
+sentistrength_neutral_post -0.8381300  4.571790            10.653433        393.99092
+subreddit                   4.2160391  3.672854            16.370083       1208.29739
+post_wordcount              1.2209241  3.536327            16.417622       1613.48061
+title_wordcount             0.5437527  8.235588            16.170118       1778.42314
+comment_wordcount          86.7239041 62.621236           119.104536      25510.40315
+ups                         1.9461933  8.187518            20.452888       2041.22081
+author_premium             -1.2811783  3.748543             8.791478        297.76945
+is_self                    -1.0994792  1.728956             2.966287         40.58073
+no_follow                  -1.1243179  2.736643             3.735578        200.67342
+num_comments                3.8296179  7.568803            17.634160       2282.38346
+
+anger_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 43.85%
+Confusion matrix:
+      0      1 class.error
+0 97492  86845   0.4711208
+1 75271 110136   0.4059771
+                                     0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment   12.32234186  3.7808049            13.419429       2577.57222
+predicted_gender_post       0.61479513  4.3737254             6.708431        225.11344
+fear_post                   1.66569361  7.6129266            25.138558       1815.62642
+anger_post                  3.70840004 12.7573619            26.182723       2016.66866
+anticip_post                2.31486159  6.7942821            14.877161       1873.15327
+trust_post                  4.07227429  6.7290794            17.188509       1860.94464
+surprise_post               3.58795091  8.7801834            16.787304       1825.73103
+positive_post               0.11695991 15.0210278            20.187066       1896.59257
+negative_post               3.64109114  5.2213819            26.322679       1817.27400
+sadness_post                3.38803059  7.6247401            17.759388       1833.04772
+disgust_post                3.48507776  5.7293446            19.872689       1820.28767
+joy_post                    3.06508728  8.8615372            14.440245       1881.42279
+care_post                  -0.23181872  3.3442332            11.017958        913.41349
+fairness_post               0.80279759  3.0500716            13.614060        860.36511
+loyalty_post                0.21830162  4.3686961            11.134959        916.77211
+authority_post              1.13202680  2.6992464            14.142181        941.38063
+purity_post                -0.03690615  3.9180490            10.170205        831.84493
+non_moral_post              0.45321234  3.6825155            15.524361       1121.70012
+sentistrength_pos_post      2.35396622  2.2451368             8.116960        581.42387
+sentistrength_neg_post      1.25836616  5.6424343            11.664372        647.45427
+sentistrength_neutral_post  2.38195736  3.9416547             6.652919        351.81934
+subreddit                   9.43012453  2.9383401            19.549880       1176.21386
+post_wordcount              1.00709378  3.9787434            12.542154       1567.59740
+title_wordcount             2.86356776  7.7918102            17.566976       1701.62349
+comment_wordcount          72.56917574 72.2639291           129.489663      25692.53588
+ups                         4.54309652  5.7122342            21.304996       1948.74196
+author_premium              2.33558591 -0.4858462             7.530388        292.18655
+is_self                     2.27486911  0.4888793             4.803151         48.44678
+no_follow                   0.96438717  3.2508052             8.952385        211.76308
+num_comments                5.64139048  3.4460783            21.327653       2236.24062
+
+anticip_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 43.24%
+Confusion matrix:
+      0      1 class.error
+0 84948  94578   0.5268206
+1 65304 124914   0.3433114
+                                    0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment    9.0124672   6.208355            13.304890       2467.79591
+predicted_gender_post      -2.9295871   7.365690             8.521122        218.92623
+fear_post                  -3.7694049  11.728812            18.752704       1722.40094
+anger_post                 -4.1226770  13.577616            19.689617       1711.77882
+anticip_post               -7.2297803  17.597688            23.817056       1969.67739
+trust_post                 -6.1369722  15.349908            24.673383       1727.99293
+surprise_post              -5.4887836  16.243139            24.709657       1731.44923
+positive_post              -3.5194239  10.991910            20.144138       1753.35366
+negative_post              -6.3044339  13.825809            16.088603       1749.12875
+sadness_post               -7.8520537  15.433659            23.550786       1706.11005
+disgust_post               -5.9791926  13.761709            16.552223       1722.77419
+joy_post                   -6.4118408  13.766925            19.410215       1747.04342
+care_post                  -2.5210384   8.647389            14.827859        930.72978
+fairness_post              -0.3047769   4.629172            13.623388        912.39434
+loyalty_post               -2.1960470   5.362952             9.229907        935.99610
+authority_post             -2.1737590   6.665904            14.575303        964.77771
+purity_post                -2.1318510   5.714258            12.118565        853.19352
+non_moral_post             -0.9996727   5.129289            12.739019       1146.79272
+sentistrength_pos_post     -3.2494437   7.122411            12.377980        553.45251
+sentistrength_neg_post     -2.7514945   7.923015            10.417515        559.84491
+sentistrength_neutral_post -1.4899217   5.896120             7.587741        330.65235
+subreddit                   2.7097255   6.534719            15.862640       1272.54099
+post_wordcount             -2.1563766   7.008493            16.559052       1482.23199
+title_wordcount            -6.4357383  16.067016            19.602050       1625.96007
+comment_wordcount          70.1381852 105.425157           118.530358      25570.36002
+ups                        -7.6869111  15.519655            19.233647       1886.94470
+author_premium             -3.7911164   4.984260             5.849103        292.07547
+is_self                    -1.0915255   2.359288             4.479224         80.38424
+no_follow                  -3.3926868   4.632026             6.526604        184.64011
+num_comments               -1.6713316  12.078986            27.579346       2133.05522
+
+trust_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 38.65%
+Confusion matrix:
+      0      1 class.error
+0 96690  88066   0.4766611
+1 54851 130137   0.2965111
+                                    0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment   -15.028794  32.614245            21.093155       1368.31791
+predicted_gender_post        3.008618   5.326569             8.000648        354.53322
+fear_post                    3.855440  11.286012            20.501030       2702.70202
+anger_post                   4.566487  12.050147            23.932518       2630.04345
+anticip_post                -1.340822  14.942112            21.511473       2676.51582
+trust_post                   1.245911  16.239837            23.199015       2891.66850
+surprise_post                1.892573  13.411747            26.853268       2675.47438
+positive_post                4.593167  12.482608            20.077197       2728.36719
+negative_post                1.681291  11.017781            23.753518       2691.24426
+sadness_post                 2.434045  11.026384            20.054833       2693.69899
+disgust_post                 4.178789   9.681950            18.448723       2670.16067
+joy_post                     2.617182  12.257341            21.669668       2671.73554
+care_post                    1.751364   5.320479            11.347042       1338.48083
+fairness_post                2.992828   4.037461             8.821455       1242.46894
+loyalty_post                 2.619486   5.020532            13.250798       1288.55515
+authority_post               1.563763   6.109572            10.172521       1402.07614
+purity_post                  5.527155   1.867733            11.372406       1195.17100
+non_moral_post               1.886090   7.683556            13.614243       1590.61479
+sentistrength_pos_post       3.168424   6.991638             9.434361        831.52553
+sentistrength_neg_post       1.745563   8.106790            10.661266        927.39888
+sentistrength_neutral_post   2.673994   4.222539            11.083915        512.24754
+subreddit                    3.172841   9.911178            19.262151       1793.14341
+post_wordcount               3.853113   9.360426            14.273144       2324.56900
+title_wordcount              4.205304  10.459329            19.493150       2417.30918
+comment_wordcount          172.497466 158.632600           198.180966      37899.63362
+ups                          2.524123  10.811260            19.397245       2982.84024
+author_premium              -1.445795   3.768784             4.790964        475.16264
+is_self                      2.327002   2.066666             4.637370         66.44799
+no_follow                    0.677320   4.198808             5.435987        296.07456
+num_comments                 3.793028  11.153136            24.486105       3183.04317
+
+surprise_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 43.92%
+Confusion matrix:
+      0      1 class.error
+0 99391  85073   0.4611903
+1 77323 107957   0.4173305
+                                    0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment   19.0958563 -1.5043040            14.332566       1879.12129
+predicted_gender_post      -0.8712840  6.9523169            10.719610        236.90271
+fear_post                   0.6479539 14.7269794            20.567049       1817.66312
+anger_post                  1.7513853  8.1710530            17.943668       1748.36297
+anticip_post                0.7225348  6.7050457            16.850098       1792.74994
+trust_post                  0.5900274  8.7545959            19.935225       1838.03260
+surprise_post               0.8075743 13.8212845            23.370647       2065.20660
+positive_post              -1.4350717 11.1473852            15.956445       1846.73579
+negative_post               0.8849027  8.1769575            16.786538       1809.12959
+sadness_post                0.9864019  6.3092481            13.367844       1784.66816
+disgust_post                1.1936608  8.1335973            14.439751       1806.19863
+joy_post                    2.0023644  8.0729383            16.401266       1832.87854
+care_post                   1.2367158  2.7098881            14.065579        930.60097
+fairness_post              -0.8784893  4.7873232            11.176987        849.14213
+loyalty_post                0.3310392  4.9866642            13.175442        912.24458
+authority_post             -3.1074639  7.1703587            11.816371        952.51639
+purity_post                -0.7126712  3.9088584            13.132394        828.45678
+non_moral_post              0.7004440  3.9029903            15.389626       1126.55643
+sentistrength_pos_post      1.0628915  5.0438250            13.447911        588.23615
+sentistrength_neg_post      1.9949942  3.9725817            14.302059        648.76496
+sentistrength_neutral_post  1.3695566  1.2851893             7.579135        369.80707
+subreddit                   8.2085353  1.0075922            17.680069       1309.56438
+post_wordcount             -0.1008715  6.6753405            16.114495       1576.50378
+title_wordcount             3.1906493  3.2701702            15.754620       1686.91745
+comment_wordcount          63.5846189 61.1085762           133.416468      25172.68769
+ups                         0.7763922  8.0503814            18.105690       1880.31622
+author_premium              3.2658392 -0.4217344             6.812427        321.52811
+is_self                     0.9535582  0.6500810             4.633468         47.98241
+no_follow                   3.1723818  0.4711224             6.227028        181.56037
+num_comments                3.2224831  6.3803853            16.857424       2201.63576
+
+positive_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 40.21%
+Confusion matrix:
+       0      1 class.error
+0 103269  81570   0.4413030
+1  67093 117812   0.3628512
+                                      0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment    -9.02227955  19.282889            14.088684       1808.67570
+predicted_gender_post        0.89951853   4.844178             7.044815        301.59311
+fear_post                    4.41521522   9.458798            22.686825       2560.51205
+anger_post                   7.06218953   9.913701            19.758720       2555.72236
+anticip_post                 2.56906168  13.245888            19.393923       2569.19169
+trust_post                   3.08350264   6.721979            13.824466       2630.64547
+surprise_post                1.92169787   9.463822            17.198981       2534.90856
+positive_post                4.77124298   8.408804            18.508676       2723.69142
+negative_post                1.52826478  11.026566            17.644295       2562.05383
+sadness_post                 0.61735748   8.182745            16.256188       2543.32076
+disgust_post                 2.30547834   9.183256            13.575842       2581.87626
+joy_post                     3.00275976   8.939737            15.299972       2599.68853
+care_post                   -0.35439098   5.778597             9.001655       1306.47417
+fairness_post                2.39060791   3.653324             9.111400       1220.41757
+loyalty_post                 2.92457891   2.980312            10.609072       1309.37221
+authority_post               0.37928389   5.522858            10.966642       1341.69713
+purity_post                  2.47136519   4.522395             7.846154       1192.52876
+non_moral_post               0.82593900   4.498770            11.960631       1553.68686
+sentistrength_pos_post       3.55177831   3.828896             9.047361        792.60207
+sentistrength_neg_post      -0.03689064   5.950930            12.837704        898.33958
+sentistrength_neutral_post   0.86123709   4.641973             8.194928        494.19638
+subreddit                    6.61868292   7.361874            15.871755       1725.15563
+post_wordcount               1.57958724   6.458626            13.060405       2208.54825
+title_wordcount             -0.44270872   8.491553            12.735737       2384.41258
+comment_wordcount          123.41445935 104.607067           181.884430      35026.30428
+ups                          5.05073814   9.876481            18.502793       2751.04553
+author_premium              -0.17241516   4.403073             5.403961        429.70858
+is_self                      2.64044336   1.306853             4.122595         54.65363
+no_follow                   -0.80152164   2.930525             3.915631        271.61707
+num_comments                 2.41763365   7.348579            16.895976       3098.95650
+
+negative_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 39%
+Confusion matrix:
+       0      1 class.error
+0 102775  81196   0.4413522
+1  62989 122784   0.3390643
+                                     0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment    -1.6972464  25.188826            24.333276       1887.06691
+predicted_gender_post        1.0552507   5.147321             8.347860        313.99342
+fear_post                    0.7898433  12.609571            28.902679       2639.41094
+anger_post                   3.7941857  10.991884            24.884132       2612.15923
+anticip_post                 1.7796998  10.864886            18.887806       2664.45875
+trust_post                   2.1462576  11.447583            24.629214       2701.43679
+surprise_post                2.0635678  11.002525            15.697510       2692.55955
+positive_post                2.2945919  11.108952            23.478579       2680.66901
+negative_post                3.8251599  17.514940            28.460179       2830.17277
+sadness_post                 3.2919758  10.997934            22.819422       2620.08274
+disgust_post                 1.1313785  10.037365            25.490531       2641.51544
+joy_post                     1.9554249   8.989046            20.226970       2658.52809
+care_post                    1.3504003   6.974761            11.079419       1285.80376
+fairness_post                3.5023666   4.451912            10.813648       1184.09527
+loyalty_post                 3.1787827   5.562005             8.959365       1257.71033
+authority_post               4.8050843   4.505730            17.167556       1331.50916
+purity_post                  2.7451927   5.148135            11.421123       1151.00828
+non_moral_post               0.3684239   8.123069            13.488867       1547.27833
+sentistrength_pos_post       1.2943324   7.387502            16.332274        814.59040
+sentistrength_neg_post      -1.1809231   5.365568             9.481673        876.97778
+sentistrength_neutral_post  -1.4629896   6.474488             7.361343        451.48563
+subreddit                    6.3478309   8.334799            17.150695       1683.59983
+post_wordcount               0.4019245   7.644399            14.252375       2250.90975
+title_wordcount             -0.2652680  12.015143            17.750199       2411.30661
+comment_wordcount          123.5323370 121.797662           165.430087      36022.11465
+ups                          3.6752699  11.866975            23.347892       2862.58633
+author_premium              -3.2109995   4.805657             5.637805        419.03269
+is_self                      0.5936888   4.313133             5.440009         64.54577
+no_follow                   -1.6141023   3.846457             4.414985        266.15608
+num_comments                 4.2901248  10.467739            21.591528       3141.70824
+
+sadness_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 43.83%
+Confusion matrix:
+      0      1 class.error
+0 97235  87101   0.4725122
+1 74953 110455   0.4042598
+                                    0           1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment   22.8017489 -3.21297766            14.884802       1820.63126
+predicted_gender_post      -0.6657532  5.14507360             6.992271        239.45514
+fear_post                   2.0111227  8.93712139            22.432887       1949.37726
+anger_post                  1.9936695 12.03151959            20.504990       1930.83102
+anticip_post                2.2567598  9.25676919            14.855511       1956.87139
+trust_post                  2.5308343  8.47864068            13.385309       2002.38805
+surprise_post               1.3185733  9.69369741            16.232854       1920.40323
+positive_post               1.2399423  9.49253690            17.190903       1986.83051
+negative_post               1.2006683  9.73748760            17.314135       1936.99839
+sadness_post                4.0192107 13.75160675            27.310884       2153.74314
+disgust_post                2.9089935  6.81380476            14.160105       1937.60929
+joy_post                    5.0791627  4.83624984            14.432000       1975.32162
+care_post                   0.7582404  4.74550692            11.919518        977.63077
+fairness_post              -0.6523965  4.88043494            12.424549        901.02390
+loyalty_post                0.3801467  5.02948257            12.404119        971.85692
+authority_post              0.9917299  3.46017119            14.226290       1011.83275
+purity_post                 0.3437445  4.03115693            14.505264        896.20063
+non_moral_post              0.8971591  3.99834373            14.898676       1173.30103
+sentistrength_pos_post      0.5956571  3.82896144            13.583627        625.30909
+sentistrength_neg_post      1.9580718  4.74275888            13.555777        679.41668
+sentistrength_neutral_post  1.0657510  3.94184074             6.665912        385.84231
+subreddit                   8.2746816 -0.03700271            18.177071       1342.49122
+post_wordcount              2.6936011  5.43056946            18.819038       1667.91452
+title_wordcount             3.1281049  4.18360425            15.922725       1805.90691
+comment_wordcount          60.6384855 67.52605928           108.330783      25802.54967
+ups                         2.3758207  8.27364884            20.416885       2089.99309
+author_premium              1.9216766  0.98333290             5.719268        324.79577
+is_self                     0.6556435  1.14769712             2.655436         49.14668
+no_follow                   2.2662405  3.07660785             4.031166        207.34585
+num_comments                5.9185884  4.70030126            24.355612       2392.01366
+
+disgust_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 43.55%
+Confusion matrix:
+      0      1 class.error
+0 98373  86399   0.4675979
+1 74627 110345   0.4034503
+                                     0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment   18.53278578 -8.3079965            13.007057       1829.59901
+predicted_gender_post       2.59629620  4.6759473             6.902837        243.04771
+fear_post                   1.38819302  9.2180229            20.175701       2064.72353
+anger_post                  3.19126916  6.9580634            14.202276       2058.76032
+anticip_post                4.22246649  9.1608355            16.131076       2107.44160
+trust_post                  3.02113462  9.4458033            16.481174       2121.77681
+surprise_post               2.10191850  8.9251797            25.673269       2060.52133
+positive_post               1.67080076 10.6878905            21.249900       2093.42042
+negative_post               0.04207123 11.3314794            20.229404       2049.84988
+sadness_post                3.79292492 10.0837934            14.748582       2077.02736
+disgust_post                1.79779177 15.3376007            26.479419       2292.46669
+joy_post                    4.96214065  5.5722530            17.820363       2086.43090
+care_post                   0.03794848  3.4317427            13.096526       1044.66326
+fairness_post               0.90472226  3.4566965            11.521864        943.44957
+loyalty_post                0.48683323  4.4681416            12.771793       1027.17047
+authority_post              1.24481720  4.6216526            14.972543       1055.50769
+purity_post                 0.47638439  3.7381935            11.527527        932.66159
+non_moral_post              3.26731484  2.4873829            15.962339       1257.60411
+sentistrength_pos_post     -2.38892573  9.4062556            12.099414        683.45321
+sentistrength_neg_post     -0.41531572  9.2744478            16.065528        739.91239
+sentistrength_neutral_post  0.47637603  7.4090775            13.068687        417.39707
+subreddit                   6.65128500  5.2688073            19.753872       1414.31024
+post_wordcount              1.30949024  4.4289541            19.992982       1765.84124
+title_wordcount             4.59603208  7.2156837            16.402592       1922.40626
+comment_wordcount          72.45590854 70.3897419           111.371328      27027.52608
+ups                         2.49574378  8.6795313            15.021150       2226.86051
+author_premium              2.77394145  0.2912518             6.323344        326.55795
+is_self                    -0.69086927  2.4274558             5.513198         49.01613
+no_follow                   0.09972522  2.9026294             3.663490        228.26893
+num_comments                5.68927995  6.1391326            18.771356       2530.01990
+
+joy_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 43.68%
+Confusion matrix:
+       0      1 class.error
+0 103058  81779   0.4424385
+1  79714 105193   0.4311032
+                                     0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment   22.24099143  8.7861848            20.925258        1134.1500
+predicted_gender_post      -2.38920860  9.0420677            13.463782         269.8843
+fear_post                  -0.85871465 14.7471714            26.650034        2078.6993
+anger_post                  3.36537923 12.2301085            18.963826        2113.8314
+anticip_post               -3.48067436 15.3998309            20.904695        2106.6789
+trust_post                  3.34903358  8.2876426            25.744825        2123.9119
+surprise_post               1.76237650  9.1865894            27.433258        2071.5915
+positive_post              -2.42128814 13.6914480            26.393914        2118.4801
+negative_post               0.28730483 12.7659749            23.677085        2140.8002
+sadness_post               -2.31721634 14.3070598            23.415594        2046.0926
+disgust_post                0.56381599  9.3041822            19.709847        2078.5480
+joy_post                   -0.22249412 15.4616022            26.903878        2410.6000
+care_post                  -0.16012785  4.2684304             9.822785        1063.7272
+fairness_post               0.01779373  4.7200164             9.835432         968.6737
+loyalty_post                1.36162224  1.7371422            11.787850        1036.9313
+authority_post              1.45871241  4.4367388            12.877704        1096.3437
+purity_post                 2.02178461  1.8306923             7.139287         981.9239
+non_moral_post             -0.26645327  4.7299489            13.137740        1257.7205
+sentistrength_pos_post     -1.51826477  6.7294109             9.742099         636.1693
+sentistrength_neg_post     -0.35757621  7.9879896            16.709379         731.5631
+sentistrength_neutral_post  2.00426046  2.3455409             9.770975         401.8220
+subreddit                   7.90650928  2.3133906            21.217593        1558.1167
+post_wordcount             -0.33036927  6.2983626            13.480857        1814.2444
+title_wordcount             1.44186605  8.5654980            22.639794        1909.7134
+comment_wordcount          72.60144226 64.6990470           125.619301       26141.7417
+ups                        -1.73046739 14.0832956            21.193089        2233.7732
+author_premium              1.64863998  0.9679045            10.983737         363.4788
+is_self                     1.67013251  0.6629444             5.215757          75.8541
+no_follow                   0.23962919  1.5096136             8.611593         243.3539
+num_comments                1.39735092  8.6903013            29.058355        2509.3882
+
+care_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 9.48%
+Confusion matrix:
+       0      1 class.error
+0 168614  16258  0.08794193
+1  18790 166082  0.10163789
+                                    0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment     2.316366   9.339519             9.800928       2551.96153
+predicted_gender_post        4.646453   4.704113             5.711823        159.71750
+fear_post                   11.867733   7.179220            15.281504       1200.30704
+anger_post                   9.298362   9.865413            14.831670       1176.76932
+anticip_post                11.797261   9.623437            14.508124       1211.53762
+trust_post                  10.178979   6.026521            11.263093       1283.84749
+surprise_post               12.253558   7.855403            15.511563       1222.93259
+positive_post               10.873295   9.863456            15.437934       1230.87050
+negative_post               15.234699   7.347296            12.495930       1222.04670
+sadness_post                 8.786553   6.356260             8.838549       1275.80301
+disgust_post                12.301379   9.010338            16.980013       1219.94303
+joy_post                    12.842153   7.840344            14.115026       1220.02085
+care_post                    6.690958   5.671885             8.337345        753.82477
+fairness_post                6.404969   5.539253             7.492355       1003.53143
+loyalty_post                 5.864820   5.964207             8.634947        957.00879
+authority_post               7.187490   7.440073            10.403341        828.07802
+purity_post                  4.982883   4.942168             6.290954        845.38894
+non_moral_post               6.937844   7.493789             9.861975       1081.54753
+sentistrength_pos_post       7.996653   8.773612            11.206831        400.45642
+sentistrength_neg_post       4.828648   5.154097             5.749076        428.16580
+sentistrength_neutral_post   5.588675   4.218316             6.468726        221.20972
+subreddit                   11.830376   6.068609            11.640521       1405.76324
+post_wordcount               9.655549   6.396984             9.614558       1277.48071
+title_wordcount              8.281606   4.947215             8.858995       1176.29798
+comment_wordcount          234.584713 210.778973           234.463233     129969.14210
+ups                          7.590575   9.209619            13.053846       1730.30202
+author_premium               2.473255   2.826231             3.662420        313.26435
+is_self                      1.941385   1.714972             2.578358         83.09287
+no_follow                    3.699445   2.682658             3.950580        193.46644
+num_comments                 7.444333   8.489404            11.517417       1621.59292
+
+fairness_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 9.83%
+Confusion matrix:
+       0      1 class.error
+0 168026  16846  0.09112251
+1  19483 165389  0.10538643
+                                     0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment     7.0558169   8.805738            11.344694        2059.0988
+predicted_gender_post        6.5399879   4.053868             6.267787         154.8379
+fear_post                   11.8173192  12.024079            17.912306        1244.0207
+anger_post                  11.9216782   7.917662            16.810420        1246.8965
+anticip_post                11.3583875   6.692937             9.620664        1273.0618
+trust_post                   8.9725483   6.961640            10.973881        1334.0048
+surprise_post               12.0671153  11.425335            17.976434        1258.1789
+positive_post                8.3876397  11.568031            12.851830        1295.3776
+negative_post                7.9834943   7.233584            10.575928        1278.1387
+sadness_post                10.0835262   7.553746            13.760222        1267.6101
+disgust_post                10.8392105  11.661392            18.340641        1260.8416
+joy_post                    14.5944602   7.082769            16.064216        1243.0469
+care_post                    7.7184702   5.928850            10.051432         726.1915
+fairness_post                7.4263563   4.758660             7.854790         908.9269
+loyalty_post                 5.0393624   5.992691             7.521504         947.8385
+authority_post               8.2643176   4.862810             7.839745         971.1803
+purity_post                  5.7536926   4.434748             6.741810         874.0336
+non_moral_post               8.5674491   6.816387            11.145371        1072.7632
+sentistrength_pos_post      11.1292337   6.458019            12.221680         398.5046
+sentistrength_neg_post       8.7994106   8.461885            11.168108         439.1477
+sentistrength_neutral_post   5.1449456   4.499790             6.356359         227.9285
+subreddit                   14.6462499   5.744042            13.146089        1584.5151
+post_wordcount               5.2682290   7.019789             7.538449        1259.7308
+title_wordcount             10.3569345   4.017979             8.723177        1179.7201
+comment_wordcount          272.5072377 215.474503           259.885897      130600.1013
+ups                          8.8430702   6.649719             8.407072        1549.0415
+author_premium               0.8987673   1.587522             2.878082         256.8319
+is_self                      3.5166466   2.792111             3.629403          59.4595
+no_follow                    1.8929874   1.900173             2.766154         159.9852
+num_comments                 7.9482914   5.492944             9.747222        1570.4853
+
+loyalty_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 8.75%
+Confusion matrix:
+       0      1 class.error
+0 169920  14952  0.08087758
+1  17414 167458  0.09419490
+                                    0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment     1.615444   8.721191             9.372889       2571.64161
+predicted_gender_post        5.899068   3.181107             4.686536        160.16078
+fear_post                   11.320993  10.939411            15.480905       1183.68128
+anger_post                  10.281239  10.575904            14.900010       1166.93346
+anticip_post                11.024101   6.614669            11.526521       1164.25098
+trust_post                   8.154693   7.081400            12.287391       1248.61864
+surprise_post               11.293462  11.822833            15.300681       1174.26136
+positive_post                7.066186   6.943850             8.412273       1242.23182
+negative_post                7.902791   5.403131             8.252687       1264.82836
+sadness_post                 9.746161   5.785918             8.689854       1228.32005
+disgust_post                12.826979   8.200212            15.147818       1188.74204
+joy_post                    11.106237   5.452887            11.887641       1193.76843
+care_post                    8.779900   6.350164             9.510942        662.37871
+fairness_post                6.834866   5.170387             8.472652        870.75373
+loyalty_post                 6.936107   6.646609             8.178794       1037.72613
+authority_post               7.291797   6.519600             9.195566        842.63498
+purity_post                  7.125265   4.645386             8.147547        581.68800
+non_moral_post               8.607475   6.773108             8.558907       1089.42987
+sentistrength_pos_post       7.081334   6.732165            10.589990        358.45036
+sentistrength_neg_post       9.754876   5.852485             9.018159        404.20683
+sentistrength_neutral_post   7.775899   3.285857             5.276982        224.56745
+subreddit                   12.272629   6.841649            12.094096       1620.26159
+post_wordcount               6.178318   8.665027             9.493113       1066.67620
+title_wordcount              9.461436   6.272567            11.085808       1129.01057
+comment_wordcount          209.764505 177.674232           197.857447     133740.41090
+ups                          9.412069   7.167106             9.389594       1587.63652
+author_premium               3.710748   2.290337             3.486764        362.47151
+is_self                      2.648345   1.339946             2.727488         83.85941
+no_follow                    1.937755   3.371392             4.012206        121.44234
+num_comments                 8.491188   8.373724            10.099012       1534.27611
+
+authority_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 10.09%
+Confusion matrix:
+       0      1 class.error
+0 168431  16441   0.0889318
+1  20863 164009   0.1128511
+                                    0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment     4.842400   9.354180             9.923674       2196.95940
+predicted_gender_post        5.890548   4.703719             6.909754        161.04383
+fear_post                   11.968138   8.747476            16.570525       1305.06954
+anger_post                  12.721619   7.724487            14.731510       1280.15369
+anticip_post                10.103841   8.595834            12.500253       1295.05466
+trust_post                   9.186002   8.817238            13.048450       1366.71181
+surprise_post               11.288419  10.973194            15.529500       1292.48870
+positive_post                8.195595  11.119434            11.931281       1367.17955
+negative_post               11.870864   9.945574            13.389372       1316.97058
+sadness_post                13.489856   9.001559            13.462892       1326.58405
+disgust_post                13.710985   7.190568            16.060638       1307.10160
+joy_post                    12.801452   8.563503            15.457490       1372.89898
+care_post                    7.701659   6.269479             9.083823        777.42569
+fairness_post                8.327399   4.340039             7.824295        767.50320
+loyalty_post                 5.978274   6.231402             7.727177       1042.31631
+authority_post               9.208794   6.382110             9.106715        923.53052
+purity_post                  7.217620   4.849987             7.666123        693.22933
+non_moral_post               9.092126   7.927250            11.453510       1000.88248
+sentistrength_pos_post       9.530119   7.254594            11.864236        385.22308
+sentistrength_neg_post       8.420820   7.072042             9.232844        446.86581
+sentistrength_neutral_post   3.967922   3.739307             5.985148        229.53357
+subreddit                   10.329729   6.148892             9.883027       1689.19311
+post_wordcount               5.461966   7.316162            10.463164       1331.51194
+title_wordcount              9.706138   4.537630             8.462212       1233.99363
+comment_wordcount          226.414184 219.713573           230.909463     128742.53151
+ups                         12.382893   8.748266            11.543480       1797.19406
+author_premium               3.971884   2.019882             4.578351        304.78459
+is_self                      5.105819   1.240058             2.616055         57.94708
+no_follow                    3.512628   1.781191             2.626499        166.22997
+num_comments                 7.948068   9.603953            11.397351       1675.56429
+
+purity_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 9.1%
+Confusion matrix:
+       0      1 class.error
+0 169534  15338  0.08296551
+1  18293 166579  0.09894954
+                                    0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment     4.089415   9.307190             9.953953       2066.24762
+predicted_gender_post        5.858278   3.192377             5.967110        166.75339
+fear_post                   16.114562   5.716825            11.859322       1208.80706
+anger_post                   8.794970  10.390169            13.295453       1168.23900
+anticip_post                12.691211   7.943380            13.256594       1202.95623
+trust_post                   9.167924   8.562004            12.039974       1289.45979
+surprise_post               12.493089  11.653702            17.221667       1195.06563
+positive_post               10.611792  11.095750            15.087302       1201.56748
+negative_post               13.304424   8.596514            15.136635       1210.32221
+sadness_post                10.065404   7.020589            12.095021       1246.30659
+disgust_post                11.443535   7.560122            12.326975       1216.02494
+joy_post                    10.955185   8.044423            14.990729       1207.75880
+care_post                    6.076322   5.383443             6.615886        815.20191
+fairness_post                4.917268   4.847620             5.822116        825.01019
+loyalty_post                 8.202687   4.303264             7.988972        796.65416
+authority_post               5.566059   6.027936             7.897813        803.19098
+purity_post                  7.503715   5.279737             8.428632        729.57590
+non_moral_post               7.411142   7.797373            10.800313       1225.12150
+sentistrength_pos_post       7.301401   5.286566             9.910721        368.55842
+sentistrength_neg_post       6.698105   4.614425             7.099321        404.86696
+sentistrength_neutral_post   7.340443   3.352634             6.729683        217.81865
+subreddit                    8.644279   7.450529            11.586971       1608.24797
+post_wordcount               8.633958   8.017333            10.986988       1267.30853
+title_wordcount             14.864779   7.631156            13.929115       1147.92495
+comment_wordcount          214.141682 187.208140           205.382461     133353.82035
+ups                         10.743966   8.026793            10.763861       1614.32457
+author_premium               2.819758   2.733220             3.638382        323.97831
+is_self                      3.186223   1.445287             3.086025         39.43377
+no_follow                    3.367759   2.549042             4.341509        118.86664
+num_comments                 8.901954   6.792547            10.023189       1527.09654
+
+non_moral_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 12.1%
+Confusion matrix:
+       0      1 class.error
+0 163599  21273   0.1150688
+1  23479 161393   0.1270014
+                                    0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment    14.269801   7.177651            18.206309        1312.3821
+predicted_gender_post        5.720235   6.664048             9.285734         187.9789
+fear_post                    9.640878  14.596331            18.332793        1470.4802
+anger_post                  12.298687  15.373691            19.973694        1452.7513
+anticip_post                12.270149  10.335072            18.192773        1490.7269
+trust_post                   6.706139   8.464631            14.576165        1518.9902
+surprise_post               15.436454   9.429365            17.344621        1460.7964
+positive_post                6.758288  10.618643            12.321803        1551.5180
+negative_post               11.200742  10.190571            16.529076        1485.2680
+sadness_post                 8.233336   8.849828            11.533915        1496.7392
+disgust_post                12.773983  10.779094            18.358817        1512.4432
+joy_post                    13.798763  10.454568            18.723911        1473.9227
+care_post                    7.383715   6.034447             9.365790        1097.5968
+fairness_post                6.682566   6.357869             9.330745        1156.6038
+loyalty_post                 6.790117   6.941447            11.228570         843.7591
+authority_post               7.572015   6.577634             8.944893        1100.3610
+purity_post                  4.491371   7.116577             7.855764         872.0624
+non_moral_post               7.105773   8.500595            10.174539        1686.8330
+sentistrength_pos_post       6.901680   4.945980             7.751379         467.7598
+sentistrength_neg_post       5.481915   6.556835             7.328598         503.5891
+sentistrength_neutral_post   5.652932   8.421227             8.303702         270.1022
+subreddit                   10.677271   8.530770            14.166773        1785.2222
+post_wordcount               9.153934   5.119783            10.406020        1349.7399
+title_wordcount             10.194168  12.570328            16.676354        1351.3390
+comment_wordcount          246.150223 268.659137           271.013120      120912.0091
+ups                          8.220022  10.289026            11.619066        1786.5298
+author_premium               2.946192   4.481823             7.123741         311.3062
+is_self                      2.103259   2.481734             3.121733         138.7825
+no_follow                    4.301685   5.123919             5.464867         139.0198
+num_comments                 8.046485   8.871249            11.472521        1839.3554
+
+sentistrength_pos_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 30.41%
+Confusion matrix:
+      0      1 class.error
+0 82797  65754   0.4426359
+1 46691 174502   0.2110872
+                                    0           1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment    20.003081  51.4700990            53.138807        2174.0927
+predicted_gender_post        8.206742   7.1856326             9.482328         354.3243
+fear_post                    9.581785  24.6518096            33.413143        2629.5161
+anger_post                  12.353554  20.3902145            27.586268        2659.5994
+anticip_post                 9.866904  32.2666366            37.640792        2658.7913
+trust_post                   7.624187  20.4637819            28.705357        2717.7862
+surprise_post               11.314633  27.7613354            30.750361        2650.6458
+positive_post               10.256631  20.2970170            28.653190        2745.1666
+negative_post                9.294830  22.2144498            33.205890        2634.0637
+sadness_post                 9.618672  26.6105613            36.823459        2599.6858
+disgust_post                 7.768364  20.1201154            26.703170        2637.6130
+joy_post                     7.853097  24.7102758            33.840399        2626.0143
+care_post                    2.870053   6.5474395            11.262934        1461.8442
+fairness_post                4.930157   5.3925888             9.219915        1247.2590
+loyalty_post                 2.450184   6.0733750             8.894648        1371.7521
+authority_post               4.107092   6.9572217            11.375494        1488.0386
+purity_post                  5.180966   5.0589515             7.898408        1879.5520
+non_moral_post               5.986624   8.8651425            13.656154        2119.9653
+sentistrength_pos_post       8.114959  13.5055975            19.883237        1231.9989
+sentistrength_neg_post       9.221993   9.4509657            13.986463         880.7135
+sentistrength_neutral_post   7.757903   7.1661471            11.803550         458.1949
+subreddit                   19.026980   5.6261078            23.746040        2523.1159
+post_wordcount               6.222441   8.5418683            14.280658        3517.7416
+title_wordcount              8.747381   7.5177468            12.671906        2414.6561
+comment_wordcount          203.020903 128.2697033           183.123208       42379.1097
+ups                         16.380370  12.9214057            21.636107        2984.8154
+author_premium               1.007365   5.8993556             7.222776         546.6007
+is_self                      4.138789   0.9657956             3.747310         229.5282
+no_follow                    1.302596   3.7451324             5.187979         299.8424
+num_comments                13.451356  23.6367863            41.493506        3220.9159
+
+sentistrength_neg_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 27.63%
+Confusion matrix:
+      0      1 class.error
+0 98855  56746   0.3646892
+1 45408 168735   0.2120452
+                                      0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment    13.62508018   9.828175            16.422406        2260.7835
+predicted_gender_post        7.06769887  10.957618            13.089094         316.6594
+fear_post                    9.27757311  17.443321            36.300425        2531.1674
+anger_post                  10.12823781  22.538240            35.456357        2572.6111
+anticip_post                 9.90788634  16.129062            22.436529        2557.4824
+trust_post                   8.89671869  13.734664            26.224438        2572.5886
+surprise_post               12.91355214  18.881822            31.759257        2555.6667
+positive_post                7.14957098  14.310578            23.232979        2558.5303
+negative_post                5.83705387  20.781152            39.118692        2552.5282
+sadness_post                 3.41777675  15.070797            28.646815        2512.0923
+disgust_post                 6.30990680  15.797113            23.750096        2516.9706
+joy_post                     4.66676761  13.754850            23.912286        2621.7402
+care_post                    3.35025397  10.307685            10.277658        1307.8232
+fairness_post                3.93736975   9.291035            10.805465        1275.6417
+loyalty_post                 3.83039511  10.577503            13.677470        1216.6704
+authority_post               5.19211352   9.348577            15.465816        1299.8985
+purity_post                  2.17125840  11.673690            17.010043        1121.9344
+non_moral_post               8.37502407  10.841966            15.821043        1599.9821
+sentistrength_pos_post       5.35396875  10.656178            13.708638         737.8664
+sentistrength_neg_post       8.48522184  14.875934            19.370177         999.2686
+sentistrength_neutral_post   8.37376947  13.433775            16.315296         840.9676
+subreddit                   15.64311301  10.771143            24.834509        2297.4062
+post_wordcount               4.35769886  13.805490            19.622551        2464.6363
+title_wordcount              2.32380332  12.966284            23.289903        2428.6359
+comment_wordcount          183.32986240 166.237873           202.940488       54557.9860
+ups                          3.01986448  18.949578            26.245229        2816.9926
+author_premium              -2.33023700   7.186108            10.952864         477.2030
+is_self                      3.86212882   3.677099             6.524999         396.5926
+no_follow                    0.04775587   5.204753             7.404208         272.3848
+num_comments                 7.17266169  19.270538            25.612713        3282.6729
+
+sentistrength_neutral_comment
+
+Call:
+ randomForest(formula = response ~ ., data = d, importance = TRUE,      ntree = 50, mtry = 5) 
+               Type of random forest: classification
+                     Number of trees: 50
+No. of variables tried at each split: 5
+
+        OOB estimate of  error rate: 29.2%
+Confusion matrix:
+      0      1 class.error
+0 56701  66522   0.5398505
+1 41447 205074   0.1681277
+                                     0          1 MeanDecreaseAccuracy MeanDecreaseGini
+predicted_gender_comment    18.9826608  11.204624            24.608960        1888.5960
+predicted_gender_post        5.6269791   9.565054            14.640764         306.3645
+fear_post                    2.8372261  21.080256            29.742070        2507.6068
+anger_post                   8.2337455  15.088049            19.316463        2585.9816
+anticip_post                 2.2578512  14.303351            22.244747        2548.0999
+trust_post                   3.4628807  16.648606            23.814797        2530.7515
+surprise_post                5.4361358  21.868838            32.236922        2527.1336
+positive_post                4.6707062  25.587832            26.442245        2546.9336
+negative_post                4.3129867  19.279681            26.729658        2581.5691
+sadness_post                 2.1058194  15.823013            23.519623        2488.3801
+disgust_post                 0.5489335  16.158571            23.715674        2500.2485
+joy_post                     3.0051608  16.065764            20.403947        2571.8964
+care_post                   -1.6697974  10.933228            12.330820        1300.1523
+fairness_post                0.2318010  11.281412            11.749337        1260.6157
+loyalty_post                 0.6267772   9.778407            12.365555        1289.5253
+authority_post               0.8938856  10.279830            12.391337        1400.3303
+purity_post                 -0.7853311   9.226667            11.056593        1180.2021
+non_moral_post               3.9576070  10.238919            19.875238        1557.1103
+sentistrength_pos_post       4.5065883   8.469064            10.802237         780.2697
+sentistrength_neg_post       7.9302064  10.736367            13.416050        1001.0830
+sentistrength_neutral_post   6.7306449  13.838422            17.059331         868.6189
+subreddit                   14.7942950  11.534592            21.106802        2794.5583
+post_wordcount               1.8505692  12.272367            15.766248        2692.8363
+title_wordcount              2.2641404  13.523278            21.350820        2358.1429
+comment_wordcount          206.9871651 135.279407           209.025851       33872.7956
+ups                          7.5632786  18.291714            21.763197        2858.8383
+author_premium              -3.5124589   6.328657             7.283762         516.0431
+is_self                      1.8204315   4.125313             6.128245         616.8979
+no_follow                   -2.0861106   5.391358             6.527940         275.2487
+num_comments                 3.4212042  15.932429            25.340816        3163.5058

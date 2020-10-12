@@ -1,4 +1,4 @@
-setwd("~/Desktop/reddit/src/")
+setwd("~/Desktop/gender_difference_analysis/src/")
 source("utils.R")
 library(ROCit)
 library(caret)

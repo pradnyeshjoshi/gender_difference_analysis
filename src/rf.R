@@ -1,5 +1,11 @@
-setwd("~/Desktop/reddit/src/")
+setwd("~/Desktop/gender_difference_analysis/src/")
 source("utils.R")
+library(randomForest)
+library(ROCit)
+library(caret)
+library(dplyr)
+library(lme4)
+library(ggplot2)
 
 # This function dichotomizes each comment sentiment using
 # a median threshold, builds a random forest classifier, and plots ROC curve.
