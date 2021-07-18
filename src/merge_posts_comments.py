@@ -3,6 +3,7 @@ from glob import glob
 import os
 import numpy as np
 
+
 def merge_posts(reddit_dir='../data/rawdata/'):
     sentiment_list = [
         'fear', 'anger', 'anticip', 'trust', 'surprise',
@@ -30,6 +31,7 @@ def merge_posts(reddit_dir='../data/rawdata/'):
     post_df = post_df.drop_duplicates()
     return post_df
 
+
 def merge_comments(reddit_dir='../data/rawdata/'):
     sentiment_list = [
         'fear', 'anger', 'anticip', 'trust', 'surprise',
@@ -53,6 +55,7 @@ def merge_comments(reddit_dir='../data/rawdata/'):
     comment_df = comment_df.drop_duplicates()
     return comment_df
 
+
 def combine_posts_comments(posts, comments):
     df = pd.merge(
         comments, posts, how='inner',left_on='link_id', right_on='name',
@@ -64,14 +67,15 @@ def combine_posts_comments(posts, comments):
     df = df.drop_duplicates()
     return df
 
+
 if __name__ == "__main__":
     post_df = merge_posts()
     print(post_df.head())
-    post_df.to_csv('../data/posts.csv', index=False, index_label=False)
-    comment_df = merge_comments()
-    print(comment_df.head())
-    comment_df.to_csv('../data/comments.csv', index=False, index_label=False)
-    df = combine_posts_comments(post_df, comment_df)
-    print("writing to csv")
-    df.to_csv("../data/reddit_data.csv", index=False, index_label=False)
+    post_df.to_csv('../data/posts_numeric_gender.csv', index=False, index_label=False)
+    # comment_df = merge_comments()
+    # print(comment_df.head())
+    # comment_df.to_csv('../data/comments_numeric_gender.csv', index=False, index_label=False)
+    # df = combine_posts_comments(post_df, comment_df)
+    # print("writing to csv")
+    # df.to_csv("../data/reddit_data.csv", index=False, index_label=False)
     # df.loc[df['link_id'] == "t3_e8qkg7"].to_csv("../data/reddit_data_sample.csv", index=False, index_label=False)

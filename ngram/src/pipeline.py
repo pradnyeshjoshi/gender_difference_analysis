@@ -3,6 +3,7 @@ from sklearn.svm import SVC, LinearSVC
 from sklearn.pipeline import Pipeline
 from sklearn.pipeline import FeatureUnion
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.calibration import CalibratedClassifierCV
 
 emojis = [e for e in emoji.UNICODE_EMOJI]
 
@@ -26,7 +27,7 @@ pipeline = Pipeline([('features', FeatureUnion([
                           ('wrd', TfidfVectorizer(binary=False, max_df=1.0, min_df=2, norm='l2', sublinear_tf=True, use_idf=True, lowercase=True)),
                           ('char',TfidfVectorizer(analyzer='char', ngram_range=(3,6), binary=False, max_df=1.0, min_df=2, norm='l2', sublinear_tf=True, use_idf=True, lowercase=True))
                     ])),
-                    ('clf', LinearSVC(C=0.1)) ])
+                    ('clf', CalibratedClassifierCV(LinearSVC(C=0.1))) ])
 
 
 

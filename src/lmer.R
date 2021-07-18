@@ -20,7 +20,7 @@ plot_histograms(reddit_data, features)
 
 # Linear Mixed Models
 # Let's subset the data for one comment sentiment.
-c <- 'trust_comment'
+c <- 'fairness_comment'
 d <- cbind(reddit_data[c(features, "link_id")], response = reddit_data[[c]])
 d <- transform_features(d, features)
 
@@ -34,8 +34,8 @@ d <- scale_features(d, features)
 
 # Finally, building an LMER model.
 mixed.lmer <- lmer(response ~ . + predicted_gender_comment:comment_wordcount +
-                           sadness_post:predicted_gender_post +
-                           sadness_post:predicted_gender_comment +
+                           fairness_post:predicted_gender_post +
+                           fairness_post:predicted_gender_comment +
                            # fairness_post:predicted_gender_post +
                            # fairness_post:predicted_gender_comment +
                            predicted_gender_post:predicted_gender_comment -

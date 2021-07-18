@@ -49,17 +49,18 @@ def runbaseline():
 	test_dir = '../../data/pan17/pan17-author-profiling-test-dataset-2017-03-16/'
 	reddit_dir = '../../data/rawdata/'
 
+	logging.basicConfig(filename="prediction_log.log", filemode="w")
 	logging.info("loading train dataset...")
 	df = datasets.load_pan17(train_dir)
 	corpus = df.corpus
 	corpus['text'] = corpus.text.apply(lambda x: '\n'.join(x))  # join tweets
-	print(corpus.shape)
+	logging.info(corpus.shape)
 
 	logging.info("loading test dataset...")
 	df_test = datasets.load_pan17(test_dir)
 	corpus_test = df_test.corpus
 	corpus_test['text'] = corpus_test.text.apply(lambda x: '\n'.join(x))  # join tweets
-	print(corpus_test.shape)
+	logging.info(corpus_test.shape)
 
 	# load pipeline
 	pipe = pipeline.pipeline
@@ -95,17 +96,17 @@ def runbaseline():
 	test = corpus_test
 	subset = pd.concat([subset, test])
 	subset = subset.sample(n=11400, replace=False)
-	print("sampled data shape ", subset.shape)
+	logging.info("sampled data shape " + str(subset.shape))
 
 	logging.info("testing pipeline for gender")
 
 	start_time = time()
 	pipe.fit(subset.text,  # X
 	         subset.gender)  # Y
-	print("model fit in " + str(time()-start_time) + " sec")
+	logging.info("model fit in " + str(time()-start_time) + " sec")
 
 	try:
-		print("train accuracy on train+test data", pipe.score(subset['text'], subset['gender']))
+		logging.info("train accuracy on train+test data", pipe.score(subset['text'], subset['gender']))
 	except:
 		logging.info("error calculating accuracy")
 
@@ -119,12 +120,12 @@ def runbaseline():
 	reddit_post_list = [y for x in os.walk(reddit_dir) for y in glob(os.path.join(x[0], '*.csv')) if 'comment' not in y]
 	reddit_comment_list = [y for x in os.walk(reddit_dir) for y in glob(os.path.join(x[0], '*.csv')) if 'comment' in y]
 	for r in reddit_post_list + reddit_comment_list:
-		print("loading ", r)
+		logging.info("loading ", r)
 		file_type = "post" if r in reddit_post_list else "comment"
-		print(file_type)
+		logging.info(file_type)
 		df_reddit = datasets.load_reddit(r, type=file_type)
-		print("predict on ", r)
-		pred = pipe.predict(df_reddit.corpus.text)
+		logging.info("predict on ", r)
+		pred = pipe.predict_proba(df_reddit.corpus.text)
 		df_reddit.corpus['predicted_gender'] = pred
 		df_reddit.corpus.to_csv(r, index=False, index_label=False)
 
